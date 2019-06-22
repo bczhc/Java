@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="zhc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/commons-beanutils-1.7.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-codec-1.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-collections-3.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-fileupload-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-io-2.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-lang-2.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-logging-1.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/commons-net-3.6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/ezmorph-1.0.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/jdom.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/json-lib-2.2.2-jdk15.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

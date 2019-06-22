@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" charset="GB2312">
+<style>
+    .sr{
+        width:50px;
+    }
+</style>
+设定时间:
+<br/>
+离<input type="text" id="xs" placeholder="输入小时" class="sr">
+<input type="text" id="fz" placeholder="输入分钟" class="sr">
+<input type="text" id="m" placeholder="  输入秒" class="sr">
+<input type="text" id="hm" placeholder="输入毫秒" class="sr">
+<br/>
+现在:<span id="sj">现在时间</span>
+<br/>
+还剩:<span id="hs">还剩时间</span>
+<br/>
+还剩毫秒数:<span id="ms">还剩毫秒数</span>
+<br>
+进度条:   <progress id="pg" max="" value=""></progress>
+<script>
+    alert("该计时器需要震动权限，请放心确定")
+    navigator.vibrate([1])
+    //new Notification("通知:获取权限")
+    function js()
+    {
+        try{
+            /*现在*/
+            var day=new Date();
+            var nowHOUR=day.getHours();
+            var nowMINUTE=day.getMinutes();
+            var nowSECOND=day.getSeconds();
+            var nowMILLISECOND=day.getMilliseconds();
+            /*将来*/
+            var jlHOUR=Number(document.getElementById("xs").value);
+            var jlMINUTE=Number(document.getElementById("fz").value);
+            var jlSECOND=Number(document.getElementById("m").value);
+            var jlMILLISECOND=Number(document.getElementById("hm").value);
+            if(document.getElementById("ms").innerHTML=="0毫秒")
+            {
+                var jm=jlHOUR*60*60*1000+jlMINUTE*60*1000+jlSECOND*1000+jlMILLISECOND-(nowHOUR*60*60*1000+nowMINUTE*60*1000+nowSECOND*1000+nowMILLISECOND)
+                document.getElementById("pg").max=jm
+            }
+            /*毫秒*/
+            if(nowMILLISECOND>jlMILLISECOND)
+            {
+                jlSECOND=jlSECOND-1;
+                jlMILLISECOND=jlMILLISECOND+1000;
+            }
+            var sxMILLISECOND=jlMILLISECOND-nowMILLISECOND;
+            /*秒*/
+            if(nowSECOND>jlSECOND)
+            {
+                jlMINUTE=jlMINUTE-1;
+                jlSECOND=jlSECOND+60
+            }
+            var sxSECOND=jlSECOND-nowSECOND;
+            /*分*/
+            if(nowMINUTE>jlMINUTE)
+            {
+                jlHOUR=jlHOUR-1;
+                jlMINUTE=jlMINUTE+60
+            }
+            var sxMINUTE=jlMINUTE-nowMINUTE
+            /*时*/
+            var sxHOUR=jlHOUR-nowHOUR; if(sxHOUR<0||sxMINUTE<0||sxSECOND<0||sxMILLISECOND<0)
+            {document.getElementById("hs").innerHTML=0+"时"+0+"分"+0+"秒"+0+"毫秒";
+                document.getElementById("ms").innerHTML="0毫秒"
+                document.getElementById("pg").value=0
+            }
+            else
+            {document.getElementById("hs").innerHTML=sxHOUR+"时"+sxMINUTE+"分"+sxSECOND+"秒"+sxMILLISECOND+"毫秒";
+                document.getElementById("ms").innerHTML=sxHOUR*60*60*1000+sxMINUTE*60*1000+sxSECOND*1000+sxMILLISECOND+"毫秒"
+
+                document.getElementById("pg").value=sxHOUR*60*60*1000+sxMINUTE*60*1000+sxSECOND*1000+sxMILLISECOND
+            }
+            if(sxHOUR==0&&sxMINUTE==0&&sxSECOND<10)
+            {
+                document.getElementById("hs").style.color="red";
+                document.getElementById("hs").style.fontSize="30px";
+            }
+            else
+            {
+                document.getElementById("hs").style.color="black";
+                document.getElementById("hs").style.fontSize="20px";
+
+            }
+            if(sxHOUR<1&&sxMINUTE<1&&sxSECOND<1)
+            {
+                if(sxHOUR>-1)
+                {
+                    // if(sxMILLISECOND<1)
+                    // {
+                    //  if(sxHOUR>-1)
+                    // {
+                    navigator.vibrate([5000])
+//new Notification("时间到:",{body:"00:00:00:000"});
+
+                    // }
+//}
+                }
+            }
+
+        }
+        catch(e)
+        {
+            alert(e)
+        }
+        document.getElementById("sj").innerHTML="今日"+nowHOUR+"时"+nowMINUTE+"分"+nowSECOND+"秒"+nowMILLISECOND+"毫秒";
+
+    }
+    setInterval("js()",1)
+
+</script>
+</html>

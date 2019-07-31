@@ -14,7 +14,7 @@ import java.util.concurrent.Executors;
 
 import static java.lang.System.*;
 
-public class a {
+public class A {
     public static void main(String[] args) throws InterruptedException, MalformedURLException {
         String s = new Scanner(in).next();
         CountDownLatch latch = new CountDownLatch(100);

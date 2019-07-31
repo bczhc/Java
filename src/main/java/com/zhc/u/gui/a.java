@@ -12,7 +12,7 @@ public class a {
     private static boolean c = false;
 
     public static void main(String[] args) {
-        JFrame jf = new JFrame();
+            JFrame jf = new JFrame();
         jf.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         final double[] n = new double[10];
         n[0] = 0;

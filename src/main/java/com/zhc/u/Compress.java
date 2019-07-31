@@ -2,9 +2,9 @@ package com.zhc.u;
 
 import java.io.*;
 
-public class Compress extends com.zhc.u.u_File {
+public class Compress extends FileU {
     public static void main(String[] args) throws IOException {
-        File f = new File("C:/zhc/f/a/大壮-魔鬼中的天使.mp3");
+        File f = new File("C:/zhc/f/A/大壮-魔鬼中的天使.mp3");
         InputStream is = new FileInputStream(f);
         OutputStream os = compress(is);
 //        System.out.println(Arrays.toString(((ByteArrayOutputStream) os).toByteArray()));

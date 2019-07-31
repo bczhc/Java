@@ -7,12 +7,12 @@ import java.awt.*;
 public class s implements Runnable {
     private static s o = new s();
     private Thread t;
-    private int a = 0;
+    private int A = 0;
     private int scW = 0;
     private int scH = 0;
 
     private s(int i) {
-        a = i;
+        A = i;
     }
 
     private s() {
@@ -20,7 +20,7 @@ public class s implements Runnable {
 
     @Override
     public void run() {
-        o.CAS(a, 0);
+        o.CAS(A, 0);
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
@@ -78,6 +78,7 @@ public class s implements Runnable {
 }*/
 
 
+/*
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 
@@ -87,7 +88,28 @@ public class s {
         System.out.println("\"\\u2028\" = " + "\u2028");
         OutputStream os = new FileOutputStream("C:\\Users\\zhc\\Downloads\\s.txt");
         OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_16);
-        osw.write("a\u2028b");
+        osw.write("A\u2028b");
         osw.flush();
+    }
+}*/
+
+
+public class s {
+    private boolean b = false;
+
+    private void f1() {
+        System.out.println(1);
+    }
+
+    public int f2(String s) {
+        return Integer.valueOf(s);
+    }
+
+    public static void main(String[] args) {
+        s s = new s();
+        s.f1();
+        System.out.println("s.f2(\"a.\") = " + s.f2("a."));
+        new s().b = true;
+        s.b = true;
     }
 }

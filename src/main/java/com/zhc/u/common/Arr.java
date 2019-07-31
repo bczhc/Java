@@ -202,7 +202,7 @@ public class Arr {
 
 class s0 {
     public static void main(String[] args) {
-        new Arr.SeparateArr<>(new String[]{"a"}, 2).separate(new Arr.SeparateArrDo() {
+        new Arr.SeparateArr<>(new String[]{"A"}, 2).separate(new Arr.SeparateArrDo() {
             @Override
             public void f(Object[] a) {
 

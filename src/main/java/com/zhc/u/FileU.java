@@ -1,6 +1,8 @@
 package com.zhc.u;
 
 
+import com.sun.istack.internal.Nullable;
+
 import java.io.*;
 import java.math.BigInteger;
 import java.net.MalformedURLException;
@@ -13,8 +15,8 @@ import java.util.List;
 import java.util.Scanner;
 
 @SuppressWarnings({"unused", "WeakerAccess"})
-public class u_File {
-    public static u_File o = new u_File();
+public class FileU {
+    public static FileU o = new FileU();
 
     /**
      * @param inputStream     Stream_a
@@ -91,7 +93,7 @@ public class u_File {
      * @return 是否成功完成
      * @throws IOException 流异常
      */
-    public static boolean FileCopy(File srcFile, File destFile) throws IOException {
+    public static boolean FileCopy(java.io.File srcFile, java.io.File destFile) throws IOException {
         boolean r1 = true, r2 = true, r3 = true;
         if (srcFile.exists()) {
             if (!destFile.exists()) r1 = destFile.createNewFile();
@@ -99,6 +101,21 @@ public class u_File {
             InputStream is = new FileInputStream(srcFile);
             FileOutputStream fos = new FileOutputStream(destFile);
             StreamWrite(is, fos);
+        } else {
+            r3 = false;
+        }
+        return r1 && r2 && r3;
+    }
+
+    @SuppressWarnings("UnusedReturnValue")
+    public static boolean FileCopy(java.io.File srcFile, java.io.File destFile, long skip) throws IOException {
+        boolean r1 = true, r2 = true, r3 = true;
+        if (srcFile.exists()) {
+            if (!destFile.exists()) r1 = destFile.createNewFile();
+            else r2 = destFile.delete();
+            InputStream is = new FileInputStream(srcFile);
+            FileOutputStream fos = new FileOutputStream(destFile);
+            StreamWrite(is, fos, skip);
         } else {
             r3 = false;
         }
@@ -114,7 +131,7 @@ public class u_File {
      * @return 是否成功完成
      * @throws IOException 流异常
      */
-    public static boolean FileCopy(File srcFile, File destFile, boolean overwrite) throws IOException {
+    public static boolean FileCopy(java.io.File srcFile, java.io.File destFile, boolean overwrite) throws IOException {
         boolean r1 = true, r2 = true, r3 = true;
         if (srcFile.exists()) {
             if (!destFile.exists()) r1 = destFile.createNewFile();
@@ -134,7 +151,7 @@ public class u_File {
     }
 
     public static void DownloadWeb(String url, OutputStream to_outputStream) throws IOException {
-        URL u = new u_File().StrToUrl(url);
+        URL u = new FileU().StrToUrl(url);
         StreamWrite(u.openConnection().getInputStream(), to_outputStream);
     }
 
@@ -143,17 +160,17 @@ public class u_File {
     }
 
     public static InputStream DownloadWeb(String url) throws IOException {
-        URL u = new u_File().StrToUrl(url);
+        URL u = new FileU().StrToUrl(url);
         return u.openConnection().getInputStream();
     }
 
-    public static void DownloadWeb(URL url, File file) throws IOException {
+    public static void DownloadWeb(URL url, java.io.File file) throws IOException {
         OutputStream fos = new FileOutputStream(file, false);
         StreamWrite(url.openConnection().getInputStream(), fos);
     }
 
-    public static void DownloadWeb(String url, File file) throws IOException {
-        URL u = new u_File().StrToUrl(url);
+    public static void DownloadWeb(String url, java.io.File file) throws IOException {
+        URL u = new FileU().StrToUrl(url);
         OutputStream fos = new FileOutputStream(file, false);
         StreamWrite(u.openConnection().getInputStream(), fos);
     }
@@ -163,8 +180,15 @@ public class u_File {
         return new URL(!s1.matches(".*http.*") ? ("http://" + s) : s);
     }
 
+    public URL StrToUrl(String s, @Nullable URL url) throws MalformedURLException {
+        String s1 = url.toString();
+        int i = s1.lastIndexOf('/');
+        String substring = s1.substring(0, i + 1);
+        return new URL(s.matches(".*http.*://.*") ? s : substring + s);
+    }
+
     public static void ReadServletInputStreamToFileIS(InputStream in, OutputStream to_outputStream, long fileSize) throws IOException {
-        u_File o = new u_File();
+        FileU o = new FileU();
         ByteArrayOutputStream baos1 = new ByteArrayOutputStream(), baos2 = new ByteArrayOutputStream();
         StreamCopy(in, baos1, baos2);
         InputStream is1 = StreamParse(baos1);
@@ -204,7 +228,7 @@ public class u_File {
         return skip;
     }
 
-    public static String getMD5String(File file) throws IOException {
+    public static String getMD5String(java.io.File file) throws IOException {
         InputStream is = new FileInputStream(file);
         return getMD5String(is);
     }
@@ -230,19 +254,33 @@ public class u_File {
 //        return DigestUtils.md5Hex(inputStream);
     }
 
-    public boolean[] FileMove(File srcFile, File destFile) throws IOException {
+    public boolean[] FileMove(java.io.File srcFile, java.io.File destFile) throws IOException {
         boolean[] b = new boolean[2];
         b[0] = FileCopy(srcFile, destFile);
         b[1] = srcFile.delete();
         return b;
     }
 
-    public String getFileExtension(File f) {
+    public String getFileExtension(java.io.File f) {
         String N = f.getName();
         return N.substring(N.lastIndexOf(".") + 1);
     }
 
-    public String fileOpen_String_OneLine(File file, String charset) throws IOException {
+    public String getFileExtension(String fileName) {
+        return fileName.substring(fileName.lastIndexOf(".") + 1);
+    }
+
+    public String getFileName(String file) {
+        if (!file.matches(".*\\..*")) return file;
+        int indexOf = file.lastIndexOf('.');
+        return file.substring(0, indexOf);
+    }
+
+    public String changeFileExtension(String fileName, String newFileExtension) {
+        return this.getFileName(fileName) + "." + newFileExtension;
+    }
+
+    public String fileOpen_String_OneLine(java.io.File file, String charset) throws IOException {
         String r;
         FileInputStream fis = new FileInputStream(file);
         InputStreamReader isr = new InputStreamReader(fis, charset);
@@ -254,13 +292,13 @@ public class u_File {
         return r;
     }
 
-    public void renameFile_SameFileName(File file, File To_dest) {
+    public void renameFile_SameFileName(java.io.File file, java.io.File To_dest) {
         if (To_dest.exists()) {
             long i = 0;
-            File dest;
+            java.io.File dest;
             while (true) {
                 i++;
-                dest = new File(To_dest.getPath() + " (" + i + ")");
+                dest = new java.io.File(To_dest.getPath() + " (" + i + ")");
                 if (!dest.exists()) {
                     System.out.println("ren: " + To_dest.renameTo(dest));
                     break;
@@ -271,14 +309,14 @@ public class u_File {
         }
     }
 
-    public File creatFile_SameFileName(File file) throws IOException {
-        File r;
+    public java.io.File creatFile_SameFileName(java.io.File file) throws IOException {
+        java.io.File r;
         if (file.exists()) {
             long i = 0;
-            File t;
+            java.io.File t;
             while (true) {
                 i++;
-                t = new File(file.getPath() + " (" + i + ")");
+                t = new java.io.File(file.getPath() + " (" + i + ")");
                 if (!t.exists()) {
                     System.out.println("creatFile: " + t.createNewFile());
                     r = t;
@@ -293,18 +331,18 @@ public class u_File {
     }
 
     public static class TraversalFile {
-        private File dic;
+        private java.io.File dic;
 
         public TraversalFile(String dic) {
-            this.dic = new File(dic);
+            this.dic = new java.io.File(dic);
         }
 
-        public TraversalFile(File dic) {
+        public TraversalFile(java.io.File dic) {
             this.dic = dic;
         }
 
         public void Do(TraversalFileDo target) {
-            List<File> ds = new ArrayList<>();
+            List<java.io.File> ds = new ArrayList<>();
             ds.add(dic);
             int i = 0;
             while (true) {
@@ -313,9 +351,9 @@ public class u_File {
                 } catch (IndexOutOfBoundsException ignored) {
                     break;
                 }
-                File[] As = dic.listFiles();
+                java.io.File[] As = dic.listFiles();
                 if (As != null) {
-                    for (File f : As) {
+                    for (java.io.File f : As) {
                         target.a(f);
                         if (f.isFile()) {
                             target.f(f);
@@ -331,11 +369,11 @@ public class u_File {
     }
 
     public interface TraversalFileDo {
-        void f(File f);
+        void f(java.io.File f);
 
-        void d(File d);
+        void d(java.io.File d);
 
-        void a(File a);
+        void a(java.io.File a);
     }
 
     public static class FindDuplicateFile {
@@ -346,43 +384,43 @@ public class u_File {
         public static void main(String[] args) {
             System.out.println("InputP");
             p = new Scanner(System.in).next();
-            new FindDuplicateFile().Find(new File(p), FindDuplicateFile.Traverse_All);
+            new FindDuplicateFile().Find(new java.io.File(p), FindDuplicateFile.Traverse_All);
         }
 
-        public void Find(File path, int method) {
-            List<File> fileArrayList = new ArrayList<>();
+        public void Find(java.io.File path, int method) {
+            List<java.io.File> fileArrayList = new ArrayList<>();
             if (method == In_a_Folder) {
-                File[] list = path.listFiles();
+                java.io.File[] list = path.listFiles();
                 fileArrayList = new ArrayList<>();
                 if (list != null) {
-                    for (File f : list) {
+                    for (java.io.File f : list) {
                         if (f.isFile()) fileArrayList.add(f);
                     }
                 }
             } else if (method == Traverse_All) {
-                final List<File> finalFileArrayList = fileArrayList;
+                final List<java.io.File> finalFileArrayList = fileArrayList;
                 new TraversalFile(path).Do(new TraversalFileDo() {
                     @Override
-                    public void f(File f) {
+                    public void f(java.io.File f) {
                         finalFileArrayList.add(f);
                     }
 
                     @Override
-                    public void d(File d) {
+                    public void d(java.io.File d) {
 
                     }
 
                     @Override
-                    public void a(File a) {
+                    public void a(java.io.File a) {
 
                     }
                 });
             }
-            File[] files = fileArrayList.toArray(new File[0]);
+            java.io.File[] files = fileArrayList.toArray(new java.io.File[0]);
             String[] md5 = new String[fileArrayList.size()];
             /*//noinspection unchecked
-            new Arr.SeparateArr<>(files, 1).separate((Arr.SeparateArrDo) a -> {
-                String[] pMd5 = new FindDuplicateFileThread().Main(a);
+            new Arr.SeparateArr<>(files, 1).separate((Arr.SeparateArrDo) A -> {
+                String[] pMd5 = new FindDuplicateFileThread().Main(A);
                 System.out.println(Arrays.toString(pMd5));
                 try {
                     Thread.sleep(100L);
@@ -402,7 +440,7 @@ public class u_File {
             System.out.println("ok-----------------------------");
             BufferedWriter bw = null;
             try {
-                File out = new File(new File(p).getCanonicalFile() + "/chong.txt");
+                java.io.File out = new java.io.File(new java.io.File(p).getCanonicalFile() + "/chong.txt");
                 if (!out.exists()) System.out.println(out.createNewFile());
                 FileOutputStream fos = new FileOutputStream(out, false);
                 OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
@@ -440,6 +478,16 @@ public class u_File {
         }
     }
 
+    public static void readISR(InputStreamReader isr) throws IOException {
+        BufferedReader br = new BufferedReader(isr);
+        String s = br.readLine();
+        while (s != null) {
+            System.out.println(s);
+            s = br.readLine();
+        }
+        br.close();
+    }
+
 }
 
 /*
@@ -452,9 +500,9 @@ class FindDuplicateFileThread implements Runnable {
 
     @Override
     public void run() {
-        File f = new File(fileName);
+        FileU f = new FileU(fileName);
         try {
-            md5[this.i] = u_File.getMD5String(f);
+            md5[this.i] = com.zhc.u.FileU.getMD5String(f);
             System.out.println("md5[this.i] = " + md5[this.i]);
             latch.countDown();
             Thread.sleep(50);

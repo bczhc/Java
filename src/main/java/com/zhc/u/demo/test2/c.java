@@ -1,10 +1,12 @@
 package com.zhc.u.demo.test2;
 
+import com.zhc.u.FileU;
+
 import java.io.*;
 
-public class c extends com.zhc.u.u_File {
+public class c extends FileU {
     public static void main(String[] args) throws IOException {
-        InputStream is = new FileInputStream("C:\\zhc\\f\\s2\\a");
+        InputStream is = new FileInputStream("C:\\zhc\\f\\s2\\A");
         File f = new File("C:\\zhc\\f\\s2\\b");
         System.out.println(f.createNewFile());
         OutputStream os = new FileOutputStream(f);

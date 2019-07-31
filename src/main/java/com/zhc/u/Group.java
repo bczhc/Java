@@ -164,3 +164,24 @@ class s0 {
         System.out.println("sum = " + sum);
     }
 }
+
+class s1 {
+    public static void main(String[] args) {
+        System.out.println("100");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        for (int i = 0; i < 100; i++) {
+            new Thread(() -> {
+                int[] ran = Random.ran(10000, 1000000000, 100, false);
+                for (int j = 0; j < 1000; j++) {
+                    int i1 = Random.ran_sc(0, ran[j % 100]);
+                    String factor = new Factor2().factor((long) i1);
+                    System.out.println(factor);
+                }
+            }).start();
+        }
+    }
+}

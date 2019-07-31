@@ -17,7 +17,7 @@ class C0 {
     }
 
     fun main() {
-        System.out.println("a")
+        System.out.println("A")
         StrDic("abc", 12).Do { s, _ ->
             run {
                 println(s)

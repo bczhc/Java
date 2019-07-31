@@ -55,7 +55,7 @@ class s2 {
     public static void main(String[] args) throws IOException {
         //定义数组
         String[] strs={"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"
-                /*, "a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","com.zhc.u","v","w","x","y","z"*/};
+                /*, "A","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","com.zhc.u","v","w","x","y","z"*/};
         //定义随机组合最多位数
 //        int size=5;
 //        eachStr(size,strs);//调用

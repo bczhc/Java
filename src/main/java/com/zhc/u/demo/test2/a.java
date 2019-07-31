@@ -5,16 +5,16 @@ import java.math.BigDecimal;
 import java.math.MathContext;
 import java.math.RoundingMode;
 
-public class a {
+public class A {
 
     public static void main(String[] args) {
-        a a = new a();
+        A A = new A();
         BigDecimal sum = BigDecimal.valueOf(0);
         for (int i = 1; i < 1000000; i++) {
             BigDecimal ii = BigDecimal.valueOf(i);
             sum = sum.add(BigDecimal.valueOf(1).divide(ii.multiply(ii), 500, RoundingMode.FLOOR));
         }
-        System.out.println(a.bdSQRT(new BigDecimal(6).multiply(sum)).toString());
+        System.out.println(A.bdSQRT(new BigDecimal(6).multiply(sum)).toString());
     }
 
     private BigDecimal bdSQRT(BigDecimal bd) {
@@ -43,21 +43,21 @@ import java.math.MathContext;
 import java.math.RoundingMode;
 import java.util.Scanner;
 
-public class a {
+public class A {
 
     BigDecimal bdSQRT(String[] args) {
         // TODO Auto-generated method stub
         Scanner in = new Scanner(System.in);
-        BigDecimal a = in.nextBigDecimal();
+        BigDecimal A = in.nextBigDecimal();
         BigDecimal _2 = BigDecimal.valueOf(2.0);
         int precision = 100;//精度
         MathContext mc = new MathContext(precision, RoundingMode.HALF_UP);            //某个操作使用的数字个数；结果舍入到此精度
-        if (a.compareTo(BigDecimal.ZERO) == 0) System.out.println(0);
+        if (A.compareTo(BigDecimal.ZERO) == 0) System.out.println(0);
         else {
-            BigDecimal x = a;
+            BigDecimal x = A;
             int cnt = 0;
             while (cnt < precision) {
-                x = (x.add(a.divide(x, mc))).divide(_2, mc);
+                x = (x.add(A.divide(x, mc))).divide(_2, mc);
                 cnt++;
             }
         }
@@ -71,7 +71,7 @@ public class a {
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class a {
+public class A {
 
     public static void main(String[] args) {
         final int PRECISION = 100;//计算精度

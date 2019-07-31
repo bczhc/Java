@@ -26,7 +26,7 @@ public class Factor0 {
         } else {
             do {
                 for (int i = 2; true; i++) {
-                    if (isZS(i) && (x % i == 0)) {
+                    if (isPrime(i) && (x % i == 0)) {
                         if (i == x) {
                             r.append(i);
                             a = 1;
@@ -38,13 +38,13 @@ public class Factor0 {
                         }
                     }
                 }
-            } while (!isZS(x));
+            } while (!isPrime(x));
             if (a != 1) r.append(x);
         }
         return r;
     }
 
-    private static boolean isZS(long n) {
+    private static boolean isPrime(long n) {
         boolean r = true;
         if (n == 1) r = false;
         for (int j = 2; j < n; j++) {

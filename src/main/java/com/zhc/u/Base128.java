@@ -78,8 +78,8 @@ public class Base128 {
 
     private List<String> ck_extracted(File f1, File new_ckF) throws IOException {
         List<String> r = new ArrayList<>();
-        String md5_1 = u_File.getMD5String(new_ckF);
-        String md5_2 = u_File.getMD5String(f1);
+        String md5_1 = FileU.getMD5String(new_ckF);
+        String md5_2 = FileU.getMD5String(f1);
         if (md5_1.equals(md5_2)) {
             System.out.print("\u6821\u9a8c\u901a\u8fc7\uff01\n" + "MD5: " + md5_1);
             r.add("true");
@@ -248,7 +248,7 @@ public class Base128 {
         String[] r;
         System.out.print("\u6b63\u5728\u6821\u9a8c...");
         File ckF = new File(dest.getPath());
-        File new_ckF = new u_File().creatFile_SameFileName(ckF);
+        File new_ckF = new FileU().creatFile_SameFileName(ckF);
         if (aArg_EnOrDe.equals("En")) {
             encode(new FileInputStream(dest), new FileOutputStream(new_ckF));
         } else if (aArg_EnOrDe.equals("De")) {

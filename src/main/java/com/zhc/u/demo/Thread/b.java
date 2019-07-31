@@ -1,7 +1,7 @@
 package com.zhc.u.demo.Thread;
 
+import com.zhc.u.FileU;
 import com.zhc.u.common.Arr;
-import com.zhc.u.u_File;
 
 import java.io.File;
 import java.io.IOException;
@@ -97,7 +97,7 @@ class s2 {
     public static void main(String[] args) {
         final String[][] md5 = new String[1][];
         final List<File> l = new ArrayList<>();
-        new u_File.TraversalFile("F:\\DownloadMusic\\").Do(new u_File.TraversalFileDo() {
+        new FileU.TraversalFile("F:\\DownloadMusic\\").Do(new FileU.TraversalFileDo() {
             @Override
             public void f(File f) {
                 l.add(f);
@@ -128,7 +128,7 @@ class s2 {
                         @Override
                         public void run() {
                             try {
-                                String md5S = u_File.getMD5String(new File(String.valueOf(o)));
+                                String md5S = FileU.getMD5String(new File(String.valueOf(o)));
                                 System.out.println(md5S);
                             } catch (IOException e) {
                                 e.printStackTrace();
@@ -151,14 +151,14 @@ class s2 {
 class s3 {
     public static void main(String[] args) {
         final ExecutorService es = Executors.newCachedThreadPool();
-        new u_File.TraversalFile("F:\\DownloadMusic\\").Do(new u_File.TraversalFileDo() {
+        new FileU.TraversalFile("F:\\DownloadMusic\\").Do(new FileU.TraversalFileDo() {
             @Override
             public void f(final File f) {
                 es.execute(new Runnable() {
                     @Override
                     public void run() {
                         try {
-                            System.out.println(u_File.getMD5String(f));
+                            System.out.println(FileU.getMD5String(f));
                         } catch (IOException e) {
                             e.printStackTrace();
                         }

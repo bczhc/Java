@@ -64,9 +64,9 @@ public class a implements Runnable {
 //        jf.add(jl);
 //        jf.setSize(500, 500);
 //        JButton jb = new JButton("click");
-//        jb.addActionListener(e -> JOptionPane.showMessageDialog(jb, "a"));
+//        jb.addActionListener(e -> JOptionPane.showMessageDialog(jb, "A"));
 //        jf.add(jb);
-//        JOptionPane.showMessageDialog(null, "a");
+//        JOptionPane.showMessageDialog(null, "A");
         System.out.println("Arrays.toString(Color.RGBtoHSB(255, 255, 255, null)) = " + Arrays.toString(Color.RGBtoHSB(255, 255, 255, null)));
         JFrame jFrame = new JFrame("zhc");
         JButton jButton = new JButton("click!");

@@ -7,7 +7,7 @@ import java.util.Arrays;
  * 2018.9.22 11:01
  */
 public class Order {
-    private static int[] a = {};
+    private static int[] a = {9, 8, 7, 6, 5, 3, 4, 2, 1, 5, 3, 5, 6, 7, 7, 4, 3, 34, 435, 76, 435, 23, 12, 324, 54, 345, 234, 123, 34, 78};
     private static int[] arr_new = new int[a.length];
     private static int min_n, arr_new_i = -1;
 

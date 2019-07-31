@@ -1,6 +1,9 @@
 package com.zhc.u;
 
 import java.util.Scanner;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 /**
  * @author zhc
@@ -13,6 +16,7 @@ public class Factor2 {
      * by zhc 2018.11.9 20:06
      * 调用isPrime.isPrm()。
      * 某些方面算法更优
+     * 20190705改成2线程，其中一判断原数是否为质数，是就强制结束线程池，返回原数，否则等待另一线程分解结果
      *
      * @param args args
      */
@@ -32,36 +36,55 @@ public class Factor2 {
         main(args);
     }
 
-    public String factor(long n) {
-        String r;
+    public String factor(long number) {
+        final boolean[] f = {true};
+        final String[] r = new String[1];
+        long[] n = new long[1];
+        n[0] = number;
         StringBuilder s = new StringBuilder();
-        s.append(n).append("=");
-        if (n > 2) {
-            if (isPrime.isPrm(n)) {
-                s.append(n);
-            } else {
-                while ((int) n != 1) {
-                    for (int i = 2; i <= n; i++) {
-                        if (n % i == 0) {
-                            s.append(i).append("×");
-                            n /= i;
+        s.append(number).append("=");
+        CountDownLatch latch = new CountDownLatch(1);
+        ExecutorService es = Executors.newFixedThreadPool(2);
+        if (number > 2) {
+            es.execute(() -> {
+                if (isPrime.isPrime_old(number)) {
+                    s.append(number);
+                    latch.countDown();
+                }
+            });
+            es.execute(() -> {
+                while ((int) n[0] != 1) {
+                    for (int i = 2; i <= n[0]; i++) {
+                        if (n[0] % i == 0) {
+                            s.append(f[0] ? i : "×" + i);
+                            f[0] = false;
+                            n[0] /= i;
                             break;
                         }
                     }
                 }
-            }
-        } else if (n == 1) {
+                latch.countDown();
+            });
+        } else if (n[0] == 1) {
             s.append(1);
-        } else if (n < 1) {
+            latch.countDown();
+        } else if (n[0] < 1) {
             System.exit(0);
         } else {
             s.append(2);
+            latch.countDown();
         }
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        es.shutdownNow();
         if ((s.substring(s.length() - 1, s.length())).equals("×")) {
-            r = s.substring(0, s.length() - 1);
+            r[0] = s.substring(0, s.length() - 1);
         } else {
-            r = s.toString();
+            r[0] = s.toString();
         }
-        return r;
+        return r[0];
     }
 }

@@ -1,7 +1,7 @@
 package com.zhc.u;
 
 
-import com.sun.istack.internal.Nullable;
+import com.zhc.u.common.Documents;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -180,7 +180,7 @@ public class FileU {
         return new URL(!s1.matches(".*http.*") ? ("http://" + s) : s);
     }
 
-    public URL StrToUrl(String s, @Nullable URL url) throws MalformedURLException {
+    public URL StrToUrl(String s, @Documents.Nullable URL url) throws MalformedURLException {
         String s1 = url.toString();
         int i = s1.lastIndexOf('/');
         String substring = s1.substring(0, i + 1);

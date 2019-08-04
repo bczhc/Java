@@ -1,0 +1,61 @@
+<script>
+    var i = 0
+    var t = 0
+
+    // var e = setInterval("u()", 100)
+
+    function kk() {
+        // clearInterval(e);
+        // alert("哎，儿子,按返回吧");
+        t = 1;
+        window.addEventListener('popstate', function () {
+            console.log("重新设置监听");
+            history.go(-1);
+        });
+    }
+
+    function u() {
+        console.log("u");
+        history.pushState(null, null, document.URL);
+    }
+
+    window.addEventListener('popstate', function () {
+        console.log(1);
+        console.log("t: " + t);
+        if (t !== 1) {
+            history.pushState(null, null, document.URL);
+        } else {
+            console.log("back");
+            history.go(-1);
+        }
+        console.log(2);
+
+        i++
+        // alert(i)
+        // alert(t)
+        // alert("还想退出？")
+
+        if (i === 1) {
+            // alert()
+            document.write('<style type="t' +
+                'ext/css">\n#q {\nposition:abso' +
+                'lute;\ntop:50%;\nleft:5' +
+                '0%;\nmargin:-75px 0 0 -150px' +
+                ';\nwidth:130px;\nheight:80p' +
+                'x;\nborder:1px solid blu' +
+                'e;\nbackground:white;\n}\n</s' +
+                'tyle>\n<div id=q>叫爸爸就给你退出\n<' +
+                'br><br><button    align=left ' +
+                'onclick=kk()>爸爸</button>&' +
+                'nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
+                '&nbsp;&nbsp;&nbsp;&nbsp;&nb' +
+                'sp;&nbsp;<button   align=rignt onclick=alert("那你就待着' +
+                '吧");>不叫</button></div> ');
+        }
+
+    });
+
+    /*window.onpopstate = function () {
+
+    };*/
+</script>

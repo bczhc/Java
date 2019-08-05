@@ -7,139 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.jar.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/CheckRec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/CopyB.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG$Move.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/FileDemo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/M3u8$Etiantian.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/M3u8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/S.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/SplitText.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/TwoFilesXor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/UnicodeConvert.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/WebPush$ZHC.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/WebPush.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/c.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/compareFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/ftpL$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/ftpL.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/sW.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Base128.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Compress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileDoXor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$FindDuplicateFile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$FindDuplicateFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$TraversalFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$TraversalFileDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FractionAddition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FractionSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Group$GroupDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/IsPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Order1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Pi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Power.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Random.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/ZhiShu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr$SeparateArr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr$SeparateArrDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents$NotNull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents$Nullable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Execute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/IsNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/ReadIS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/ReadISDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Str.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/StrDic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/StrDicDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/s0$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/s0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/things.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/JNI/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/JNI/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/SwingLoginExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/R0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/t0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/c.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/e.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Cat$Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/f.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/g.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/h.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/i.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/k.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/l.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/m.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/n.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/o.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/p.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/q.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/r.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/t.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test1/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test1/u.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/c.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/feibonaqishulie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/S0$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/S0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/perfectNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/pow_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/pow_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/qmcflac_Decode/Decode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/qmcflac_Decode/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s1.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -177,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="181" column="10" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+            <state relative-caret-position="266">
+              <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -753,7 +621,7 @@
       <workItem from="1564789777787" duration="6909000" />
       <workItem from="1564827887741" duration="3697000" />
       <workItem from="1564896306260" duration="2494000" />
-      <workItem from="1565000425963" duration="8154000" />
+      <workItem from="1565000425963" duration="8358000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -818,11 +686,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565013706075</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="mvn: 1.1">
+      <created>1565014189778</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1565014189778</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232616000" />
+    <option name="totallyTimeSpent" value="232820000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1490,8 +1365,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="181" column="10" selection-start-line="181" selection-start-column="10" selection-end-line="181" selection-end-column="10" />
+        <state relative-caret-position="266">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
         </state>
       </provider>
     </entry>

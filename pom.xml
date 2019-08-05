@@ -182,7 +182,7 @@
     <distributionManagement>
         <repository>
             <id>snapshots</id>
-            <url>file:/home/zhc/code/code/java/mvn-repo</url>
+            <url>file:/home/zhc/code/code/java/mvn-repo-zhc</url>
         </repository>
     </distributionManagement>
     <build>

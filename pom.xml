@@ -6,12 +6,9 @@
     <groupId>zhc</groupId>
     <artifactId>java</artifactId>
     <version>1.0</version>
-
-
     <properties>
         <kotlin.version>1.3.21</kotlin.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
@@ -179,9 +176,15 @@
             <artifactId>json</artifactId>
             <version>20160810</version>
         </dependency>
-
     </dependencies>
-
+    <repositories>
+    </repositories>
+    <distributionManagement>
+        <repository>
+            <id>snapshots</id>
+            <url>file:/home/zhc/code/code/java/mvn-repo</url>
+        </repository>
+    </distributionManagement>
     <build>
         <plugins>
             <plugin>
@@ -209,6 +212,22 @@
                     <jvmTarget>1.6</jvmTarget>
                 </configuration>
             </plugin>
+            <!--<plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.0</version>
+                &lt;!&ndash; 绑定source插件到Maven的生命周期,并在生命周期后执行绑定的source的goal &ndash;&gt;
+                <executions>
+                    <execution>
+                        &lt;!&ndash; 绑定source插件到Maven的生命周期 &ndash;&gt;
+                        <phase>compile</phase>
+                        &lt;!&ndash;在生命周期后执行绑定的source插件的goals &ndash;&gt;
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>

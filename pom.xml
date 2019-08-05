@@ -178,6 +178,10 @@
         </dependency>
     </dependencies>
     <repositories>
+        <repository>
+            <id>snapshots</id>
+            <url>https://github.com/bczhc/mvn-repo-zhc/tree/master/zhc/java</url>
+        </repository>
     </repositories>
     <distributionManagement>
         <repository>

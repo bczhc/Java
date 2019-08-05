@@ -1,61 +1,84 @@
+<script src="https://cdn.staticfile.org/jquery/2.2.4/jquery.min.js"></script>
+
+<h1>取色器</h1>
+<div class="bd">
+    <div class="huabu" >
+        <input type="file" id="file_input" />
+        <canvas id="canvasA" width="600" height="600"></canvas>
+        <div class="anniu" >添加图片</div>
+    </div>
+    <div class="data">
+        <div id="col"></div>
+        <ul>
+            <li>RGB:(0,0,0)</li>
+            <li>十六进制:#000000</li>
+        </ul>
+    </div>
+
+</div>
+2.JS部分如下（需要引用JQ库，我用的是1.12版本）：
+
 <script>
-    var i = 0
-    var t = 0
 
-    // var e = setInterval("u()", 100)
+    $(function () {
 
-    function kk() {
-        // clearInterval(e);
-        // alert("哎，儿子,按返回吧");
-        t = 1;
-        window.addEventListener('popstate', function () {
-            console.log("重新设置监听");
-            history.go(-1);
+        //初始化canvas
+        var canvasA = $('#canvasA')[0];
+        var cxtA = canvasA.getContext('2d');
+
+        var img = new Image();//定义图像对象
+        var pxData=null;
+        var $lis=$("li");
+
+        //读取文件
+        $("input[type='file']").change(function(){
+            var file = this.files[0];
+            if (window.FileReader) {
+                var reader = new FileReader();
+                reader.readAsDataURL(file);
+                //监听文件读取结束后事件
+                reader.onloadend = function (e) {
+                    // $(".file_img").attr("src",e.target.result);    //e.target.result就是最后的路径地址
+                    img.src = e.target.result;
+                };
+            }
         });
-    }
-
-    function u() {
-        console.log("u");
-        history.pushState(null, null, document.URL);
-    }
-
-    window.addEventListener('popstate', function () {
-        console.log(1);
-        console.log("t: " + t);
-        if (t !== 1) {
-            history.pushState(null, null, document.URL);
-        } else {
-            console.log("back");
-            history.go(-1);
+        //图片读取完毕后，写到canvas里面
+        img.onload = function(){
+            if(img.width>600||img.height>600){
+                $("#canvasA").attr("width",img.width/2);
+                $("#canvasA").attr("height",img.height/2);
+            }else if(img.width<300&&img.height<300){
+                $("#canvasA").attr("width",img.width*2);
+                $("#canvasA").attr("height",img.height*2);
+            }else {
+                $("#canvasA").attr("width",600);
+                $("#canvasA").attr("height",600);
+            }
+            cxtA.drawImage(img, 0, 0, canvasA.width, canvasA.height);
+            var imgDataA = cxtA.getImageData(0, 0, canvasA.width, canvasA.height);
+            pxData = imgDataA.data;  //获取每一个像素
         }
-        console.log(2);
-
-        i++
-        // alert(i)
-        // alert(t)
-        // alert("还想退出？")
-
-        if (i === 1) {
-            // alert()
-            document.write('<style type="t' +
-                'ext/css">\n#q {\nposition:abso' +
-                'lute;\ntop:50%;\nleft:5' +
-                '0%;\nmargin:-75px 0 0 -150px' +
-                ';\nwidth:130px;\nheight:80p' +
-                'x;\nborder:1px solid blu' +
-                'e;\nbackground:white;\n}\n</s' +
-                'tyle>\n<div id=q>叫爸爸就给你退出\n<' +
-                'br><br><button    align=left ' +
-                'onclick=kk()>爸爸</button>&' +
-                'nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' +
-                '&nbsp;&nbsp;&nbsp;&nbsp;&nb' +
-                'sp;&nbsp;<button   align=rignt onclick=alert("那你就待着' +
-                '吧");>不叫</button></div> ');
-        }
-
+        //获得鼠标相对于画布的坐标点
+        $("#canvasA").on("click",function (e) {
+            //获取鼠标位置
+            var positionX=e.pageX - $(this).offset().left - parseFloat($(this).css('border-left-width'));
+            var positionY=e.pageY - $(this).offset().top - parseFloat($(this).css('border-top-width'));
+            //当前位置对应的成员
+            var imgdata= positionY*canvasA.width+positionX;
+            //获得rgb值
+            var r = pxData[4*imgdata+0];
+            var g = pxData[4*imgdata+1];
+            var b = pxData[4*imgdata+2];
+            var grey = 0.3*r + 0.59*g + 0.11*b;//灰度公式
+            $("#col").css("backgroundColor","rgba("+r+","+g+","+b+")");
+            // $("#col").css("backgroundColor","rgba("+r+","+g+","+b+","+grey+")");
+            $lis.eq(0).text("RGB:("+r+","+g+","+b+")");
+            $lis.eq(1).text("十六进制:#"+r.toString(16)+g.toString(16)+b.toString(16));
+        });
+        $(".anniu").on("click" , function () {
+            $("#file_input").click();
+        });
     });
 
-    /*window.onpopstate = function () {
-
-    };*/
 </script>

@@ -13,6 +13,7 @@
 <%@ page import="java.io.*" %>
 <%@ page import="java.text.SimpleDateFormat" %>
 <%@ page import="java.util.*" %>
+<%@ page import="pers.zhc.u.common.Color" %>
 <%--
 <%!
     private String demo.u.ArrayToString(String[] a) {
@@ -504,7 +505,7 @@
     };
     //todo jqE
     $(function () {
-        let ranColor = "<%=new com.zhc.u.common.Color().ranColor()%>";
+        let ranColor = "<%=new Color().ranColor()%>";
         $(".hrD").css({
             backgroundColor: ranColor
         });

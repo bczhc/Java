@@ -1,5 +1,5 @@
 import com.alibaba.fastjson.JSON;
-import com.zhc.u.IsPrime;
+import pers.zhc.u.IsPrime;
 import org.intellij.lang.annotations.Language;
 
 import java.util.concurrent.CountDownLatch;

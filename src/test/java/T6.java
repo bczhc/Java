@@ -125,3 +125,10 @@ class T14 {
     }
 
 }
+
+class T15 {
+    public static void main(String[] args) {
+        byte[] bytes = {(byte) 143, 59, 47, 25, 62, 33, (byte) 214};
+        System.out.println("Base64.getEncoder().encode(bytes) = " + Arrays.toString(Base64.getEncoder().encode(bytes)));
+    }
+}

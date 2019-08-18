@@ -1,6 +1,6 @@
 package Z;
 
-import com.zhc.u.common.StrDic;
+import pers.zhc.u.common.StrDic;
 import org.apache.commons.net.ftp.FTPClient;
 
 import javax.swing.*;

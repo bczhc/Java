@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/com/zhc/u/qmcflac_Decode/Main.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/b.html" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/Main.java" charset="UTF-8" />
   </component>
 </project>

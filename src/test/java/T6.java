@@ -132,3 +132,8 @@ class T15 {
         System.out.println("Base64.getEncoder().encode(bytes) = " + Arrays.toString(Base64.getEncoder().encode(bytes)));
     }
 }
+
+class T16 {
+    public static void main(String[] args) {
+    }
+}

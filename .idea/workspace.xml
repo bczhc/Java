@@ -8,236 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFloatFunctionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFunctionInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/SolveMathExpression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.jar.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/CheckRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/CheckRec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG$Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG$Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/M3u8.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/M3u8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/S.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/S.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/WebPush$ZHC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/WebPush$ZHC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/ftpL.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/ftpL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/b.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/b.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/CheckRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/CheckRec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/FFMPEG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/FFMPEG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/M3u8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/M3u8.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/WebPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/WebPush.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/ftpL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/ftpL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Base128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Base128.smali" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.smali" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Compress.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Compress.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Definite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Factor0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Factor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Factor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/FileDoXor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileDoXor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/FileU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/FourierSeries.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/FractionAddition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FractionAddition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/FractionSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FractionSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Group.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/IsPrime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/IsPrime.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Order1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Order1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Pi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Pi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Power.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Random.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/ZhiShu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ZhiShu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Arr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Arr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Color.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Color.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Documents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Documents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Execute.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/IsNum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/IsNum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/ReadIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadIS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/ReadISDO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadISDO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Str.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Str.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/StrDic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/StrDicDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDicDo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/common/things.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/things.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/JNI/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/JNI/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/JNI/b.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/JNI/b.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/JNI/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/JNI/b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/SwingLoginExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/SwingLoginExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/Thread/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/Thread/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/YouDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/YouDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/c.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/d.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/e.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/e.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/extend/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/extend/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/extend/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/extend/b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/f.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/f.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/g.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/g.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/h.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/h.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/i.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/i.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/k.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/k.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/l.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/l.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/m.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/n.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/n.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/o.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/o.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/p.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/p.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/q.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/q.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/r.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/r.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/s.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/t.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/t.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/test1/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test1/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/test1/u.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test1/u.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/test2/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test2/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/test2/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test2/b.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/test2/c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test2/c.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/feibonaqishulie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/feibonaqishulie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/gui/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/B.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/gui/S0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/S0.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/gui/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/hello.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/hello.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/kotlin/a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/a.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/perfectNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/perfectNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/pow_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/pow_1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/pow_2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/pow_2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/qmcflac_Decode/Decode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/Decode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/qmcflac_Decode/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/s.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhc/u/s.smali" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/s.smali" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/b.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/b.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DrawFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/T1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/T6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/java.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/java.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/CheckRec.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/CheckRec.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG$Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/FFMPEG$Move.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/FFMPEG.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/M3u8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/M3u8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/S.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/S.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/WebPush$ZHC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/WebPush$ZHC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/ftpL.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/ftpL.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Base128.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Compress.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Factor2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileDoXor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$FindDuplicateFile$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$FindDuplicateFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$TraversalFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU$TraversalFileDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FileU.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FractionAddition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/FractionSimple.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Group$GroupDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Group.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/IsPrime.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Order.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Order1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Pi.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Power.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/Random.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/ZhiShu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr$SeparateArr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr$SeparateArrDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Arr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Color.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents$NotNull.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents$Nullable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Documents.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Execute.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/IsNum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/ReadIS.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/ReadISDO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/Str.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/StrDic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/StrDicDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/s0$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/s0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/common/things.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/JNI/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/JNI/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/SwingLoginExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/R0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$2$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3$1$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/s3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/Thread/t0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/c.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/e.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Animal.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Cat$Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Cat.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Dog.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/extend/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/f.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/g.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/h.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/i.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/k.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/l.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/m.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/n.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/o.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/p.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/q.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/r.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/t.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test1/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test1/u.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/b.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/c.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/demo/test2/s2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/feibonaqishulie.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/B.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/S0$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/S0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/gui/a.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/hello.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/kotlin/AKt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/kotlin/C0$main$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/kotlin/C0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/perfectNumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/pow_1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/pow_2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/qmcflac_Decode/Decode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/qmcflac_Decode/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s0.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhc/u/s1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/T4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/T4.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -275,10 +48,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2166">
-              <caret line="131" column="120" selection-start-line="131" selection-start-column="120" selection-end-line="131" selection-end-column="120" />
+            <state relative-caret-position="275">
+              <caret line="111" column="26" lean-forward="true" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#9271#9272#0" expanded="true" />
+                <element signature="e#9343#9344#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -301,11 +88,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="456">
+              <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -330,7 +117,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>爸爸</find>
       <find>plugin</find>
       <find>server</find>
       <find>url</find>
@@ -360,6 +146,7 @@
       <find>latch</find>
       <find>inita</find>
       <find>functioninterface</find>
+      <find>filecopy</find>
     </findStrings>
     <replaceStrings>
       <replace>%%</replace>
@@ -373,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Arr.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/demo/SwingLoginExample.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/Factor3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/Factor0.java" />
@@ -418,12 +204,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/SolveMathExpression.java" />
         <option value="$PROJECT_DIR$/src/test/java/DrawFunction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/DrawFunction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/T6.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/Definite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/MathFunctionInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/MathFloatFunctionInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/FourierSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" />
+        <option value="$PROJECT_DIR$/src/test/java/T6.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" />
       </list>
     </option>
   </component>
@@ -476,6 +263,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="java" type="58d84e3e:PackageViewProjectNode" />
+              <item name="java" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -555,18 +354,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java" type="58d84e3e:PackageViewProjectNode" />
-              <item name="java" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -628,16 +415,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.DrawFunction">
+  <component name="RunManager" selected="Application.T16">
     <configuration name="DrawFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zhc.u.DrawFunction" />
-      <module name="java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Eval" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Eval" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -676,20 +456,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="T16" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="T16" />
+      <module name="java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.FourierSeries" />
       <item itemvalue="Application.DrawFunction" />
-      <item itemvalue="Application.Eval" />
       <item itemvalue="Application.GetProcessDate" />
       <item itemvalue="Application.T15" />
+      <item itemvalue="Application.T16" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.T16" />
         <item itemvalue="Application.DrawFunction" />
         <item itemvalue="Application.FourierSeries" />
         <item itemvalue="Application.T15" />
         <item itemvalue="Application.GetProcessDate" />
-        <item itemvalue="Application.Eval" />
       </list>
     </recent_temporary>
   </component>
@@ -818,7 +605,8 @@
       <workItem from="1565496553728" duration="6075000" />
       <workItem from="1565876456052" duration="575000" />
       <workItem from="1565886849787" duration="32451000" />
-      <workItem from="1566135863319" duration="586000" />
+      <workItem from="1566135863319" duration="1263000" />
+      <workItem from="1566641511490" duration="1872000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -904,11 +692,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565976616493</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="a">
+      <created>1566171531289</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1566171531289</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="282227000" />
+    <option name="totallyTimeSpent" value="284776000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -921,9 +716,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15224358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24038461" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1061,7 +855,8 @@
     <MESSAGE value="mvn: 1.1" />
     <MESSAGE value="mvn: 1.2" />
     <MESSAGE value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1102,11 +897,22 @@
           <properties />
           <option name="timeStamp" value="86" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
+          <line>136</line>
+          <properties class="T16" method="main">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="i" language="JavaScript" />
+      </configuration>
+      <configuration name="Application">
+        <watch expression="new File(&quot;/a/a/c.cc&quot;).getName()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1150,52 +956,52 @@
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>fs.a0()</expression-string>
+        <expression-string>new File(&quot;/a/a/c.cc&quot;).getName()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fs.F(2, 2)</expression-string>
+        <expression-string>new File(&quot;/a/a/c.cc&quot;).toString()</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fs.F(2, 21)</expression-string>
+        <expression-string>new File(&quot;/a/a/c.cc&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fs.F(1, 21)</expression-string>
+        <expression-string>// FIXME: 19-8-25 a</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fs.F(1, 1)</expression-string>
+        <expression-string>FileU().getFileName(&quot;/h/h/a.a&quot;)</expression-string>
+        <language-id>kotlin</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new FileU().getFileName(&quot;/h/h/a.a&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fu(0, 1)</expression-string>
+        <expression-string>new FileU().getFileName(&quot;/h/ha.a&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fu(2, 0) - fu(2, 112)</expression-string>
+        <expression-string>new FileU().getFileName(&quot;a.a&quot;) + new FileU().getFileExtension(&quot;a.a&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fu(2, 0) - fu(2, 1)</expression-string>
+        <expression-string>new FileU().getFileName(&quot;saf.fas&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>fu(2, 0) - fu(2, )</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>fu(2, 0)</expression-string>
+        <expression-string>new FileU().getFileName(&quot;a.a&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -1352,16 +1158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="23" column="7" lean-forward="true" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1544,16 +1340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2166">
-          <caret line="131" column="120" selection-start-line="131" selection-start-column="120" selection-end-line="131" selection-end-column="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/SolveMathExpression.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1569,10 +1355,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="30" selection-end-line="78" selection-end-column="30" />
+        <state relative-caret-position="456">
+          <caret line="87" column="48" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="111" column="26" lean-forward="true" selection-start-line="111" selection-start-column="26" selection-end-line="111" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="144" column="17" lean-forward="true" selection-start-line="144" selection-start-column="17" selection-end-line="144" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#9271#9272#0" expanded="true" />
+            <element signature="e#9343#9344#0" expanded="true" />
           </folding>
         </state>
       </provider>

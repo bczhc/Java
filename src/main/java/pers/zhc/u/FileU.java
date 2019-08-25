@@ -101,6 +101,8 @@ public class FileU {
             InputStream is = new FileInputStream(srcFile);
             FileOutputStream fos = new FileOutputStream(destFile);
             StreamWrite(is, fos);
+            is.close();
+            fos.close();
         } else {
             r3 = false;
         }
@@ -116,6 +118,8 @@ public class FileU {
             InputStream is = new FileInputStream(srcFile);
             FileOutputStream fos = new FileOutputStream(destFile);
             StreamWrite(is, fos, skip);
+            is.close();
+            fos.close();
         } else {
             r3 = false;
         }
@@ -132,18 +136,13 @@ public class FileU {
      * @throws IOException 流异常
      */
     public static boolean FileCopy(java.io.File srcFile, java.io.File destFile, boolean overwrite) throws IOException {
-        boolean r1 = true, r2 = true, r3 = true;
-        if (srcFile.exists()) {
-            if (!destFile.exists()) r1 = destFile.createNewFile();
-            else if (!overwrite) r2 = destFile.delete();
-            else r2 = destFile.delete();
-            InputStream is = new FileInputStream(srcFile);
-            FileOutputStream fos = new FileOutputStream(destFile);
-            StreamWrite(is, fos);
+        boolean r;
+        if (destFile.exists() && !overwrite) {
+            return true;
         } else {
-            r3 = false;
+            r = FileCopy(srcFile, destFile);
         }
-        return r1 && r2 && r3;
+        return r;
     }
 
     public static void DownloadWeb(URL url, OutputStream to_outputStream) throws IOException {

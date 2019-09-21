@@ -1,0 +1,21 @@
+{
+  "sentences": [
+    {
+      "trans": "这不就好了，你看！！ok",
+      "orig": "这不就好了，你看！！ok",
+      "backend": 0
+    }
+  ],
+  "src": "zh-CN",
+  "ld_result": {
+    "srclangs": [
+      "zh-CN"
+    ],
+    "srclangs_confidences": [
+      1.0
+    ],
+    "extended_srclangs": [
+      "zh-CN"
+    ]
+  }
+}

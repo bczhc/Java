@@ -1,5 +1,6 @@
 package pers.zhc.u.kotlin
 
+/*
 import pers.zhc.u.common.StrDic
 import java.io.*
 
@@ -29,4 +30,8 @@ class C0 {
     fun f(x: String): String {
         return x + x
     }
+}*/
+
+fun main() {
+    println(1)
 }

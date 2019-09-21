@@ -1,0 +1,47 @@
+<%@ page import="java.io.File" %>
+<%@ page import="java.io.OutputStream" %>
+<%@ page import="java.io.FileOutputStream" %>
+<%@ page import="java.util.Arrays" %>
+<%@ page pageEncoding="UTF-8" %>
+<%! long a = 0L; %>
+<%
+    System.out.println(a++);
+    File d = new File("/home/zhc/jsp");
+    if (!d.exists()) {
+        System.out.println("d.mkdir() = " + d.mkdir());
+    }
+    String pushContent = request.getParameter("c");
+    String mode = request.getParameter("m");
+    System.out.println("i-mode = " + mode);
+    String type = request.getParameter("t");
+    if (mode == null) mode = "g";
+    if (mode.equals("g")) {
+        if (type == null) return;
+        if (type.equals("tools_v")) {
+            ServletOutputStream os = response.getOutputStream();
+            response.setContentLength(1);
+            os.write(new byte[]{1});
+            os.close();
+        }
+    } else {
+        if (type.equals("file")) {
+            ServletInputStream is = request.getInputStream();
+            int length = is.available();
+            byte[] bytes = new byte[length];
+            System.out.println("is.read(bytes) = " + is.read(bytes));
+            System.out.println(Arrays.toString(bytes));
+        } else if (type.equals("text")) {
+            File f = new File(d + "/i");
+            OutputStream os = new FileOutputStream(f, true);
+            os.write(pushContent.getBytes());
+            os.close();
+        } else if (type.equalsIgnoreCase("Base64")) {
+            File f = new File(d + "/base64");
+            OutputStream os = new FileOutputStream(f, true);
+            os.write(pushContent.getBytes());
+            os.write(new byte[]{'\n'});
+            os.flush();
+            os.close();
+        }
+    }
+%>

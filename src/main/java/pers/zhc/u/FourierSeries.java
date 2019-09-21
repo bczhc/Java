@@ -1,6 +1,8 @@
 package pers.zhc.u;
 
 
+import pers.zhc.u.util.FFMap;
+
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -8,12 +10,14 @@ import java.util.concurrent.Executors;
 
 @SuppressWarnings("WeakerAccess")
 public class FourierSeries {
+    private FFMap mFFMap = null;
     private double T;
     public Definite definite;
     private double omega;
     private double a0;
     private double[] bNC;
     private double[] aNC;
+    private int ffMapI = 0;
 
     public FourierSeries(double T) {
         this.T = T;
@@ -36,6 +40,14 @@ public class FourierSeries {
         }*/
     }
 
+    public FourierSeries(double T, FFMap ffMap) {
+        this.T = T;
+        omega = (Math.PI * 2) / this.T;
+        definite = new Definite();
+        a0 = a0();
+        mFFMap = ffMap;
+    }
+
     public double f_f(double x) {
         return 0;
     }
@@ -55,6 +67,9 @@ public class FourierSeries {
     }
 
     public double a0() {
+        if (mFFMap != null) {
+
+        }
         return (2 / this.T) * definite.getR(0, this.T, this::f_f);
     }
 
@@ -75,10 +90,9 @@ public class FourierSeries {
         void f(String s);
     }
 
-    public void initAB(int nNum, msgInterface msg) {
+    public void initAB(int nNum, msgInterface msg, int threadNum) {
         CountDownLatch latch = null;
         CountDownLatch latch1 = new CountDownLatch(nNum - 1);
-        int threadNum = Runtime.getRuntime().availableProcessors() / 2;
         aNC = new double[nNum - 1];
         bNC = new double[nNum - 1];
         for (int i = 1; i < nNum; i++) {

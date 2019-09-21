@@ -79,7 +79,7 @@ public class DrawFunction extends JFrame {
         fs.definite.n = 10000;
         nNum = 10000;
         long t1 = System.currentTimeMillis();
-        fs.initAB(nNum, System.out::println);
+        fs.initAB(nNum, System.out::println, 3);
         long t2 = System.currentTimeMillis();
         System.out.println((t2 - t1) + "ms");
     }

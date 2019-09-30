@@ -7,12 +7,30 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/root.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/root.xml" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="c">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexFunctionInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateDouble.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateFloat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.jar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/WebPush$ZHC.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/WebPush.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/lib/zhc.jar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFloatFunctionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFloatFunctionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFunctionInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFunctionInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -50,7 +68,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2413">
+            <state relative-caret-position="458">
               <caret line="142" column="66" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -61,29 +79,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/i.zhc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zhc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="22" selection-start-line="22" selection-end-line="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="475">
+              <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="687">
+              <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+              <folding>
+                <element signature="e#31#64#0" expanded="true" />
+                <element signature="e#294#295#0" expanded="true" />
+                <element signature="e#367#368#0" expanded="true" />
+                <element signature="e#390#391#0" expanded="true" />
+                <element signature="e#463#464#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -106,9 +125,9 @@
         <option value="HTML File" />
         <option value="JUnit4 Test Class" />
         <option value="JavaScript File" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -157,15 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../../../Downloads/youku_dc/smali/com/youku/phone/ActivityWelcome.smali" />
-        <option value="$PROJECT_DIR$/src/test/java/PPBase64.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/Z/M3u8.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/s.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/s.smali" />
-        <option value="$PROJECT_DIR$/src/main/webapp/b.html" />
-        <option value="$PROJECT_DIR$/src/main/java/Z/SplitText.java" />
-        <option value="$PROJECT_DIR$/src/test/java/PPBase64DecoderException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java" />
         <option value="$PROJECT_DIR$/src/main/java/Z/FFMPEG.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/FileU.java" />
@@ -202,12 +212,21 @@
         <option value="$PROJECT_DIR$/src/main/java/Z/WebPush.java" />
         <option value="$PROJECT_DIR$/../../../jsp/base64" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/a.kt" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.zhc" />
         <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicycleSequence.java" />
         <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFloatFunctionInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/Coordinate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateDouble.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateFloat.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexFunctionInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" />
       </list>
     </option>
   </component>
@@ -266,7 +285,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -295,6 +313,14 @@
             <path>
               <item name="java" type="b2602c69:ProjectViewProjectNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
+              <item name="zhc" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="1.4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -343,7 +369,17 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="u" type="462c0819:PsiDirectoryNode" />
-              <item name="qmcflac_Decode" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="u" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="java" type="b2602c69:ProjectViewProjectNode" />
@@ -411,6 +447,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -434,7 +471,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last.edited.regexp" value="http://hls.hd.etiantian.com/hls/gzhx000042/400k_0285.ts.ett?st=w1XxCjcBEMFK7dglppQj_g&amp;e=1563316536" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -451,24 +488,24 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zhc.u" />
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
       <recent name="$PROJECT_DIR$/mvn-repo-zhc/zhc/java" />
       <recent name="C:\code\code\java\src\main\java\com\zhc\u\qmcflac_Decode" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="OPEN_URL_DIALOG">
       <recent name="http://www.baidu.com" />
       <recent name="http://baidu.com" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -483,7 +520,33 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EpicyclesSequence">
+  <component name="RunManager" selected="Application.ComplexDefinite">
+    <configuration name="ComplexDefinite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.ComplexDefinite" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ComplexValue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.math.util.ComplexValue" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.math.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DrawFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.zhc.u.DrawFunction" />
       <module name="java" />
@@ -498,37 +561,11 @@
       </method>
     </configuration>
     <configuration name="EpicyclesSequence" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.qmcflac_Decode.EpicyclesSequence" />
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.math.fourier.EpicyclesSequence" />
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.zhc.u.qmcflac_Decode.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FourierSeries" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.FourierSeries" />
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.zhc.u.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebPush$ZHC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Z.WebPush$ZHC" />
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Z.*" />
+          <option name="PATTERN" value="pers.zhc.u.math.fourier.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -550,19 +587,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.WebPush$ZHC" />
-      <item itemvalue="Application.FourierSeries" />
       <item itemvalue="Application.DrawFunction" />
-      <item itemvalue="Kotlin.pers.zhc.u.kotlin.AKt" />
       <item itemvalue="Application.EpicyclesSequence" />
+      <item itemvalue="Kotlin.pers.zhc.u.kotlin.AKt" />
+      <item itemvalue="Application.ComplexValue" />
+      <item itemvalue="Application.ComplexDefinite" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ComplexDefinite" />
+        <item itemvalue="Application.ComplexValue" />
         <item itemvalue="Application.EpicyclesSequence" />
         <item itemvalue="Kotlin.pers.zhc.u.kotlin.AKt" />
         <item itemvalue="Application.DrawFunction" />
-        <item itemvalue="Application.FourierSeries" />
-        <item itemvalue="Application.WebPush$ZHC" />
       </list>
     </recent_temporary>
   </component>
@@ -712,7 +749,8 @@
       <workItem from="1568364158033" duration="9072000" />
       <workItem from="1569044026966" duration="726000" />
       <workItem from="1569044933808" duration="23000" />
-      <workItem from="1569045018574" duration="3895000" />
+      <workItem from="1569045018574" duration="10444000" />
+      <workItem from="1569851619078" duration="2855000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -819,11 +857,18 @@
       <option name="project" value="LOCAL" />
       <updated>1569045715942</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="c">
+      <created>1569050646185</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1569050646185</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="336346000" />
+    <option name="totallyTimeSpent" value="345750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,7 +883,7 @@
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3118971" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31618434" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -846,8 +891,9 @@
       <window_info id="UI Designer" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Duplicates" weight="0.32963374" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.9672489" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.50610435" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4989282" weight="0.38068813" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893162" weight="0.55049944" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -868,15 +914,15 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="make" order="5" weight="0.32959402" />
-      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.25830653" />
+      <window_info anchor="right" id="Maven" order="6" weight="0.25830653" />
       <window_info anchor="right" id="Database" order="7" weight="0.329582" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
       <window_info anchor="right" id="Kotlin Bytecode" order="10" weight="0.32959402" />
       <window_info anchor="right" id="JSF" order="11" weight="0.32959402" />
       <window_info anchor="right" id="CDI" order="12" weight="0.32908848" />
-      <window_info anchor="right" id="Bean Validation" order="13" weight="0.32959402" />
-      <window_info anchor="right" id="Coverage" order="14" side_tool="true" weight="0.32959402" />
+      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32959402" />
+      <window_info anchor="right" id="Bean Validation" order="14" weight="0.329582" />
       <window_info anchor="right" id="SciView" order="15" />
     </layout>
     <layout-to-restore>
@@ -978,6 +1024,7 @@
     <MESSAGE value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
     <MESSAGE value="a" />
     <MESSAGE value="b" />
+    <MESSAGE value="d" />
     <MESSAGE value="c" />
     <option name="LAST_COMMIT_MESSAGE" value="c" />
   </component>
@@ -1038,6 +1085,12 @@
           <properties />
           <option name="timeStamp" value="91" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java</url>
+          <line>65</line>
+          <properties />
+          <option name="timeStamp" value="92" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
           <line>134</line>
@@ -1094,102 +1147,58 @@
     </expressions>
     <expressions id="watch">
       <expression>
-        <expression-string>pattern.matcher(line).group()</expression-string>
+        <expression-string>complexValue.divide(new ComplexValue(1.2, 2.3))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pattern.matcher(line).find()</expression-string>
+        <expression-string>new ComplexValue(0, -0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>pattern.matcher(line)</expression-string>
+        <expression-string>new ComplexValue(1, -0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).getJSONObject(0).toMap().get(&quot;tgt&quot;).toString()</expression-string>
+        <expression-string>new ComplexValue(1, -1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).getJSONObject(0).toMap().get(&quot;tgt&quot;)</expression-string>
+        <expression-string>new ComplexValue(-1, 1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).getJSONObject(0).toMap()</expression-string>
+        <expression-string>new ComplexValue(-1, -1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).getJSONObject(0)</expression-string>
+        <expression-string>new ComplexValue(1, 0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).get(0)</expression-string>
+        <expression-string>new ComplexValue(0, -1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0)</expression-string>
+        <expression-string>new ComplexValue(0, 1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;translateResult&quot;).getJSONArray(0).getJSONArray(0)</expression-string>
+        <expression-string>new ComplexValue(0, 0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Arr.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="205" selection-start-line="205" selection-end-line="205" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Color.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/s/A.smali" />
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/text/SimpleDateFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="577" column="11" selection-start-line="577" selection-start-column="11" selection-end-line="577" selection-end-column="11" />
-          <folding>
-            <element signature="e#23443#23444#0" expanded="true" />
-            <element signature="e#23515#23516#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/S0.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="22" column="32" selection-start-line="22" selection-start-column="32" selection-end-line="22" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/javax/swing/JComponent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="775" column="17" lean-forward="true" selection-start-line="775" selection-start-column="17" selection-end-line="775" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/a.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/Eval.java" />
     <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/lib/tools.jar!/com/sun/tools/javac/Main.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -1235,24 +1244,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="264" column="48" lean-forward="true" selection-start-line="264" selection-start-column="48" selection-end-line="264" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#243#276#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFloatFunctionInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1388,24 +1379,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/math/BigDecimal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="4491" lean-forward="true" selection-start-line="4491" selection-end-line="4491" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/common/things.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFunctionInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -1458,32 +1435,10 @@
     <entry file="file://$PROJECT_DIR$/../../../jsp/base64">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="64" column="48" lean-forward="true" selection-start-line="64" selection-start-column="48" selection-end-line="64" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#250#251#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1507,29 +1462,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFloatFunctionInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2413">
-          <caret line="142" column="66" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
+        <state relative-caret-position="57">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="3" selection-start-column="21" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFunctionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="96" column="17" selection-start-line="96" selection-start-column="17" selection-end-line="96" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#11655#11656#0" expanded="true" />
-            <element signature="e#11676#11677#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/i.zhc">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateDouble.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zhc">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateFloat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        <state relative-caret-position="114">
+          <caret line="6" column="19" lean-forward="true" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/math/BigDecimal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="4531" column="30" lean-forward="true" selection-start-line="4531" selection-start-column="30" selection-end-line="4531" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1540,10 +1514,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFloatFunctionInterface.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="28" lean-forward="true" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        <state>
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/MathFunctionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="36" column="11" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zhc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/i.zhc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexFunctionInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="142" column="66" selection-start-line="142" selection-start-column="66" selection-end-line="142" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#11655#11656#0" expanded="true" />
+            <element signature="e#11676#11677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+          <folding>
+            <element signature="e#31#64#0" expanded="true" />
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#367#368#0" expanded="true" />
+            <element signature="e#390#391#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -1,6 +1,6 @@
 package pers.zhc.u.util;
 
-import pers.zhc.u.MathFloatFunctionInterface;
+import pers.zhc.u.math.util.MathFloatFunctionInterface;
 
 import java.util.ArrayList;
 import java.util.List;

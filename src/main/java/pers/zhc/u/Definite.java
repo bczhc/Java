@@ -1,10 +1,12 @@
 package pers.zhc.u;
 
+import pers.zhc.u.math.util.MathFunctionInterface;
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import static java.lang.Math.*;
+import static java.lang.Math.abs;
 
 @SuppressWarnings("WeakerAccess")
 public class Definite {

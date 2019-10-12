@@ -12,8 +12,8 @@ public class Order {
     private static int min_n, arr_new_i = -1;
 
     public static void main(String[] args) {
-        System.out.println("原 " + Arrays.toString(a));
-        System.out.println(order(a, "01"));
+//        System.out.println("原 " + Arrays.toString(a));
+//        System.out.println(order(a, "01"));
     }
 
     private static int getMin_n(int[] arr) {

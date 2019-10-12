@@ -1,7 +1,19 @@
+import pers.zhc.u.ComplexDefinite;
+import pers.zhc.u.ThreadSequence;
+import pers.zhc.u.math.util.ComplexFunctionInterface;
+import pers.zhc.u.math.util.ComplexValue;
+
+import javax.servlet.ServletException;
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.math.BigDecimal;
 import java.util.Arrays;
 import java.util.Base64;
+
+import static pers.zhc.u.common.MultipartUploader.formUpload;
 
 class T9 {
     int a = 0;
@@ -149,21 +161,58 @@ class T18 {
 }
 
 class T19 {
-    int a;
+    public static void main(String[] args) {
+        ThreadSequence threadSequence = new ThreadSequence(8);
+        threadSequence.execute((i, t) -> {
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            System.out.println(1);
+        });
+        threadSequence.start(null);
+        threadSequence.shutdownNow();
+    }
 }
 
-class T20 extends T19 {
-
+class T20 {
     public static void main(String[] args) {
-        T20 t20 = new T20();
-        t20.f();
-        t20.a = 3;
-        System.out.println("t20.a = " + t20.a);
-        T19 t19 = new T19();
-        t19.a = 4;
+        ComplexDefinite complexDefinite = new ComplexDefinite();
+        complexDefinite.n = 1000000;
+        double T = 100D;
+        double omega = 2 * Math.PI / T;
+        ComplexFunctionInterface complexFunctionInterface = t -> new ComplexValue(10 * Math.cos(t * omega), 10 * Math.sin(t * omega));
+        ComplexValue definiteIntegralByTrapezium = complexDefinite.getDefiniteIntegralByTrapezium(0, 100D
+                , complexFunctionInterface);
+        ComplexValue definiteIntegralByRectangle2 = complexDefinite.getDefiniteIntegralByRectangle2(0, 100D, complexFunctionInterface);
+        System.out.println("definiteIntegralByTrapezium = " + definiteIntegralByTrapezium);
+        System.out.println("definiteIntegralByRectangle2 = " + definiteIntegralByRectangle2);
+    }
+}
+
+class T21 extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ServletOutputStream outputStream = resp.getOutputStream();
+        outputStream.write(new byte[]{1, 2, 3});
+        outputStream.flush();
+        outputStream.close();
+        resp.setContentLength(3);
+        super.doPost(req, resp);
     }
 
-    private void f() {
-        a = 1;
+    public static void main(String[] args) throws IOException {
+        String url = "http://235m82e811.imwork.net/upload.zhc";
+        ByteArrayInputStream bais = new ByteArrayInputStream(new byte[]{
+                98
+        });
+        String s = null;
+        try {
+            s = formUpload(url, new byte[]{97,97, 0}, bais);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        System.out.println("s = " + s);
     }
 }

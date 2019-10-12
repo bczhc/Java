@@ -42,6 +42,7 @@ public class FFMap {
                     FF ff2 = ffList.get(i + 1);
                     if (v > ff1.k && v <= ff2.k) {
                         return (ff1.v + ff2.v) / 2;
+//                        return ff1.v + (ff2.v - ff1.v) /
                     }
                 } catch (Exception ignored) {
                     return 0;

@@ -1,0 +1,34 @@
+<%@ page import="org.json.JSONArray" %>
+<%@ page import="org.json.JSONObject" %>
+<%@ page import="pers.zhc.u.Digest" %>
+<%@ page import="java.io.File" %>
+<%@ page pageEncoding="UTF-8" %>
+<%
+    String can = request.getParameter("can");
+    if (can != null) {
+        ServletOutputStream os = response.getOutputStream();
+        response.setContentLength(1);
+        os.write(new byte[]{1});
+        os.flush();
+        os.close();
+    } else
+        out.print(this.existingFileJSONString());
+%>
+<%!
+    private String existingFileJSONString() {
+        File d = new File("/home/zhc/code/code/java/src/main/webapp/WEB-INF/upload");
+        JSONObject jsonObject = new JSONObject();
+        JSONArray jsonArray = new JSONArray();
+        File[] listFiles = d.listFiles();
+        if (listFiles != null) {
+            for (File listFile : listFiles) {
+                JSONObject child = new JSONObject();
+                child.put("name", listFile.getName());
+                child.put("md5", Digest.getFileMd5String(listFile));
+                jsonArray.put(child);
+            }
+            jsonObject.put("files", jsonArray);
+        }
+        return jsonObject.toString();
+    }
+%>

@@ -202,17 +202,51 @@ class T21 extends HttpServlet {
         super.doPost(req, resp);
     }
 
-    public static void main(String[] args) throws IOException {
-        String url = "http://235m82e811.imwork.net/upload.zhc";
+    public static void main(String[] args) {
+        String url = "http://235m82e811.imwork.net/upload/upload.zhc";
         ByteArrayInputStream bais = new ByteArrayInputStream(new byte[]{
-                98
+                97, 98, 0, 99
         });
         String s = null;
         try {
-            s = formUpload(url, new byte[]{97,97, 0}, bais);
+            s = formUpload(url, new byte[]{}, bais);
         } catch (IOException e) {
             e.printStackTrace();
         }
-        System.out.println("s = " + s);
+        System.out.println(s);
+    }
+
+}
+
+class T22 {
+    public static void main(String[] args) {
+        byte[] bytes = new byte[]{-27, -91, -67};
+        StringBuilder stringBuilder = new StringBuilder();
+        char a = '好';
+        System.out.println("a = " + a);
+        stringBuilder.append(((char) bytes[0]));
+        stringBuilder.append(((char) bytes[1]));
+        stringBuilder.append(((char) bytes[2]));
+        System.out.println("stringBuilder.toString() = " + stringBuilder.toString());
+    }
+}
+
+class T23 {
+    public static void main(String[] args) {
+        File newName = new T23().findNewName(new File("/home/zhc/bin/jad"));
+        System.out.println("newName = " + newName);
+    }
+
+    private File findNewName(File f) {
+        String fP = f.getPath();
+        File file;
+        for (int i = 2; ; ++i) {
+            if (fP.matches("^.*\\([0-9]+\\)$")) {
+                fP = fP.substring(0, fP.length() - 3) + "(" + i + ")";
+            } else fP += " (2)";
+            if (!(file = new File(fP)).exists()) {
+                return file;
+            }
+        }
     }
 }

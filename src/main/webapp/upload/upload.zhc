@@ -1,0 +1,67 @@
+<%@ page import="org.json.JSONException" %>
+<%@ page import="org.json.JSONObject" %>
+<%@ page import="java.io.*" %>
+<%@ page import="pers.zhc.u.FileU" %>
+<%@ page pageEncoding="utf-8" %>
+<%
+    InputStream is = request.getInputStream();
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    int b = is.read();
+    if (b == -1) {
+//        out.print("\n接受multipart上传，文件头信息范围为0-127的byte，以(byte) 0结尾。\n");
+        out.print("？啥都没有。");
+        return;
+    }
+    baos.write(b);
+    baos.flush();
+    while ((b = is.read()) != -1) {
+        if (b == 0) break;
+        baos.write(b);
+        baos.flush();
+    }
+    String headInformation = new String(baos.toByteArray());
+    baos.close();
+    System.out.println("接收到文件 " + headInformation);
+    byte[] bytes = new byte[1024];
+    out.print(headInformation);
+    String d = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/upload";
+    String fileName = null;
+    try {
+        JSONObject jsonObject = new JSONObject(headInformation);
+        fileName = jsonObject.getString("name");
+    } catch (JSONException e) {
+        e.printStackTrace();
+    }
+    if (fileName == null) {
+        fileName = String.valueOf(System.currentTimeMillis());
+    }
+    File f = findNewName(new File(d + File.separatorChar + fileName));
+    OutputStream os = new FileOutputStream(f, false);
+    int readLen;
+    while ((readLen = is.read(bytes)) != -1) {
+        os.write(bytes, 0, readLen);
+        os.flush();
+    }
+    os.close();
+    is.close();
+    System.out.println("完成");
+%>
+<%!
+    private File findNewName(File f) {
+        if (!f.exists()) {
+            return f;
+        }
+        String x = "." + new FileU().getFileExtension(f);
+        String path = f.getPath();
+        StringBuilder fP = new StringBuilder(path.substring(0, path.lastIndexOf('.')));
+        File file;
+        for (int i = 2; ; ++i) {
+            if (fP.toString().matches("^.*\\([0-9]+\\)$")) {
+                fP = new StringBuilder(fP.substring(0, fP.length() - 3) + "(" + i + ")");
+            } else fP.append(" (2)");
+            if (!(file = new File(fP + x)).exists()) {
+                return file;
+            }
+        }
+    }
+%>

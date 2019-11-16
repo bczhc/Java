@@ -14,12 +14,17 @@
     return-void
 .end method
 
-.method private f0()Z
-    .registers 2
+.method private f0()V
+    .registers 3
 
     .prologue
     .line 5
-    const/4 v0, 0x1
+    sget-object v0, Ljava/lang/System;->out:Ljava/io/PrintStream;
 
-    return v0
+    const-string v1, "aaaa"
+
+    invoke-virtual {v0, v1}, Ljava/io/PrintStream;->println(Ljava/lang/String;)V
+
+    .line 6
+    return-void
 .end method

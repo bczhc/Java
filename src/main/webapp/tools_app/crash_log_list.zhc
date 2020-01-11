@@ -1,0 +1,18 @@
+<%@ page import="org.json.JSONArray" %>
+<%@ page import="java.io.File" %>
+<%@ page pageEncoding="UTF-8" %>
+
+<%
+    String dir = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/tools-app-crashLog";
+    if (request.getParameter("list") != null) {
+        JSONArray jsonArray = new JSONArray();
+        File d = new File(dir);
+        String[] list = d.list();
+        if (list != null) {
+            for (String s : list) {
+                jsonArray.put(s);
+            }
+        }
+        out.print(jsonArray.toString());
+    }
+%>

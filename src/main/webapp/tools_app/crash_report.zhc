@@ -1,4 +1,3 @@
-<%@ page import="org.json.JSONArray" %>
 <%@ page import="pers.zhc.u.FileU" %>
 <%@ page import="java.io.ByteArrayOutputStream" %>
 <%@ page import="java.io.File" %>
@@ -15,39 +14,27 @@ Created by IntelliJ IDEA.
 
 <%
     String dir = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/tools-app-crashLog";
-    if (request.getParameter("list") != null) {
-        JSONArray jsonArray = new JSONArray();
-        File d = new File(dir);
-        String[] list = d.list();
-        if (list != null) {
-            for (String s : list) {
-                jsonArray.put(s);
-            }
+    ServletInputStream is = request.getInputStream();
+    int b = is.read();
+    ByteArrayOutputStream baos = new ByteArrayOutputStream();
+    baos.write(b);
+    baos.flush();
+    if (b != -1) {
+        while ((b = is.read()) != -1) {
+            if (b == 0) break;
+            baos.write(b);
+            baos.flush();
         }
-        out.print(jsonArray.toString());
+        String headInformation = new String(baos.toByteArray());
+        baos.close();
+        File file = new File(dir + File.separatorChar + headInformation);
+        System.out.println("receive crash report: " + headInformation);
+        OutputStream os = new FileOutputStream(file, false);
+        FileU.StreamWrite(is, os);
+        os.close();
+        is.close();
+        System.out.println("done");
     } else {
-        ServletInputStream is = request.getInputStream();
-        int b = is.read();
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        baos.write(b);
-        baos.flush();
-        if (b != -1) {
-            while ((b = is.read()) != -1) {
-                if (b == 0) break;
-                baos.write(b);
-                baos.flush();
-            }
-            String headInformation = new String(baos.toByteArray());
-            baos.close();
-            File file = new File(dir + File.separatorChar + headInformation);
-            System.out.println("receive crash report: " + headInformation);
-            OutputStream os = new FileOutputStream(file, false);
-            FileU.StreamWrite(is, os);
-            os.close();
-            is.close();
-            System.out.println("done");
-        } else {
-            out.print("<h1>错误报告上传页面</h1>");
-        }
+        out.print("<h1>错误报告上传页面</h1>");
     }
 %>

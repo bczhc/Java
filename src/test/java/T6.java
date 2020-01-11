@@ -1,6 +1,7 @@
 import pers.zhc.u.ComplexDefinite;
+import pers.zhc.u.FileU;
 import pers.zhc.u.ThreadSequence;
-import pers.zhc.u.kotlin.AKt;
+import pers.zhc.u.common.MultipartUploader;
 import pers.zhc.u.math.util.ComplexFunctionInterface;
 import pers.zhc.u.math.util.ComplexValue;
 
@@ -271,8 +272,16 @@ class TSSplit {
 
 class T24 {
     public static void main(String[] args) {
-        StringBuilder sb = new StringBuilder();
-        String s = AKt.f2(sb);
-        System.out.println("s = " + s);
+        try {
+            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+            baos.write(new byte[]{'b'});
+            baos.flush();
+            InputStream is = FileU.StreamParse(baos);
+            MultipartUploader.formUpload("http://235m82e811.imwork.net/tools_app/crash_report.zhc", "a".getBytes(), is);
+            baos.close();
+            is.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

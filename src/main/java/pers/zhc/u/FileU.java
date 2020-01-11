@@ -174,18 +174,6 @@ public class FileU {
         StreamWrite(u.openConnection().getInputStream(), fos);
     }
 
-    public URL StrToUrl(String s) throws MalformedURLException {
-        String s1 = s.split("\\.")[0];
-        return new URL(!s1.matches(".*http.*") ? ("http://" + s) : s);
-    }
-
-    public URL StrToUrl(String s, @Documents.Nullable URL url) throws MalformedURLException {
-        String s1 = url.toString();
-        int i = s1.lastIndexOf('/');
-        String substring = s1.substring(0, i + 1);
-        return new URL(s.matches(".*http.*://.*") ? s : substring + s);
-    }
-
     public static void ReadServletInputStreamToFileIS(InputStream in, OutputStream to_outputStream, long fileSize) throws IOException {
         FileU o = new FileU();
         ByteArrayOutputStream baos1 = new ByteArrayOutputStream(), baos2 = new ByteArrayOutputStream();
@@ -207,24 +195,6 @@ public class FileU {
         }
         dest1.flush();
         dest2.flush();
-    }
-
-    private long find0a0d0a0d(InputStream inputStream) throws IOException {
-        long skip = 0;
-        byte[] b;
-        w:
-        while (true) {
-            b = new byte[1024];
-            if (inputStream.read(b) != -1) {
-                for (int i = 0; i < b.length - 3; i++) {
-                    if (b[i] == 0x0D && b[i + 1] == 0x0A && b[i + 2] == 0x0D && b[i + 3] == 0x0A) {
-                        skip = i + 4;
-                        break w;
-                    }
-                }
-            } else break;
-        }
-        return skip;
     }
 
     public static String getMD5String(java.io.File file) throws IOException {
@@ -251,6 +221,46 @@ public class FileU {
         assert md != null;
         return new Base128(new BigInteger(1, md.digest()).toString(16)).NumStr_lenTo(32);
 //        return DigestUtils.md5Hex(inputStream);
+    }
+
+    public static void readISR(InputStreamReader isr) throws IOException {
+        BufferedReader br = new BufferedReader(isr);
+        String s = br.readLine();
+        while (s != null) {
+            System.out.println(s);
+            s = br.readLine();
+        }
+        br.close();
+    }
+
+    public URL StrToUrl(String s) throws MalformedURLException {
+        String s1 = s.split("\\.")[0];
+        return new URL(!s1.matches(".*http.*") ? ("http://" + s) : s);
+    }
+
+    public URL StrToUrl(String s, @Documents.Nullable URL url) throws MalformedURLException {
+        String s1 = url.toString();
+        int i = s1.lastIndexOf('/');
+        String substring = s1.substring(0, i + 1);
+        return new URL(s.matches(".*http.*://.*") ? s : substring + s);
+    }
+
+    private long find0a0d0a0d(InputStream inputStream) throws IOException {
+        long skip = 0;
+        byte[] b;
+        w:
+        while (true) {
+            b = new byte[1024];
+            if (inputStream.read(b) != -1) {
+                for (int i = 0; i < b.length - 3; i++) {
+                    if (b[i] == 0x0D && b[i + 1] == 0x0A && b[i + 2] == 0x0D && b[i + 3] == 0x0A) {
+                        skip = i + 4;
+                        break w;
+                    }
+                }
+            } else break;
+        }
+        return skip;
     }
 
     public boolean[] FileMove(java.io.File srcFile, java.io.File destFile) throws IOException {
@@ -329,6 +339,14 @@ public class FileU {
         return r;
     }
 
+    public interface TraversalFileDo {
+        void f(java.io.File f);
+
+        void d(java.io.File d);
+
+        void a(java.io.File a);
+    }
+
     public static class TraversalFile {
         private java.io.File dic;
 
@@ -365,14 +383,6 @@ public class FileU {
                 i++;
             }
         }
-    }
-
-    public interface TraversalFileDo {
-        void f(java.io.File f);
-
-        void d(java.io.File d);
-
-        void a(java.io.File a);
     }
 
     public static class FindDuplicateFile {
@@ -475,16 +485,6 @@ public class FileU {
                 e.printStackTrace();
             }
         }
-    }
-
-    public static void readISR(InputStreamReader isr) throws IOException {
-        BufferedReader br = new BufferedReader(isr);
-        String s = br.readLine();
-        while (s != null) {
-            System.out.println(s);
-            s = br.readLine();
-        }
-        br.close();
     }
 
 }

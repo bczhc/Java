@@ -16,46 +16,6 @@ public class a implements Runnable {
         this.s = a;
     }
 
-    @Override
-    public void run() {
-        try {
-//            JOptionPane.showMessageDialog(null, new Date().toString(), s, JOptionPane.INFORMATION_MESSAGE);
-//            JFrame jFrame = new JFrame(new Date().toString());
-//            jFrame.setVisible(true);
-//            JLabel jLabel = new JLabel("lol");
-            /*jFrame.add(jLabel);
-            jFrame.setBounds(300, 300, 300, 100);*/
-//            jFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
-//            JTextField jTextField = new JTextField();
-//            jFrame.add(jTextField);
-//            SwingLoginExample.main(new String[0]);
-            JFrame jFrame = new JFrame("Demo");
-            jFrame.setVisible(true);;
-            jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-            jFrame.setBounds(500, 300, 100, 100);
-            JPanel jPanel = new JPanel();
-            jFrame.add(jPanel);
-            JTextField jTextField = new JTextField(20);
-            jTextField.setBounds(0, 0, 50, 30);
-            jPanel.add(jTextField);
-
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, e.toString(), "error", JOptionPane.INFORMATION_MESSAGE);
-        }
-        try {
-            Thread.sleep(50);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-    }
-
-    private void TStart() {
-        if (t == null) {
-            t = new Thread(this);
-            t.start();
-        }
-    }
-
     public static void main(String[] args) {
 //        JFrame jf = new JFrame("zhc");
 //        jf.setVisible(true);
@@ -82,5 +42,46 @@ public class a implements Runnable {
         jFrame.setVisible(true);
 //        jFrame.setSize(100, 100);
         jFrame.setBounds(100, 100, 500, 300);
+    }
+
+    @Override
+    public void run() {
+        try {
+//            JOptionPane.showMessageDialog(null, new Date().toString(), s, JOptionPane.INFORMATION_MESSAGE);
+//            JFrame jFrame = new JFrame(new Date().toString());
+//            jFrame.setVisible(true);
+//            JLabel jLabel = new JLabel("lol");
+            /*jFrame.add(jLabel);
+            jFrame.setBounds(300, 300, 300, 100);*/
+//            jFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+//            JTextField jTextField = new JTextField();
+//            jFrame.add(jTextField);
+//            SwingLoginExample.main(new String[0]);
+            JFrame jFrame = new JFrame("Demo");
+            jFrame.setVisible(true);
+            ;
+            jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+            jFrame.setBounds(500, 300, 100, 100);
+            JPanel jPanel = new JPanel();
+            jFrame.add(jPanel);
+            JTextField jTextField = new JTextField(20);
+            jTextField.setBounds(0, 0, 50, 30);
+            jPanel.add(jTextField);
+
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e.toString(), "error", JOptionPane.INFORMATION_MESSAGE);
+        }
+        try {
+            Thread.sleep(50);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void TStart() {
+        if (t == null) {
+            t = new Thread(this);
+            t.start();
+        }
     }
 }

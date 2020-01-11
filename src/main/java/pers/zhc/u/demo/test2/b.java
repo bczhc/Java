@@ -10,7 +10,7 @@ import java.nio.charset.StandardCharsets;
 public class b {
     public static void main(String[] args) throws IOException {
         b b = new b();
-        for (long i = 0;  i < 99999999999999999L; i++) {
+        for (long i = 0; i < 99999999999999999L; i++) {
             if (b.login(String.valueOf(i)) == 0) {
                 System.out.println("s: " + i);
                 System.exit(1);
@@ -52,26 +52,27 @@ public class b {
 
 class s2 {
     private static int i = 0;
+
     public static void main(String[] args) throws IOException {
         //定义数组
-        String[] strs={"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"
+        String[] strs = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"
                 /*, "A","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","com.zhc.u","v","w","x","y","z"*/};
         //定义随机组合最多位数
 //        int size=5;
 //        eachStr(size,strs);//调用
         for (int i = 1; i < 100; i++) {
-            new s2().eachStr(i,strs);//调用
+            new s2().eachStr(i, strs);//调用
         }
     }
 
-    public void pintStr(int num,String[] strs,String beforeStr,String beforeChar) throws IOException {
+    public void pintStr(int num, String[] strs, String beforeStr, String beforeChar) throws IOException {
         num--;
         for (String str : strs) {
             if (str.equals(beforeChar)) {
                 continue;
             }
             if (num == 0) {
-                String pw =  (beforeStr == null ? "" : beforeStr) + str;
+                String pw = (beforeStr == null ? "" : beforeStr) + str;
                 int r = new b().login(pw);
                 i++;
                 if (i == 100) {
@@ -87,9 +88,10 @@ class s2 {
             }
         }
     }
-    public void eachStr(int num,String[] strs) throws IOException {
-        while (num>0) {
-            pintStr(num, strs, null,null);
+
+    public void eachStr(int num, String[] strs) throws IOException {
+        while (num > 0) {
+            pintStr(num, strs, null, null);
             num--;
         }
     }

@@ -43,12 +43,14 @@ public class StrDic {
         int dicLen = this.d.length;
         int[] i = new int[this.len];
         BigDecimal n = new Power().power(dicLen, this.len);
-        for (long j = 0; j < (long) Math.pow(dicLen, this.len); j++) {
+        long l = (long) Math.pow(dicLen, this.len);
+        String nString = n.toString();
+        for (long j = 0; j < l; j++) {
             StringBuilder sb = new StringBuilder();
             for (int k = 0; k < this.len; k++) {
                 sb.append(d[i[k]]);
             }
-            this.D(sb.toString(), n.toString());
+            this.D(sb.toString(), nString);
             for (int k = this.len - 1; k > 0; --k) {
                 if ((i[k] += 1) == dicLen) {
                     i[k] = 0;

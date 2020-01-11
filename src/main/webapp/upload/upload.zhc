@@ -1,7 +1,7 @@
 <%@ page import="org.json.JSONException" %>
 <%@ page import="org.json.JSONObject" %>
-<%@ page import="java.io.*" %>
 <%@ page import="pers.zhc.u.FileU" %>
+<%@ page import="java.io.*" %>
 <%@ page pageEncoding="utf-8" %>
 <%
     InputStream is = request.getInputStream();
@@ -9,9 +9,16 @@
     int b = is.read();
     if (b == -1) {
 //        out.print("\n接受multipart上传，文件头信息范围为0-127的byte，以(byte) 0结尾。\n");
-        out.print("？啥都没有。");
+        response.setStatus(403);
+%>
+<div style="text-align: center; margin: 1% auto auto">
+    <h1>403 Forbidden.</h1>
+</div>
+<%
         return;
     }
+%>
+<%
     baos.write(b);
     baos.flush();
     while ((b = is.read()) != -1) {
@@ -21,7 +28,7 @@
     }
     String headInformation = new String(baos.toByteArray());
     baos.close();
-    System.out.println("接收到文件 " + headInformation);
+    System.out.println("received file " + headInformation + "...");
     byte[] bytes = new byte[1024];
     out.print(headInformation);
     String d = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/upload";
@@ -37,14 +44,16 @@
     }
     File f = findNewName(new File(d + File.separatorChar + fileName));
     OutputStream os = new FileOutputStream(f, false);
-    int readLen;
+    /*int readLen;
     while ((readLen = is.read(bytes)) != -1) {
         os.write(bytes, 0, readLen);
         os.flush();
     }
+    os.close();*/
+    FileU.StreamWrite(is, os);
     os.close();
     is.close();
-    System.out.println("完成");
+    System.out.println("done");
 %>
 <%!
     private File findNewName(File f) {

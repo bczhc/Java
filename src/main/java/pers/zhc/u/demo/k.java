@@ -1,7 +1,9 @@
 package pers.zhc.u.demo;
 
-import java.io.*;
-import java.net.*;
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URL;
 
 public class k {
     private static int n = 10000;

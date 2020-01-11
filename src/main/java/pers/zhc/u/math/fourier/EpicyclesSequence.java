@@ -13,17 +13,6 @@ public class EpicyclesSequence {
         this.epicycles = new ArrayList<>();
     }
 
-    public static class AEpicycle {
-
-        public AEpicycle(double n, ComplexValue c) {
-            this.n = n;
-            this.c = c;
-        }
-
-        public double n;
-        public ComplexValue c;
-    }
-
     public void put(double n, ComplexValue c) {
         this.epicycles.add(new AEpicycle(n, c));
     }
@@ -34,5 +23,15 @@ public class EpicyclesSequence {
 
     public void put(AEpicycle aEpicycle) {
         this.epicycles.add(aEpicycle);
+    }
+
+    public static class AEpicycle {
+
+        public double n;
+        public ComplexValue c;
+        public AEpicycle(double n, ComplexValue c) {
+            this.n = n;
+            this.c = c;
+        }
     }
 }

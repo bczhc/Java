@@ -39,6 +39,7 @@ public class Random {
 
     /**
      * 生成可调范围随机数
+     *
      * @param min 起
      * @param max 止
      * @return n

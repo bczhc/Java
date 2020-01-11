@@ -1,12 +1,21 @@
 package pers.zhc.u.math.util;
 
-@SuppressWarnings({"WeakerAccess", "UnusedReturnValue", "unused"})
+@SuppressWarnings({"UnusedReturnValue", "unused"})
 public class ComplexValue {
     public double re, im;
 
     public ComplexValue(double re, double im) {
         this.re = re;
         this.im = im;
+    }
+
+    public static void main(String[] args) {
+        ComplexValue complexValue = new ComplexValue(3, 4);
+        System.out.println(complexValue.multiply(new ComplexValue(4, 5)));
+    }
+
+    public double getComplexModule() {
+        return Math.sqrt(Math.pow(re, 2D) + Math.pow(im, 2D));
     }
 
     public ComplexValue add(ComplexValue cv) {
@@ -101,11 +110,6 @@ public class ComplexValue {
         else if (im > 0) return re + "+" + im + "i";
         else if (im < 0) return re + "" + im + "i";
         return String.valueOf(0);
-    }
-
-    public static void main(String[] args) {
-        ComplexValue complexValue = new ComplexValue(3, 4);
-        System.out.println(complexValue.multiply(new ComplexValue(4, 5)));
     }
 
     public ComplexValue setValue(ComplexValue cv) {

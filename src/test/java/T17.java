@@ -1,12 +1,14 @@
 import pers.zhc.u.TranslateApi;
 import pers.zhc.u.common.ReadIS;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class T17 {
+class T17 {
     public static void main(String[] args) throws Exception {
         InputStream is = new FileInputStream(new File("/home/zhc/code/code/Android/QMCFLAC/app/src/main/res/values/strings.xml"));
         new ReadIS(is, StandardCharsets.UTF_8).read(line -> {

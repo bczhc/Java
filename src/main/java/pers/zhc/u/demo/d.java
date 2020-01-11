@@ -13,6 +13,7 @@ public class d {
         }
         return hashCode;
     }
+
     public static void main(String[] args) {
 //        System.out.println(toHash("mini"));
     }

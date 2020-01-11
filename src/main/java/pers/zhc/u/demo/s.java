@@ -10,7 +10,7 @@ public class s {
         String s = "1, 2, -128";
         List<Byte> l = new ArrayList<>();
         for (String s1 : s.split(",")) {
-             l.add(Byte.parseByte(s1.replace(" ", "")));
+            l.add(Byte.parseByte(s1.replace(" ", "")));
         }
         System.out.println(Arrays.toString(l.toArray(new Byte[0])));
     }

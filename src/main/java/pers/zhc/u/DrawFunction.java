@@ -4,8 +4,24 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DrawFunction extends JFrame {
+    private static int W = 1200, H = 900;
     private FourierSeries fs;
     private int nNum;
+    private int x0, y0;
+    private Graphics G;
+    private DrawFunction() {
+        init();
+    }
+
+    public static void main(String[] args) {
+        DrawFunction frame = new DrawFunction();
+        frame.setTitle("DrawFunction");
+        frame.setSize(W, H);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.setResizable(false);
+    }
 
     private double F(double x) {
 //        return Math.sin(x) / Math.pow(1.1, -x);//函数表达式
@@ -20,10 +36,6 @@ public class DrawFunction extends JFrame {
         }*/
         return fs.F(nNum, x);
     }
-
-    private int x0, y0;
-    private static int W = 1200, H = 900;
-    private Graphics G;
 
     private void setOrigin(int x, int y) {
         this.x0 = x;
@@ -41,10 +53,6 @@ public class DrawFunction extends JFrame {
             draw(-i, H / 2 - i);
             draw(i, H / 2 - i);
         }
-    }
-
-    private DrawFunction() {
-        init();
     }
 
     private void init() {
@@ -82,54 +90,6 @@ public class DrawFunction extends JFrame {
         fs.initAB(nNum, System.out::println, 3);
         long t2 = System.currentTimeMillis();
         System.out.println((t2 - t1) + "ms");
-    }
-
-    public static void main(String[] args) {
-        DrawFunction frame = new DrawFunction();
-        frame.setTitle("DrawFunction");
-        frame.setSize(W, H);
-        frame.setLocationRelativeTo(null);
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setVisible(true);
-        frame.setResizable(false);
-    }
-
-    public class Coordinate2D {
-        int x, y;
-
-        Coordinate2D(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-
-        int getPixelPointX() {
-            return x0 + x;
-        }
-
-        int getPixelPointY() {
-            return y0 - y;
-        }
-    }
-
-    class NewPanel extends JPanel {
-        @Override
-        protected void paintComponent(Graphics g) {
-            super.paintComponent(g);
-            G = g;
-            setOrigin(W / 2, H / 2);
-            // in the following , draw what you want draw!
-            for (int i = -W / 2; i <= W / 2; i++) {
-                draw(i, work(i));
-//                System.out.println((1 - ((-(double) i - W / 2) / (((double) W))) * 100) + "%");
-            }
-            /*
-            for (int i = 0; i < 1000; i ++) {
-                int x = (int)(Math.random() * 400 - 200);
-                int y = (int)(Math.random() * 400 - 200);
-                drawString("哈哈", x, y);
-            }
-            */
-        }
     }
 
     private int work(int x) {
@@ -171,5 +131,43 @@ public class DrawFunction extends JFrame {
         int X = new Coordinate2D(x, y).getPixelPointX();
         int Y = new Coordinate2D(x, y).getPixelPointY();
         G.drawString(s, X, Y);
+    }
+
+    public class Coordinate2D {
+        int x, y;
+
+        Coordinate2D(int x, int y) {
+            this.x = x;
+            this.y = y;
+        }
+
+        int getPixelPointX() {
+            return x0 + x;
+        }
+
+        int getPixelPointY() {
+            return y0 - y;
+        }
+    }
+
+    class NewPanel extends JPanel {
+        @Override
+        protected void paintComponent(Graphics g) {
+            super.paintComponent(g);
+            G = g;
+            setOrigin(W / 2, H / 2);
+            // in the following , draw what you want draw!
+            for (int i = -W / 2; i <= W / 2; i++) {
+                draw(i, work(i));
+//                System.out.println((1 - ((-(double) i - W / 2) / (((double) W))) * 100) + "%");
+            }
+            /*
+            for (int i = 0; i < 1000; i ++) {
+                int x = (int)(Math.random() * 400 - 200);
+                int y = (int)(Math.random() * 400 - 200);
+                drawString("哈哈", x, y);
+            }
+            */
+        }
     }
 }

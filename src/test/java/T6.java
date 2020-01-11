@@ -1,5 +1,6 @@
 import pers.zhc.u.ComplexDefinite;
 import pers.zhc.u.ThreadSequence;
+import pers.zhc.u.kotlin.AKt;
 import pers.zhc.u.math.util.ComplexFunctionInterface;
 import pers.zhc.u.math.util.ComplexValue;
 
@@ -84,6 +85,16 @@ abstract class DefiniteIntegralApp {
     private double sum;
     private double e;
 
+    DefiniteIntegralApp(double a, double b, int n) {
+        e = cha(a, b, ((double) n));
+        // 求和，循环从第一个区间叠加到第10000个
+        for (int j = 1; j <= ((double) n); j++) {
+            double x = zhongjian(a, b, ((double) n), j);
+            sum += f(x);
+
+        }
+    }
+
     // 定义被积函数，可以修改
     abstract double f(double x);
 
@@ -95,16 +106,6 @@ abstract class DefiniteIntegralApp {
     // 定义每个小区间的间隔差，即将范围分成n个等区间
     private double cha(double a, double b, double n) {
         return (b - a) / n;
-    }
-
-    DefiniteIntegralApp(double a, double b, int n) {
-        e = cha(a, b, ((double) n));
-        // 求和，循环从第一个区间叠加到第10000个
-        for (int j = 1; j <= ((double) n); j++) {
-            double x = zhongjian(a, b, ((double) n), j);
-            sum += f(x);
-
-        }
     }
 
     double get() {
@@ -192,16 +193,6 @@ class T20 {
 }
 
 class T21 extends HttpServlet {
-    @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ServletOutputStream outputStream = resp.getOutputStream();
-        outputStream.write(new byte[]{1, 2, 3});
-        outputStream.flush();
-        outputStream.close();
-        resp.setContentLength(3);
-        super.doPost(req, resp);
-    }
-
     public static void main(String[] args) {
         String url = "http://235m82e811.imwork.net/upload/upload.zhc";
         ByteArrayInputStream bais = new ByteArrayInputStream(new byte[]{
@@ -214,6 +205,16 @@ class T21 extends HttpServlet {
             e.printStackTrace();
         }
         System.out.println(s);
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        ServletOutputStream outputStream = resp.getOutputStream();
+        outputStream.write(new byte[]{1, 2, 3});
+        outputStream.flush();
+        outputStream.close();
+        resp.setContentLength(3);
+        super.doPost(req, resp);
     }
 
 }
@@ -233,8 +234,7 @@ class T22 {
 
 class T23 {
     public static void main(String[] args) {
-        File newName = new T23().findNewName(new File("/home/zhc/bin/jad"));
-        System.out.println("newName = " + newName);
+        System.out.println(((int) 99999999999999999L));
     }
 
     private File findNewName(File f) {
@@ -248,5 +248,31 @@ class T23 {
                 return file;
             }
         }
+    }
+}
+
+class TSSplit {
+    public static void main(String[] args) throws IOException {
+        String d = "/home/zhc/d/youku/downloadVideo/offlinedata/webRequest/web_browser";
+        File f = new File(d, "0.ts");
+        InputStream is = new FileInputStream(f);
+        byte[] b = new byte[188];
+        long a = f.length() / 188;
+        for (int i = 0; i < 20; i++) {
+            System.out.println("is.read(b) = " + is.read(b));
+            OutputStream os = new FileOutputStream(new File(d + "/TSSplit", String.valueOf(i)));
+            os.write(b);
+            os.flush();
+            os.close();
+        }
+        is.close();
+    }
+}
+
+class T24 {
+    public static void main(String[] args) {
+        StringBuilder sb = new StringBuilder();
+        String s = AKt.f2(sb);
+        System.out.println("s = " + s);
     }
 }

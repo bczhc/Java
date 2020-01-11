@@ -10,9 +10,9 @@ import java.util.concurrent.Executors;
 
 @SuppressWarnings("WeakerAccess")
 public class FourierSeries {
+    public Definite definite;
     private FFMap mFFMap = null;
     private double T;
-    public Definite definite;
     private double omega;
     private double a0;
     private double[] bNC;
@@ -48,10 +48,6 @@ public class FourierSeries {
         mFFMap = ffMap;
     }
 
-    public double f_f(double x) {
-        return 0;
-    }
-
     public static void main(String[] args) {
         FourierSeries fs = new FourierSeries(30D) {
             @Override
@@ -64,6 +60,10 @@ public class FourierSeries {
         };
         fs.definite.n = 10000;
         fs.m();
+    }
+
+    public double f_f(double x) {
+        return 0;
     }
 
     public double a0() {
@@ -84,10 +84,6 @@ public class FourierSeries {
                     - 10D / nPi * Math.cos(2D * nPi) + 15D / nPPow2 * Math.sin(2D * nPi)) * Math.sin(nPi * x / 15D);*/
         }
         return a0 / 2 + sum;
-    }
-
-    public interface msgInterface {
-        void f(String s);
     }
 
     public void initAB(int nNum, msgInterface msg, int threadNum) {
@@ -168,5 +164,9 @@ public class FourierSeries {
 
     public double bN(int n) {
         return (2 / this.T) * definite.getDefiniteIntegralByTrapezium(0, this.T, x -> f_f(x) * Math.sin(((double) n) * this.omega * x));
+    }
+
+    public interface msgInterface {
+        void f(String s);
     }
 }

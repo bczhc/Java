@@ -12,15 +12,6 @@ public class FFMap {
         ffList.clear();
     }
 
-    public class FF {
-        private float k, v;
-
-        FF(float k, float v) {
-            this.k = k;
-            this.v = v;
-        }
-    }
-
     public void put(float k, float v) {
         ffList.add(new FF(k, v));
     }
@@ -50,5 +41,14 @@ public class FFMap {
             }
             return 0;
         };
+    }
+
+    public class FF {
+        private float k, v;
+
+        FF(float k, float v) {
+            this.k = k;
+            this.v = v;
+        }
     }
 }

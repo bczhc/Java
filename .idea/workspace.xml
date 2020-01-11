@@ -8,14 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/tools_app/crash_log_list.zhc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/tools_app/crash_report.zhc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tools_app/crash_report.zhc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/T6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T6.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/T6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/T6.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -432,7 +425,7 @@
       <workItem from="1578739160821" duration="1691000" />
       <workItem from="1578745454533" duration="668000" />
       <workItem from="1578749183524" duration="1193000" />
-      <workItem from="1578750554012" duration="3029000" />
+      <workItem from="1578750554012" duration="3122000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -581,7 +574,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578702630097</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="MultipartUploader">
+      <created>1578782394547</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1578782394547</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,31 +651,36 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="692" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1578701235568" />
-    <state x="490" y="114" key="CommitChangelistDialog2" timestamp="1578702629202">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2" timestamp="1578782581529">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="490" y="114" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578702629202" />
+    <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1578782581529" />
     <state x="722" y="308" key="FileChooserDialogImpl" timestamp="1578754371353">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="722" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578639355999" />
     <state x="722" y="308" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1578754371353" />
-    <state width="1874" height="208" key="GridCell.Tab.0.bottom" timestamp="1578737478484">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1874" height="206" key="GridCell.Tab.0.bottom" timestamp="1578782656687">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="208" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578737478484" />
-    <state width="1874" height="208" key="GridCell.Tab.0.center" timestamp="1578737478477">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1874" height="206" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1578782656687" />
+    <state width="1874" height="206" key="GridCell.Tab.0.center" timestamp="1578782656686">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="208" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578737478477" />
-    <state width="1874" height="208" key="GridCell.Tab.0.left" timestamp="1578737478475">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1874" height="206" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1578782656686" />
+    <state width="1874" height="206" key="GridCell.Tab.0.left" timestamp="1578782656686">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="208" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578737478475" />
-    <state width="1874" height="208" key="GridCell.Tab.0.right" timestamp="1578737478479">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state width="1874" height="206" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1578782656686" />
+    <state width="1874" height="206" key="GridCell.Tab.0.right" timestamp="1578782656687">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1874" height="208" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578737478479" />
+    <state width="1874" height="206" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1578782656687" />
     <state x="747" y="459" key="ReplaceDuplicatesPrompt" timestamp="1578730918000">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -684,10 +689,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="487" y="157" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578637993702" />
-    <state x="556" y="258" key="Vcs.Push.Dialog.v2" timestamp="1578702635254">
-      <screen x="0" y="0" width="1920" height="1050" />
+    <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578782659240">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="556" y="258" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1578702635254" />
+    <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1578782659240" />
     <state x="100" y="100" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578730402260">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -708,11 +714,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="651" y="144" width="616" height="767" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578730642336" />
-    <state x="623" y="259" width="672" height="680" key="search.everywhere.popup" timestamp="1578751508127">
+    <state x="623" y="259" width="672" height="680" key="search.everywhere.popup" timestamp="1578782533734">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578724967025" />
-    <state x="623" y="259" width="672" height="680" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1578751508127" />
+    <state x="623" y="259" width="672" height="680" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1578782533734" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

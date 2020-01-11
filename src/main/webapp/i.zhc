@@ -1,7 +1,8 @@
 <%@ page import="java.io.File" %>
-<%@ page import="java.io.OutputStream" %>
 <%@ page import="java.io.FileOutputStream" %>
+<%@ page import="java.io.OutputStream" %>
 <%@ page import="java.util.Arrays" %>
+<%@ page import="java.util.Date" %>
 <%@ page pageEncoding="UTF-8" %>
 <%! long a = 0L; %>
 <%
@@ -12,7 +13,7 @@
     }
     String pushContent = request.getParameter("c");
     String mode = request.getParameter("m");
-    System.out.println("i-mode = " + mode);
+    System.out.println("i-mode = " + mode + new Date());
     String type = request.getParameter("t");
     if (mode == null) mode = "g";
     if (mode.equals("g")) {

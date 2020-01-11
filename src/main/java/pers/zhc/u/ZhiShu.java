@@ -1,8 +1,8 @@
 package pers.zhc.u;
 
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.List;
+import java.util.Scanner;
 
 /**
  * 质数生成器 by zhc

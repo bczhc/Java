@@ -2,19 +2,12 @@ package pers.zhc.u.gui;
 
 import javax.swing.*;
 import java.awt.*;
-import java.util.TimerTask;
 import java.util.Timer;
+import java.util.TimerTask;
 
 public class S0 extends JPanel {
     int x = 50;
     int y = 50;
-
-    @Override
-    public void paint(Graphics g) {
-        super.paint(g);
-        g.setColor(Color.red);
-        g.fillOval(x, y, 30, 30);
-    }
 
     public static void main(String[] ars) {
         JFrame frame = new JFrame("paintTest");
@@ -34,5 +27,12 @@ public class S0 extends JPanel {
                 }
             }
         }, 0, 20);
+    }
+
+    @Override
+    public void paint(Graphics g) {
+        super.paint(g);
+        g.setColor(Color.red);
+        g.fillOval(x, y, 30, 30);
     }
 }

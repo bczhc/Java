@@ -3,10 +3,12 @@ package pers.zhc.u.demo;
 @SuppressWarnings("ALL")
 public class c {
     private static int min_;
-    private native int hashCoad();
+
     public static void main(String[] args) {
 
     }
+
+    private native int hashCoad();
 
 /*
     public static void main(String[] args) {
@@ -44,13 +46,13 @@ public class c {
             //
         }*//*
 
-  */
+     */
 /*      int[] aa = {7, 4, 8, 6, 2, 2, 2, 9, 10};
         System.out.println(arr_getMin(aa));
     }
 *//*
 
-*/
+     */
 /*    private static int arr_getMin(int[] arr) {
 
         if (arr.length > 1) {

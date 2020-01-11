@@ -1,6 +1,6 @@
 import com.alibaba.fastjson.JSON;
-import pers.zhc.u.IsPrime;
 import org.intellij.lang.annotations.Language;
+import pers.zhc.u.IsPrime;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;

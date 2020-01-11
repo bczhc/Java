@@ -1,10 +1,16 @@
-package Z;
+package z;
 
 import java.io.File;
 import java.io.IOException;
 
 public class FileDemo {
 
+
+    public static void main(String[] args) {
+        FileDemo f = new FileDemo();
+        File file = new File("C:\\胡志澳\\test.txt");
+        f.create(file);
+    }
 
     //创建文件
     public void create(File file) {//create   创建
@@ -19,12 +25,6 @@ public class FileDemo {
 
 
         }
-    }
-
-    public static void main(String[] args) {
-        FileDemo f = new FileDemo();
-        File file = new File("C:\\胡志澳\\test.txt");
-        f.create(file);
     }
 
 

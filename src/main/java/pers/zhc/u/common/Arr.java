@@ -161,6 +161,10 @@ public class Arr {
         }
     }
 
+    public interface SeparateArrDo<A> {
+        void f(A[] a);
+    }
+
     public static class SeparateArr<T> {
         T[] arr;
         int perArrLength;
@@ -193,10 +197,6 @@ public class Arr {
                 }
             }
         }
-    }
-
-    public interface SeparateArrDo<A> {
-        void f(A[] a);
     }
 }
 

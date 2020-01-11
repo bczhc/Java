@@ -46,7 +46,7 @@ public class Factor1 {
                 for (int i = 2; i <= n; i++) {
                     if (n % i == 0) {
                         s.append(i).append("×");
-                         System.out.println("n:" + n + "    i:" + i); // todo
+                        System.out.println("n:" + n + "    i:" + i); // todo
                         n /= i;
                         break;
                     }

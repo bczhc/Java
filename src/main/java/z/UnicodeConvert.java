@@ -1,4 +1,4 @@
-package Z;
+package z;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

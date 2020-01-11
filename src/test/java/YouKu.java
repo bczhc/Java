@@ -99,4 +99,16 @@ public class YouKu {
             }
         }
     }
+
+    static class Skip34 {
+        public static void main(String[] args) throws IOException {
+            File file = new File("/home/zhc/d/youku/downloadVideo/offlinedata/new_youku/1");
+            File o = new File(file.getParent() + File.separatorChar + "1_skipped");
+            OutputStream os = new FileOutputStream(o, false);
+            InputStream is = new FileInputStream(file);
+            FileU.StreamWrite(is, os, 34);
+            os.close();
+            is.close();
+        }
+    }
 }

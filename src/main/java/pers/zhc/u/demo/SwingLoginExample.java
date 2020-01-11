@@ -40,19 +40,19 @@ public class SwingLoginExample {
          * setBounds(x, y, width, height)
          * x 和 y 指定左上角的新位置，由 width 和 height 指定新的大小。
          */
-        userLabel.setBounds(10,20,80,25);
+        userLabel.setBounds(10, 20, 80, 25);
         panel.add(userLabel);
 
         /*
          * 创建文本域用于用户输入
          */
         JTextField userText = new JTextField(20);
-        userText.setBounds(100,20,165,25);
+        userText.setBounds(100, 20, 165, 25);
         panel.add(userText);
 
         // 输入密码的文本域
         JLabel passwordLabel = new JLabel("Password:");
-        passwordLabel.setBounds(10,50,80,25);
+        passwordLabel.setBounds(10, 50, 80, 25);
         panel.add(passwordLabel);
 
         /*
@@ -60,7 +60,7 @@ public class SwingLoginExample {
          * 但是输入的信息会以点号代替，用于包含密码的安全性
          */
         JPasswordField passwordText = new JPasswordField(20);
-        passwordText.setBounds(100,50,165,25);
+        passwordText.setBounds(100, 50, 165, 25);
         panel.add(passwordText);
 
         // 创建登录按钮

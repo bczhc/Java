@@ -9,6 +9,7 @@ import java.util.Scanner;
 
 public class Power {
     private static Power o = new Power();
+
     public static void main(String[] args) throws IOException {
         r r = new r();
         Scanner sc = new Scanner(System.in);

@@ -1,14 +1,7 @@
 package pers.zhc.u;
 
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
+import java.io.*;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,9 +24,8 @@ import java.util.List;
 @SuppressWarnings({"WeakerAccess", "unused"})
 public class Base128 {
     public static Base128 o = new Base128();
-    private String string;
-
     private static long FileSize = 0;
+    private String string;
 
     public Base128(String s) {
         this.string = s;
@@ -76,25 +68,6 @@ public class Base128 {
         }
     }
 
-    private List<String> ck_extracted(File f1, File new_ckF) throws IOException {
-        List<String> r = new ArrayList<>();
-        String md5_1 = FileU.getMD5String(new_ckF);
-        String md5_2 = FileU.getMD5String(f1);
-        if (md5_1.equals(md5_2)) {
-            System.out.print("\u6821\u9a8c\u901a\u8fc7\uff01\n" + "MD5: " + md5_1);
-            r.add("true");
-            r.add(md5_1);
-        } else {
-            System.out.println("\u6821\u9a8c\u672a\u901a\u8fc7\u3002\u3002\u3002\u3002\n"
-                    + md5_1 + "\n" + md5_2);
-            r.add("false");
-            r.add(md5_1);
-            r.add(md5_2);
-        }
-        System.out.println("\ndelete: " + new_ckF.delete());
-        return r;
-    }
-
     public static OutputStream encode(InputStream in) throws IOException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         new Base128().encode_extracted(in, baos);
@@ -113,6 +86,103 @@ public class Base128 {
 
     public static void decode(InputStream in, OutputStream to_out) throws IOException {
         new Base128().decode_extracted(in, to_out);
+    }
+
+    public static String[] encode(File file, File dest, boolean check) throws IOException {
+        String[] r = new String[0];
+        if (!dest.exists()) System.out.println(dest.createNewFile());
+        FileOutputStream fos = new FileOutputStream(dest, false);
+        InputStream is = new FileInputStream(file);
+        System.out.println("\u6b63\u5728\u7f16\u7801...");
+        encode(is, fos);
+        if (check) {
+            r = new Base128().check_extracted("De", file, dest);
+        }
+        return r;
+    }
+
+    public static String[] decode(File file, File dest, boolean check) throws IOException {
+        String[] r = new String[0];
+        if (!dest.exists()) System.out.println(file.createNewFile());
+        InputStream is2 = new FileInputStream(file);
+        OutputStream os2 = new FileOutputStream(dest, false);
+        System.out.println("\u6b63\u5728\u89e3\u7801...");
+        decode(is2, os2);
+        if (check) {
+            r = new Base128().check_extracted("En", file, dest);
+        }
+        return r;
+    }
+
+    public static void encode(File file, File dest) throws IOException {
+        System.out.println(Arrays.toString(encode(file, dest, false)));
+    }
+
+    public static void decode(File file, File dest) throws IOException {
+        System.out.println(Arrays.toString(decode(file, dest, false)));
+    }
+
+    public static byte[] encode_text(byte[] bytes) throws IOException {
+        ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+        ByteArrayOutputStream baos = new ByteArrayOutputStream();
+        encode(bais, baos);
+        bais.close();
+        baos.close();
+        return baos.toByteArray();
+    }
+
+    public static byte[] encode_text(String string, String charset) throws IOException {
+        byte[] b = string.getBytes(charset);
+        return encode_text(b);
+    }
+
+    public static byte[] encode_text(String string, Charset charset) throws IOException {
+        byte[] b = string.getBytes(charset);
+        return encode_text(b);
+    }
+
+    public static byte[] encode_text(String string) throws IOException {
+        byte[] b = string.getBytes();
+        for (byte b1 : b) {
+            if (b1 < 0) {
+                System.err.println("\u5b57\u7b26\u4e32\u542b\u6709\u975eASCII\u5185\u5b57\u7b26\uff0c\u56e0\u6b64\u9700\u8981\u6307\u5b9a\u7f16\u7801\u3002");
+                return new byte[0];
+            }
+        }
+        return encode_text(b);
+    }
+
+    public static void encode2(InputStream in, OutputStream Dest_out) throws IOException {
+        long fS = in.available(), a = fS / 1029;
+        int b = (int) (fS % 1029);
+        byte[] r = new byte[1029], R = new byte[1176];
+        byte[] b1 = {0, 0, 0, 0, 0, 'z', 'h', 'c'};
+        b1[0] = (byte) (fS % 7);
+        Dest_out.write(b1);
+        for (int i = 0; i < a; i++) {
+            //noinspection ResultOfMethodCallIgnored
+            in.read(r);
+
+        }
+    }
+
+    private List<String> ck_extracted(File f1, File new_ckF) throws IOException {
+        List<String> r = new ArrayList<>();
+        String md5_1 = FileU.getMD5String(new_ckF);
+        String md5_2 = FileU.getMD5String(f1);
+        if (md5_1.equals(md5_2)) {
+            System.out.print("\u6821\u9a8c\u901a\u8fc7\uff01\n" + "MD5: " + md5_1);
+            r.add("true");
+            r.add(md5_1);
+        } else {
+            System.out.println("\u6821\u9a8c\u672a\u901a\u8fc7\u3002\u3002\u3002\u3002\n"
+                    + md5_1 + "\n" + md5_2);
+            r.add("false");
+            r.add(md5_1);
+            r.add(md5_2);
+        }
+        System.out.println("\ndelete: " + new_ckF.delete());
+        return r;
     }
 
     private void decode_extracted(InputStream in, OutputStream to_out) throws IOException {
@@ -231,19 +301,6 @@ public class Base128 {
         return r;
     }
 
-    public static String[] encode(File file, File dest, boolean check) throws IOException {
-        String[] r = new String[0];
-        if (!dest.exists()) System.out.println(dest.createNewFile());
-        FileOutputStream fos = new FileOutputStream(dest, false);
-        InputStream is = new FileInputStream(file);
-        System.out.println("\u6b63\u5728\u7f16\u7801...");
-        encode(is, fos);
-        if (check) {
-            r = new Base128().check_extracted("De", file, dest);
-        }
-        return r;
-    }
-
     private String[] check_extracted(String aArg_EnOrDe, File file, File dest) throws IOException {
         String[] r;
         System.out.print("\u6b63\u5728\u6821\u9a8c...");
@@ -258,77 +315,12 @@ public class Base128 {
         return r;
     }
 
-    public static String[] decode(File file, File dest, boolean check) throws IOException {
-        String[] r = new String[0];
-        if (!dest.exists()) System.out.println(file.createNewFile());
-        InputStream is2 = new FileInputStream(file);
-        OutputStream os2 = new FileOutputStream(dest, false);
-        System.out.println("\u6b63\u5728\u89e3\u7801...");
-        decode(is2, os2);
-        if (check) {
-            r = new Base128().check_extracted("En", file, dest);
-        }
-        return r;
-    }
-
-    public static void encode(File file, File dest) throws IOException {
-        System.out.println(Arrays.toString(encode(file, dest, false)));
-    }
-
-    public static void decode(File file, File dest) throws IOException {
-        System.out.println(Arrays.toString(decode(file, dest, false)));
-    }
-
     private void tip() {
         System.out.println("Base128\u7f16\u7801\n\u547d\u4ee4\u884c\u53c2\u6570\u683c\u5f0f\uff1a" +
                 "Command [-encode] [-decode] [\u9700\u8981\u7f16\u7801\u7684\u6587\u4ef6\u4f4d\u7f6e] " +
                 "[\u7f16\u7801\u540e\u751f\u6210\u7684\u6587\u4ef6\u4f4d\u7f6e\uff08\u4e0d\u5b58\u5728\u5219\u521b" +
                 "\u5efa\uff09] [\u5b8c\u6210\u540e\u662f\u5426\u6821\u9a8c\uff08y:\u662f | n:\u5426\uff09\uff08\u9ed8\u8ba4\u4e3an\uff09]" +
                 "\n\u53c2\u6570\u4e2d\u6709\u7a7a\u683c\u9700\u52a0\u53cc\u5f15\u53f7");
-    }
-
-    public static byte[] encode_text(byte[] bytes) throws IOException {
-        ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
-        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-        encode(bais, baos);
-        bais.close();
-        baos.close();
-        return baos.toByteArray();
-    }
-
-    public static byte[] encode_text(String string, String charset) throws IOException {
-        byte[] b = string.getBytes(charset);
-        return encode_text(b);
-    }
-
-    public static byte[] encode_text(String string, Charset charset) throws IOException {
-        byte[] b = string.getBytes(charset);
-        return encode_text(b);
-    }
-
-    public static byte[] encode_text(String string) throws IOException {
-        byte[] b = string.getBytes();
-        for (byte b1 : b) {
-            if (b1 < 0) {
-                System.err.println("\u5b57\u7b26\u4e32\u542b\u6709\u975eASCII\u5185\u5b57\u7b26\uff0c\u56e0\u6b64\u9700\u8981\u6307\u5b9a\u7f16\u7801\u3002");
-                return new byte[0];
-            }
-        }
-        return encode_text(b);
-    }
-
-    public static void encode2(InputStream in, OutputStream Dest_out) throws IOException {
-        long fS = in.available(), a = fS / 1029;
-        int b = (int) (fS % 1029);
-        byte[] r = new byte[1029], R = new byte[1176];
-        byte[] b1 = {0, 0, 0, 0, 0, 'z', 'h', 'c'};
-        b1[0] = (byte) (fS % 7);
-        Dest_out.write(b1);
-        for (int i = 0; i < a; i++) {
-            //noinspection ResultOfMethodCallIgnored
-            in.read(r);
-
-        }
     }
 
     public byte[] e1(byte[] buf) {

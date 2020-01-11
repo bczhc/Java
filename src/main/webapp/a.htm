@@ -2,21 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Document</title>
 </head>
 <body>
 <canvas id="cvs" style="border: solid #000000 1px"></canvas>
 <div id="o"></div>
-<label for="rg"></label><input type="range" name="" id="rg" min="-100" max="100" style="width: 100%;">
-<label for="rg2"></label><input type="range" name="" id="rg2" min="-100" max="100" style="width: 100%;">
+<label for="rg"></label><input id="rg" max="100" min="-100" name="" style="width: 100%;" type="range">
+<label for="rg2"></label><input id="rg2" max="100" min="-100" name="" style="width: 100%;" type="range">
 <div id="rgO"></div>
 <div id="rgO2"></div>
-i: <label for="iI"></label><input type="text" name="" id="iI" value=".01">
+i: <label for="iI"></label><input id="iI" name="" type="text" value=".01">
 <br/>
-j: <label for="jI"></label><input type="text" name="" id="jI" value=".01">
+j: <label for="jI"></label><input id="jI" name="" type="text" value=".01">
 <script>
     function clearCvs(cvs) {
         // noinspection SillyAssignmentJS

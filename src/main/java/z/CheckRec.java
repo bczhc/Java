@@ -1,4 +1,4 @@
-package Z;
+package z;
 
 import pers.zhc.u.Base128;
 

@@ -1,7 +1,7 @@
-package Z;
+package z;
 
-import pers.zhc.u.common.StrDic;
 import org.apache.commons.net.ftp.FTPClient;
+import pers.zhc.u.common.StrDic;
 
 import javax.swing.*;
 import java.util.ArrayList;

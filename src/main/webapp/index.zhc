@@ -1,5 +1,5 @@
-<%@ page import="java.math.BigDecimal" %>
 <%@ page import="pers.zhc.u.Power" %>
+<%@ page import="java.math.BigDecimal" %>
 <%@ page pageEncoding="UTF-8" %>
 <!doctype html>
 <html lang="en">
@@ -19,6 +19,7 @@
 <%
     String base = request.getParameter("base");
     String exponent = request.getParameter("exponent");
+    //noinspection IfStatementWithIdenticalBranches
     if (base == null || exponent == null) {
 %>
 <form action="." method="get">
@@ -38,5 +39,6 @@
 <%
     }
 %>
+<a href="./Lissajous_curves.html">李萨如曲线</a>
 </body>
 </html>

@@ -1,4 +1,4 @@
-package Z;
+package z;
 
 import java.io.File;
 import java.security.NoSuchAlgorithmException;

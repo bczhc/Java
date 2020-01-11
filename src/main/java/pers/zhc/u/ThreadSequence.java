@@ -9,24 +9,29 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 public class ThreadSequence {
-    public interface ThreadSequenceRunnableInterface {
-        /**
-         * 线程序列执行接口
-         *
-         * @param i 当前线程为第i个提交的
-         * @param t 当前线程是第t轮执行（从0开始）
-         */
-        void m(int i, int t);
-    }
-
+    private final int threadNum;
     private List<ThreadSequenceRunnableInterface> runnableList;
     private ExecutorService es;
-    private final int threadNum;
-
     public ThreadSequence(int threadNum) {
         es = Executors.newFixedThreadPool(threadNum);
         this.threadNum = threadNum;
         runnableList = new ArrayList<>();
+    }
+
+    public static void main(String[] args) {
+        ThreadSequence threadSequence = new ThreadSequence(1);
+        for (int i = 0; i < 1; i++) {
+            threadSequence.execute((j, t) -> {
+                System.out.println(j + "\t" + t);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            });
+        }
+        threadSequence.start(() -> System.out.println("ok!"));
+        System.out.println("ee");
     }
 
     public ExecutorService getExecutorService() {
@@ -71,19 +76,13 @@ public class ThreadSequence {
         this.es.shutdownNow();
     }
 
-    public static void main(String[] args) {
-        ThreadSequence threadSequence = new ThreadSequence(1);
-        for (int i = 0; i < 1; i++) {
-            threadSequence.execute((j, t) -> {
-                System.out.println(j + "\t" + t);
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            });
-        }
-        threadSequence.start(() -> System.out.println("ok!"));
-        System.out.println("ee");
+    public interface ThreadSequenceRunnableInterface {
+        /**
+         * 线程序列执行接口
+         *
+         * @param i 当前线程为第i个提交的
+         * @param t 当前线程是第t轮执行（从0开始）
+         */
+        void m(int i, int t);
     }
 }

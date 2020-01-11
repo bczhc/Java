@@ -1,4 +1,4 @@
-package Z;
+package z;
 
 import pers.zhc.u.FileU;
 import pers.zhc.u.common.Execute;

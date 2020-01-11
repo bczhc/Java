@@ -37,14 +37,8 @@ public class b {
 }
 
 class t0 implements Runnable {
-    private Thread t;
     private static CountDownLatch latch = new CountDownLatch(1000);
-
-    @Override
-    public void run() {
-        System.out.println(Math.random());
-        latch.countDown();
-    }
+    private Thread t;
 
     public static void main(String[] args) {
         long l1 = System.currentTimeMillis();
@@ -58,6 +52,12 @@ class t0 implements Runnable {
         }
         long l2 = System.currentTimeMillis();
         System.out.println("l2 - l1 = " + (l2 - l1));
+    }
+
+    @Override
+    public void run() {
+        System.out.println(Math.random());
+        latch.countDown();
     }
 
     private void S() {

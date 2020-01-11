@@ -7,23 +7,145 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="server&#10;...2">
-      <change afterPath="$PROJECT_DIR$/src/test/java/YouKu.java" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/.attach_pid23342" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid24906" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid25144" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid26830" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.attach_pid27713" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/FileMultipartUploader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/z/I9License.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/z/c.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/z/c.smali" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/Lissajous_curves.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/tools_app/crash_report.zhc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.1/java-1.1.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.2/java-1.2.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.2/java-1.2.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.3/java-1.3.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.4/java-1.4.pom" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.5/java-1.5.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.5/java-1.5.pom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.jar.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.pom" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/1.6/java-1.6.pom" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.md5" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/mvn-repo-zhc/zhc/java/maven-metadata.xml.sha1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/c.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Z/c.smali" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Z/c.smali" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Z/c.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Z/c.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/META-INF/java.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/CheckRec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/CopyB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG$Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FFMPEG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/FileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/M3u8$Etiantian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/M3u8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/S.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/SplitText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/TwoFilesXor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/UnicodeConvert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/compareFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/ftpL$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/ftpL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/WEB-INF/classes/Z/sW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/a.htm" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/a.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/b.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/js/jQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/s.html" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/java_war_exploded/s.js" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/java_war_exploded/s.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.smali" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/CheckRec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/CheckRec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/FFMPEG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/FFMPEG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/FileDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/FileDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/M3u8.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/M3u8.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/SplitText.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/SplitText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/TwoFilesXor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/TwoFilesXor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/UnicodeConvert.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/UnicodeConvert.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/WebPush.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/WebPush.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/c.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/c.smali" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/compareFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/compareFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/ftpL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/ftpL.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Z/sW.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/z/sW.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Power.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Power.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Random.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Random.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ZhiShu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ZhiShu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Arr.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Arr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/SwingLoginExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/SwingLoginExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/c.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/k.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/k.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/m.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/m.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/r.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/r.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/s.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/s.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/t.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/t.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test2/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/test2/b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/B.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/B.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/S0.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/S0.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/gui/a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/a.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/a.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/perfectNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/perfectNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/zhc.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/a.htm" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/a.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/b.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/b.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/c.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/c.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/i.zhc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/i.zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.zhc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/jQuery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/jQuery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/s.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/s.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/s.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/tools_app/i.zhc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/tools_app/i.zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/upload/upload.zhc" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/upload/upload.zhc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PPBase64.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PPBase64.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/PPBase64DecoderException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/PPBase64DecoderException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/T1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/T17.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T17.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/T6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/YouKu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/YouKu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/java.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/java.kotlin_module" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/CheckRec.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/CopyB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG$Move.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/FFMPEG.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/FileDemo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/M3u8$Etiantian.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/M3u8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/S.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/SplitText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/TwoFilesXor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/UnicodeConvert.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/c.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/compareFile.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/ftpL$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/ftpL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Z/sW.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PPBase64.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PPBase64.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/PPBase64DecoderException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/PPBase64DecoderException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/T6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/T6.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,58 +174,6 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/list.zhc">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/YouKu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="87" column="85" selection-start-line="87" selection-start-column="85" selection-end-line="87" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Z/c.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding>
-                <element signature="e#51#52#0" expanded="true" />
-                <element signature="e#93#94#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Z/c.smali">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Z/M3u8.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -117,104 +187,9 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>new Thread</find>
-      <find>latch</find>
-      <find>inita</find>
-      <find>functioninterface</find>
-      <find>filecopy</find>
-      <find>tran</find>
-      <find>Runtime.getP</find>
-      <find>Runtime.getRuntime().availableProcessors()</find>
-      <find>doinpu</find>
-      <find>setDoInput</find>
-      <find>content</find>
-      <find>ffmap</find>
-      <find>getf</find>
-      <find>int</find>
-      <find>omega</find>
-      <find>initab</find>
-      <find>ee</find>
-      <find>ok</find>
-      <find>i, t)</find>
-      <find>threadseq</find>
-      <find>intrange</find>
-      <find>hex.en</find>
-      <find>org.apache.bin</find>
-      <find>is</find>
-      <find>codec.</find>
-      <find>out.pr</find>
-      <find>out.pr`</find>
-      <find>write</find>
-      <find>appen</find>
-      <find>&quot;a&quot;</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>%%</replace>
-      <replace>com.zhc.u.File</replace>
-    </replaceStrings>
-  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/Definite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/MathFunctionInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/MathFloatFunctionInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/zhc/u/FourierSeries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Execute.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/a.json" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/GoogleTranslateApi.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/TranslateApi.java" />
-        <option value="$PROJECT_DIR$/src/test/java/T17.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/IntegerInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/ValueInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/i.zhc.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/i.zhc" />
-        <option value="$PROJECT_DIR$/src/main/java/Z/WebPush.java" />
-        <option value="$PROJECT_DIR$/../../../jsp/base64" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/a.kt" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.zhc" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicycleSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/EpicyclesSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFloatFunctionInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/Coordinate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateDouble.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateFloat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexFunctionInterface.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/tools_app/i.zhc.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/tools_app/i.zhc" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/Order.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Int.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Documents.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pers/zhc/u/Digest.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/a.json" />
-        <option value="$PROJECT_DIR$/src/main/webapp/upload.zhc" />
-        <option value="$PROJECT_DIR$/src/main/webapp/upload/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/upload/list.zhc" />
-        <option value="$PROJECT_DIR$/src/main/webapp/upload/upload.zhc" />
-        <option value="$PROJECT_DIR$/src/test/java/T6.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Youku.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Z/c.java" />
-        <option value="$PROJECT_DIR$/src/test/java/YouKu.java" />
-      </list>
-    </option>
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -235,250 +210,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="java" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
-  </component>
   <component name="MavenRunner">
     <option name="skipTests" value="true" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectId" id="1WBz62yKXIxeoq1Vgre5fIzh20c" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java" type="58d84e3e:PackageViewProjectNode" />
-              <item name="java" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="1.0" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="1.1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mvn-repo-zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="1.2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="zhc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="u" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="u" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="u" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="u" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
-              <item name="JNI" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Z" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Z" type="462c0819:PsiDirectoryNode" />
-              <item name="M3u8.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="upload" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="T6.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -488,16 +233,18 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="sad (11223123)" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../d/youku_gradle" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Downloads/Compressed/mariuszgromada-MathParser.org-mXparser-cf4b5b0/CURRENT/MathParser" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.21790235" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
@@ -506,6 +253,11 @@
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
+      <recent name="$PROJECT_DIR$/src/main/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.zhc.u" />
@@ -522,25 +274,21 @@
       <recent name="http://www.baidu.com" />
       <recent name="http://baidu.com" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
-      <recent name="$PROJECT_DIR$/src/main/webapp" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-    </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.T23">
+  <component name="RunManager" selected="Application.T24">
+    <configuration name="I9License" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="z.I9License" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="z.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="T21" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="T21" />
       <module name="java" />
@@ -555,43 +303,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T23" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="T23" />
+    <configuration name="T24" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="T24" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="T6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="T6" />
+    <configuration name="pers.zhc.u.kotlin.AKt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="T7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="T7" />
-      <module name="java" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.kotlin.AKt" />
+      <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.T6" />
-      <item itemvalue="Application.T7" />
       <item itemvalue="Application.T21" />
       <item itemvalue="Application.T22" />
-      <item itemvalue="Application.T23" />
+      <item itemvalue="Application.I9License" />
+      <item itemvalue="Application.T24" />
+      <item itemvalue="Kotlin.pers.zhc.u.kotlin.AKt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.T23" />
+        <item itemvalue="Application.T24" />
+        <item itemvalue="Kotlin.pers.zhc.u.kotlin.AKt" />
+        <item itemvalue="Application.I9License" />
         <item itemvalue="Application.T22" />
         <item itemvalue="Application.T21" />
-        <item itemvalue="Application.T7" />
-        <item itemvalue="Application.T6" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -768,6 +527,36 @@
       <workItem from="1573861164583" duration="175000" />
       <workItem from="1573861385032" duration="4350000" />
       <workItem from="1573872269808" duration="268000" />
+      <workItem from="1573875773117" duration="2749000" />
+      <workItem from="1573909603950" duration="5093000" />
+      <workItem from="1573953532639" duration="7152000" />
+      <workItem from="1574497446287" duration="5625000" />
+      <workItem from="1574548887293" duration="1424000" />
+      <workItem from="1574558014022" duration="103000" />
+      <workItem from="1574558184867" duration="5582000" />
+      <workItem from="1575089731059" duration="297000" />
+      <workItem from="1575094084285" duration="3147000" />
+      <workItem from="1575122342087" duration="5046000" />
+      <workItem from="1575165812652" duration="680000" />
+      <workItem from="1575167183149" duration="2693000" />
+      <workItem from="1575727087183" duration="625000" />
+      <workItem from="1575724459832" duration="599000" />
+      <workItem from="1575769981110" duration="1684000" />
+      <workItem from="1576305197818" duration="598000" />
+      <workItem from="1576340769030" duration="2034000" />
+      <workItem from="1576322846602" duration="3795000" />
+      <workItem from="1576900204639" duration="1669000" />
+      <workItem from="1576908725084" duration="3706000" />
+      <workItem from="1576915718751" duration="595000" />
+      <workItem from="1576918834747" duration="5293000" />
+      <workItem from="1576945396514" duration="252000" />
+      <workItem from="1576969569545" duration="1204000" />
+      <workItem from="1577517316132" duration="1514000" />
+      <workItem from="1577542746964" duration="2167000" />
+      <workItem from="1578637600616" duration="1641000" />
+      <workItem from="1578639651052" duration="5029000" />
+      <workItem from="1578676413418" duration="2014000" />
+      <workItem from="1578699970378" duration="2088000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -902,66 +691,15 @@
       <option name="project" value="LOCAL" />
       <updated>1573302863310</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="youku">
+      <created>1573875973630</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1573875973630</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="427878000" />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27214515" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.50610435" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4989282" visible="true" weight="0.1908397" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49893162" weight="0.47982553" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32897604" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.42467248" />
-      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5016077" side_tool="true" weight="0.38068813" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3653217" />
-      <window_info anchor="bottom" id="Database Changes" order="11" />
-      <window_info anchor="bottom" id="Version Control" order="12" weight="0.8679245" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.3286026" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32897604" />
-      <window_info anchor="bottom" id="Spring" order="15" weight="0.3286026" />
-      <window_info anchor="bottom" id="Duplicates" order="16" weight="0.32963374" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="make" order="5" weight="0.32959402" />
-      <window_info anchor="right" id="Maven" order="6" weight="0.19530416" />
-      <window_info anchor="right" id="Database" order="7" weight="0.329582" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Kotlin Bytecode" order="10" weight="0.32959402" />
-      <window_info anchor="right" id="JSF" order="11" weight="0.32959402" />
-      <window_info anchor="right" id="CDI" order="12" weight="0.32908848" />
-      <window_info anchor="right" id="Coverage" order="13" side_tool="true" weight="0.32959402" />
-      <window_info anchor="right" id="Bean Validation" order="14" weight="0.329582" />
-      <window_info anchor="right" id="SciView" order="15" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -972,20 +710,7 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
@@ -1026,61 +751,102 @@
     <MESSAGE value="复数定积分" />
     <MESSAGE value="server&#10;..." />
     <MESSAGE value="server&#10;...2" />
-    <option name="LAST_COMMIT_MESSAGE" value="server&#10;...2" />
+    <MESSAGE value="youku" />
+    <option name="LAST_COMMIT_MESSAGE" value="youku" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="548" y="192" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1578638626955">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="548" y="192" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578638626955" />
+    <state x="692" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1578701235568">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="692" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1578701235568" />
+    <state x="490" y="114" key="CommitChangelistDialog2" timestamp="1578638014229">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="490" y="114" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1578638014229" />
+    <state x="722" y="280" key="FileChooserDialogImpl" timestamp="1578639355999">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="722" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1578639355999" />
+    <state width="1874" height="210" key="GridCell.Tab.0.bottom" timestamp="1578639249387">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1874" height="210" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1578639249387" />
+    <state width="1874" height="210" key="GridCell.Tab.0.center" timestamp="1578639249387">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1874" height="210" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1578639249387" />
+    <state width="1874" height="210" key="GridCell.Tab.0.left" timestamp="1578639249387">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1874" height="210" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1578639249387" />
+    <state width="1874" height="210" key="GridCell.Tab.0.right" timestamp="1578639249387">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1874" height="210" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1578639249387" />
+    <state x="747" y="459" key="ReplaceDuplicatesPrompt" timestamp="1578702337555">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="747" y="459" key="ReplaceDuplicatesPrompt/0.0.1920.1050@0.0.1920.1050" timestamp="1578702337555" />
+    <state x="487" y="157" key="SettingsEditor" timestamp="1578637993702">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="487" y="157" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1578637993702" />
+    <state x="694" y="277" width="652" height="505" key="extract.method.dialog" timestamp="1578702336450">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="694" y="277" width="652" height="505" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578702336450" />
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1578701818911">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1578701818911" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Z/M3u8.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/z/M3u8.java</url>
           <line>94</line>
-          <properties />
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Z/M3u8.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/z/M3u8.java</url>
           <line>67</line>
-          <properties />
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java</url>
           <line>16</line>
-          <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java</url>
           <line>18</line>
-          <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/Z/FFMPEG.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/z/FFMPEG.java</url>
           <line>75</line>
-          <properties />
           <option name="timeStamp" value="81" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
-          <line>225</line>
-          <properties />
-          <option name="timeStamp" value="97" />
+          <line>196</line>
+          <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/YouKu.java</url>
-          <line>59</line>
-          <properties />
-          <option name="timeStamp" value="99" />
+          <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
+          <line>224</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="NodeJSConfigurationType">
         <watch expression="i" language="JavaScript" />
-      </configuration>
-      <configuration name="Application">
-        <watch expression="jsonObject.getJSONArray(&quot;a&quot;).getJSONObject(30).getString(&quot;src&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -1124,6 +890,24 @@
     </expressions>
     <expressions id="watch">
       <expression>
+        <expression-string>new String(c.uBn)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.lang.String</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new String(c.uBj)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.lang.String</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>new String(c.uBi)</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>java.lang.String</custom-info>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>jsonObject.getJSONArray(&quot;a&quot;).getJSONObject(30).getString(&quot;src&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -1158,366 +942,7 @@
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;segInfos&quot;).getJSONObject(604).getString(&quot;url&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>jsonObject.getJSONArray(&quot;segInfos&quot;).getJSONObject(605).getString(&quot;url&quot;)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.6.RELEASE/spring-web-4.1.6.RELEASE.jar!/org/springframework/web/multipart/commons/CommonsMultipartResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#4580#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar!/org/apache/http/impl/client/DefaultHttpClient.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1829#1830#0" expanded="true" />
-            <element signature="e#1899#1900#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10.jar!/org/apache/http/conn/ClientConnectionManager.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.12/httpcore-4.4.12.jar!/org/apache/http/ProtocolException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="13" column="11" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
-          <folding>
-            <element signature="e#345#346#0" expanded="true" />
-            <element signature="e#375#376#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.10/httpclient-4.5.10-sources.jar!/org/apache/http/impl/conn/DefaultRoutePlanner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="70" column="28" lean-forward="true" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.attach_pid8362" />
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/net/HttpURLConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="66" column="16" lean-forward="true" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/jetbrains/annotations/13.0/annotations-13.0.jar!/org/jetbrains/annotations/Nullable.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Documents.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tools_app/i.zhc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.zhc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/i.zhc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190828_134933.path">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/SolveMathExpression.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3045">
-          <caret line="152" column="5" selection-start-line="152" selection-start-column="5" selection-end-line="152" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="74" column="31" selection-start-line="74" selection-start-column="31" selection-end-line="74" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.3/commons-codec-1.3.jar!/org/apache/commons/codec/digest/DigestUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/security/MessageDigest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1142">
-          <caret line="162" column="32" selection-start-line="162" selection-start-column="32" selection-end-line="162" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/out/artifacts/java_war_exploded/b.jsp" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/Digest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/a.json" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/T17.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="6" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/9.0.20/tomcat-servlet-api-9.0.20.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="29" column="23" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/myHome/zhc/bin/jdk1.8.0_211/src.zip!/java/io/InputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="61" column="25" selection-start-line="61" selection-start-column="25" selection-end-line="61" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../jsp/i">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="18" selection-start-column="18" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="181" column="28" lean-forward="true" selection-start-line="181" selection-start-column="28" selection-end-line="181" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="581">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/9.0.20/tomcat-servlet-api-9.0.20.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/tomcat/tomcat-servlet-api/9.0.20/tomcat-servlet-api-9.0.20.jar!/javax/servlet/ServletInputStream.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_203723.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/666.path">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/2.path">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_220755.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_221317.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_225501.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_225637.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_194021.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/upload/20190827_203727.path">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Z/UnicodeConvert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/upload.zhc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#9253#9254#0" expanded="true" />
-            <element signature="e#9325#9326#0" expanded="true" />
-            <element signature="e#11418#11419#0" expanded="true" />
-            <element signature="e#11474#11475#0" expanded="true" />
-            <element signature="e#11524#11525#0" expanded="true" />
-            <element signature="e#11562#11563#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/T6.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="349">
-          <caret line="174" column="37" lean-forward="true" selection-start-line="174" selection-start-column="37" selection-end-line="174" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/json/json/20160810/json-20160810.jar!/org/json/JSONArray.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="19" column="37" lean-forward="true" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/upload/list.zhc">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Z/c.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding>
-            <element signature="e#51#52#0" expanded="true" />
-            <element signature="e#93#94#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Z/c.smali">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Z/M3u8.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="44" column="25" selection-start-line="44" selection-start-column="25" selection-end-line="44" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/YouKu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="87" column="85" selection-start-line="87" selection-start-column="85" selection-end-line="87" selection-end-column="85" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>

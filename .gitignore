@@ -1,0 +1,46 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+将删除 libs/
+将删除 logs/2019-12-08-1.log.gz
+将删除 out/artifacts/java_war_exploded/WEB-INF/classes/Z/c.dex
+将删除 out/artifacts/java_war_exploded/WEB-INF/classes/s/A.dex
+将删除 out/artifacts/java_war_exploded/WEB-INF/upload/
+将删除 out/artifacts/java_war_exploded/WEB_INF/
+将删除 out/artifacts/java_war_exploded/c.html
+将删除 out/artifacts/java_war_exploded/i.zhc
+将删除 out/artifacts/java_war_exploded/index.zhc
+将删除 out/artifacts/java_war_exploded/tools_app/
+将删除 out/artifacts/java_war_exploded/upload/
+将删除 src/main/resources/
+将删除 src/main/webapp/WEB-INF/upload/
+将删除 src/test/jni/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdC/tmp/
+将删除 src/test/jni/cmake-build-debug/CMakeFiles/3.14.3/CompilerIdCXX/tmp/
+将删除 src/test/jni/cmake-build-debug/CMakeFiles/CMakeTmp/
+将删除 target/classes/Z/c.dex
+将删除 target/generated-sources/
+将删除 target/generated-test-sources/
+将删除 target/maven-status/maven-compiler-plugin/testCompile/

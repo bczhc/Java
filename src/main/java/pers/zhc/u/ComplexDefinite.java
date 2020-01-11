@@ -6,6 +6,13 @@ import pers.zhc.u.math.util.ComplexValue;
 public class ComplexDefinite {
     public int n = 100000;
 
+    public static void main(String[] args) {
+        ComplexDefinite complexDefinite = new ComplexDefinite();
+        ComplexValue complexValue = new ComplexValue(0, 0);
+        ComplexValue definiteIntegralByTrapezium = complexDefinite.getDefiniteIntegralByTrapezium(0, 2 * Math.PI, t -> complexValue.setValue(Math.cos(t), Math.sin(t)));
+        System.out.println(definiteIntegralByTrapezium.toString());
+    }
+
     //梯形法求定积分
     public ComplexValue getDefiniteIntegralByTrapezium(double x0, double xn, ComplexFunctionInterface complexFunctionInterface) {
         double d = (xn - x0) / n;
@@ -27,12 +34,5 @@ public class ComplexDefinite {
             sum.selfAdd(complexFunctionInterface.x(i).multiply(dComplex));
         }
         return sum;
-    }
-
-    public static void main(String[] args) {
-        ComplexDefinite complexDefinite = new ComplexDefinite();
-        ComplexValue complexValue = new ComplexValue(0, 0);
-        ComplexValue definiteIntegralByTrapezium = complexDefinite.getDefiniteIntegralByTrapezium(0, 2 * Math.PI, t -> complexValue.setValue(Math.cos(t), Math.sin(t)));
-        System.out.println(definiteIntegralByTrapezium.toString());
     }
 }

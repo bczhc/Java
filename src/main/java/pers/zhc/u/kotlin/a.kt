@@ -32,6 +32,13 @@ class C0 {
     }
 }*/
 
+fun f(i: Int): Int {
+    return i * 2 + 1;
+}
+
+fun f2(s: StringBuilder): String {
+    return s.append(1).toString()
+}
+
 fun main() {
-    println(1)
 }

@@ -1,3 +1,0 @@
-/home/zhc/code/code/java/src/test/jni/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/zhc/code/code/java/src/test/jni/cmake-build-debug/CMakeFiles/a.dir
-/home/zhc/code/code/java/src/test/jni/cmake-build-debug/CMakeFiles/edit_cache.dir

@@ -23,8 +23,8 @@
     if (base == null || exponent == null) {
 %>
 <form action="." method="get">
-    <label for="base"></label><input type="number" placeholder="底数" id="base" name="base"/><br/>
-    <label for="exponent"></label><input type="number" id="exponent" placeholder="指数" name="exponent"/><br/>
+    <label for="base"></label><input placeholder="底数" id="base" name="base"/><br/>
+    <label for="exponent"></label><input id="exponent" placeholder="指数" name="exponent"/><br/>
     <input type="submit" name="" id="sbm"/>
 </form>
 <%

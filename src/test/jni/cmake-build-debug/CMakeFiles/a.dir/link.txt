@@ -1,1 +1,0 @@
-/usr/bin/cc -g  -rdynamic CMakeFiles/a.dir/a.c.o  -o a 

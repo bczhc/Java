@@ -3,11 +3,13 @@
 <%@ page pageEncoding="UTF-8" %>
 
 <%
-    String dir = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/tools-app-crashLog";
+    File dir = new File(request.getServletContext().getRealPath("WEB-INF/tools-app-crashLog"));
+    if (!dir.exists()) {
+        System.out.println("dir.mkdirs() = " + dir.mkdirs());
+    }
     if (request.getParameter("list") != null) {
         JSONArray jsonArray = new JSONArray();
-        File d = new File(dir);
-        String[] list = d.list();
+        String[] list = dir.list();
         if (list != null) {
             for (String s : list) {
                 jsonArray.put(s);

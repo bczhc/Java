@@ -12,6 +12,7 @@ public class ThreadSequence {
     private final int threadNum;
     private List<ThreadSequenceRunnableInterface> runnableList;
     private ExecutorService es;
+
     public ThreadSequence(int threadNum) {
         es = Executors.newFixedThreadPool(threadNum);
         this.threadNum = threadNum;

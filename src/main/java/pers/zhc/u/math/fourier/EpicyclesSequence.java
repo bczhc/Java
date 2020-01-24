@@ -29,6 +29,7 @@ public class EpicyclesSequence {
 
         public double n;
         public ComplexValue c;
+
         public AEpicycle(double n, ComplexValue c) {
             this.n = n;
             this.c = c;

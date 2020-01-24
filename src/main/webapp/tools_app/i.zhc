@@ -1,4 +1,6 @@
 <%@ page import="org.json.JSONObject" %>
+<%@ page import="z.I9License" %>
+<%@ page import="java.io.IOException" %>
 <%--
   Created by IntelliJ IDEA.
   User: root
@@ -10,8 +12,18 @@
 <%
     response.setContentType("application/json;charset=utf-8");
     JSONObject jsonObject = new JSONObject();
-    jsonObject.put("MainActivityText", System.currentTimeMillis() + "\n" + z.I9License.getLicense("IDEXZRGPWE144653"));
+    String license;
+    try {
+        license = I9License.getLicense("IDEXZRGPWE144653");
+    } catch (IOException e) {
+        e.printStackTrace();
+        license = e.toString();
+    }
+    jsonObject.put("MainActivityText", System.currentTimeMillis() + "\n" + license);
     String json = jsonObject.toString();
     response.setContentLength(json.getBytes().length);
-    out.print(json);
+    ServletOutputStream outputStream = response.getOutputStream();
+    outputStream.write(json.getBytes());
+    outputStream.flush();
+    outputStream.close();
 %>

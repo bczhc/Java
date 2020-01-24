@@ -13,7 +13,10 @@ Created by IntelliJ IDEA.
 <%@ page pageEncoding="UTF-8" %>
 
 <%
-    String dir = "/home/zhc/code/code/java/src/main/webapp/WEB-INF/tools-app-crashLog";
+    File dir = new File(request.getServletContext().getRealPath("WEB-INF/tools-app-crashLog"));
+    if (!dir.exists()) {
+        System.out.println("dir.mkdirs() = " + dir.mkdirs());
+    }
     ServletInputStream is = request.getInputStream();
     int b = is.read();
     ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -27,7 +30,7 @@ Created by IntelliJ IDEA.
         }
         String headInformation = new String(baos.toByteArray());
         baos.close();
-        File file = new File(dir + File.separatorChar + headInformation);
+        File file = new File(dir, headInformation);
         System.out.println("receive crash report: " + headInformation);
         OutputStream os = new FileOutputStream(file, false);
         FileU.StreamWrite(is, os);

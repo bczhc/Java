@@ -5,21 +5,24 @@
 <%@ page pageEncoding="UTF-8" %>
 <%
     String can = request.getParameter("can");
+    ServletOutputStream os = response.getOutputStream();
     if (can != null) {
-        ServletOutputStream os = response.getOutputStream();
         response.setContentLength(1);
         os.write(new byte[]{1});
-        os.flush();
-        os.close();
-    } else
-        out.print(this.existingFileJSONString());
+    } else {
+        String s = this.existingFileJSONString(new File(request.getServletContext().getRealPath("WEB-INF/upload")));
+        byte[] sBytes = s.getBytes();
+        response.setContentLength(sBytes.length);
+        os.write(sBytes);
+    }
+    os.flush();
+    os.close();
 %>
 <%!
-    private String existingFileJSONString() {
-        File d = new File("/home/zhc/code/code/java/src/main/webapp/WEB-INF/upload");
+    private String existingFileJSONString(File dir) {
         JSONObject jsonObject = new JSONObject();
         JSONArray jsonArray = new JSONArray();
-        File[] listFiles = d.listFiles();
+        File[] listFiles = dir.listFiles();
         if (listFiles != null) {
             for (File listFile : listFiles) {
                 JSONObject child = new JSONObject();

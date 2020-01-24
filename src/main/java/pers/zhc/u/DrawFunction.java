@@ -9,6 +9,7 @@ public class DrawFunction extends JFrame {
     private int nNum;
     private int x0, y0;
     private Graphics G;
+
     private DrawFunction() {
         init();
     }

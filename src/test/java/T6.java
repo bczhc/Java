@@ -285,3 +285,13 @@ class T24 {
         }
     }
 }
+
+class T25 {
+    public T25() {
+        System.out.println(this);
+    }
+
+    public static void main(String[] args) {
+        new T25();
+    }
+}

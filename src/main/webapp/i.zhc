@@ -7,8 +7,7 @@
 <%! long a = 0L; %>
 <%
     System.out.println(a++);
-    File d = new File("/home/zhc/jsp");
-    File d = new File(request.getServletContext().getRealPath(""), "../../../../../")
+    File d = new File(request.getServletContext().getRealPath(""), "../../../../../");
     if (!d.exists()) {
         System.out.println("d.mkdir() = " + d.mkdir());
     }

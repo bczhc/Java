@@ -287,11 +287,25 @@ class T24 {
 }
 
 class T25 {
-    public T25() {
-        System.out.println(this);
-    }
+    private static int i = 0;
 
-    public static void main(String[] args) {
-        new T25();
+    public static void main(String[] args) throws InterruptedException {
+        Runnable r = new Runnable() {
+            @Override
+            public void run() {
+                synchronized (this) {
+                    for (int j = 0; j < 100000; j++) {
+                        ++i;
+                    }
+                }
+            }
+        };
+        Thread t1 = new Thread(r);
+        Thread t2 = new Thread(r);
+        t1.start();
+        t2.start();
+        t1.join();
+        t2.join();
+        System.out.println("i = " + i);
     }
 }

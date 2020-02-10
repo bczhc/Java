@@ -29,7 +29,6 @@
     String headInformation = new String(baos.toByteArray());
     baos.close();
     System.out.println("received file " + headInformation + "...");
-    byte[] bytes = new byte[1024];
     out.print(headInformation);
     File d = new File(request.getServletContext().getRealPath("WEB-INF/upload"));
     if (!d.exists()) {

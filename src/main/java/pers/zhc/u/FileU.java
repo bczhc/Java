@@ -57,7 +57,8 @@ public class FileU {
      * @throws IOException IOException
      */
     public static void StreamWrite(InputStream inputStream, OutputStream to_outputStream, long skip, long len) throws IOException {
-        System.out.println("skip: " + inputStream.skip(skip));
+        if (skip > 0)
+            System.out.println("skip: " + inputStream.skip(skip));
         long ardRead = 0L;
         while (true) {
             byte[] b = new byte[1024];
@@ -143,6 +144,30 @@ public class FileU {
             r = FileCopy(srcFile, destFile);
         }
         return r;
+    }
+
+    public static void FileCopy(File src, OutputStream out, long skip, long len) throws IOException {
+        InputStream is = new FileInputStream(src);
+        long length = src.length();
+        if (skip > 0) {
+            System.out.println("is.skip(skip) = " + is.skip(skip));
+            length -= skip;
+        }
+        byte[] buffer = new byte[1024];
+        long a = length / 1024;
+        int b = (int) (length % 1024);
+        for (int i = 0; i < a; i++) {
+            System.out.println("is.read(buffer) = " + is.read(buffer));
+            out.write(buffer);
+            out.flush();
+        }
+        if (b != 0) {
+            buffer = new byte[b];
+            System.out.println("is.read(buffer) = " + is.read(buffer));
+            out.write(buffer);
+            out.flush();
+        }
+        is.close();
     }
 
     public static void DownloadWeb(URL url, OutputStream to_outputStream) throws IOException {

@@ -15,7 +15,7 @@ import java.util.concurrent.Executors;
 import static java.lang.System.*;
 
 public class A {
-    public static void main(String[] args) throws InterruptedException, MalformedURLException {
+    public static void pers.zhc.u.kotlin.main(String[] args) throws InterruptedException, MalformedURLException {
         String s = new Scanner(in).next();
         CountDownLatch latch = new CountDownLatch(100);
         final URL com.zhc.u = new URL(s);
@@ -56,7 +56,7 @@ public class A {
 }
 
 class b {
-    public static void main(String[] args) {
+    public static void pers.zhc.u.kotlin.main(String[] args) {
         BufferedImage bi = new BufferedImage(100, 100, BufferedImage.TYPE_3BYTE_BGR);
         out.println(bi.getHeight());
         JFrame jf = new JFrame();
@@ -67,7 +67,7 @@ class b {
 }
 
 class c {
-    public static void main(String[] args) {
+    public static void pers.zhc.u.kotlin.main(String[] args) {
         loadLibrary("b");
 //        load("C:\\tomcat_Server\\web\\WEB-INF\\lib\\b.dll");
         c o = new c();

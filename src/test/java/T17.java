@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 class T17 {
     public static void main(String[] args) throws Exception {
-        InputStream is = new FileInputStream(new File("/home/zhc/code/code/Android/QMCFLAC/app/src/main/res/values/strings.xml"));
+        InputStream is = new FileInputStream(new File("/home/zhc/code/code/Android/QMCFLAC/app/src/pers.zhc.u.kotlin.main/res/values/strings.xml"));
         new ReadIS(is, StandardCharsets.UTF_8).read(line -> {
             if (line.matches(" *<string.*") && !line.matches(".*translatable=\"false\".*")) {
                 Pattern pattern = Pattern.compile(">.*<");

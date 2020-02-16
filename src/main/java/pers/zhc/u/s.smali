@@ -38,7 +38,7 @@
     return-void
 .end method
 
-.method public static main([Ljava/lang/String;)V
+.method public static pers.zhc.u.kotlin.main([Ljava/lang/String;)V
     .registers 6
     .param p0, "args"    # [Ljava/lang/String;
 

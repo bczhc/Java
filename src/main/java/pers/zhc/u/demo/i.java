@@ -3,7 +3,7 @@ package pers.zhc.u.demo;
 import java.util.Scanner;
 
 public class i {
-    /*public static void main(String[] args) {
+    /*public static void pers.zhc.u.kotlin.main(String[] args) {
         i i = new i();
         System.out.println(i.jiechengsum(3));
     }

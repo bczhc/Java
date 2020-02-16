@@ -11,7 +11,7 @@ public class c {
     private native int hashCoad();
 
 /*
-    public static void main(String[] args) {
+    public static void pers.zhc.u.kotlin.main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("输入第一个数");
         int test1 = sc.nextInt();

@@ -1735,7 +1735,7 @@
     return-object v2
 .end method
 
-.method public static main([Ljava/lang/String;)V
+.method public static pers.zhc.u.kotlin.main([Ljava/lang/String;)V
     .registers 16
     .param p0, "args"    # [Ljava/lang/String;
     .annotation system Ldalvik/annotation/Throws;

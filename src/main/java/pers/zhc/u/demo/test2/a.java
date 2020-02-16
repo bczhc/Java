@@ -7,7 +7,7 @@ import java.math.RoundingMode;
 
 public class A {
 
-    public static void main(String[] args) {
+    public static void pers.zhc.u.kotlin.main(String[] args) {
         A A = new A();
         BigDecimal sum = BigDecimal.valueOf(0);
         for (int i = 1; i < 1000000; i++) {
@@ -73,7 +73,7 @@ import java.math.RoundingMode;
 
 public class A {
 
-    public static void main(String[] args) {
+    public static void pers.zhc.u.kotlin.main(String[] args) {
         final int PRECISION = 100;//计算精度
         final int THENUMBEROFCIRCLES = 1;//循环次数
         BigDecimal PI = new BigDecimal(0);

@@ -56,7 +56,7 @@ public class a implements Runnable {
 //            jFrame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
 //            JTextField jTextField = new JTextField();
 //            jFrame.add(jTextField);
-//            SwingLoginExample.main(new String[0]);
+//            SwingLoginExample.pers.zhc.u.kotlin.main(new String[0]);
             JFrame jFrame = new JFrame("Demo");
             jFrame.setVisible(true);
             ;

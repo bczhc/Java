@@ -277,7 +277,7 @@ class T24 {
             baos.write(new byte[]{'b'});
             baos.flush();
             InputStream is = FileU.StreamParse(baos);
-            MultipartUploader.formUpload("http://235m82e811.imwork.net/tools_app/crash_report.zhc", "a".getBytes(), is);
+            MultipartUploader.formUpload("http://235m82e811.imwork.net/tools_app/crash_report.zhc", "server".getBytes(), is);
             baos.close();
             is.close();
         } catch (IOException e) {

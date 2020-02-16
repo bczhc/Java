@@ -15,7 +15,7 @@ public class WebPush {
     public static class ZHC {
         public static ZHC o = new ZHC();
 
-        public static void main(String[] args) throws IOException {
+        public static void pers.zhc.u.kotlin.main(String[] args) throws IOException {
             URLConnection connection = new URL("http://235m82e811.imwork.net/i.zhc?m=p&t=f").openConnection();
             connection.setDoOutput(true);
             OutputStream outputStream = connection.getOutputStream();

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="zhcSingle">
+    <output-path>$PROJECT_DIR$/out/artifacts/zhcSingle</output-path>
+    <root id="archive" name="zhcSingle.jar">
+      <element id="module-output" name="java" />
+    </root>
+  </artifact>
+</component>

@@ -3,7 +3,7 @@ package pers.zhc.u.demo;//package com.zhc.u.com.zhc.u.com.zhc.u.com.zhc.u.demo;
 //import java.util.Map;
 //
 //public class YouDao {
-//    public static void main(String[] args) throws Exception {
+//    public static void pers.zhc.u.kotlin.main(String[] args) throws Exception {
 //        String from = "en";
 //        String to = "zh-CHS";
 //        String q = "Who am I? Where am I?";

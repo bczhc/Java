@@ -1,0 +1,49 @@
+BOARD=LLD-AL10
+CPU_ABI2=
+HOST=wh22cb47ad901557827632507-348413158-337lw
+versionName=6.0.0.0_20200208
+SUPPORTED_64_BIT_ABIS=[Ljava.lang.String;@42a2bb6
+CPU_ABI=arm64-v8a
+PERMISSIONS_REVIEW_REQUIRED=false
+DISPLAY=LLD-AL10 9.1.0.113(C00E111R1P10)
+SUPPORTED_ABIS=[Ljava.lang.String;@40a40b7
+FINGERPRINT=HONOR/LLD-AL10/HWLLD-H:9/HONORLLD-AL10/113C00:user/release-keys
+PRODUCT=LLD-AL10
+HIDE_PRODUCT_INFO=false
+ID=HONORLLD-AL10
+replacements=[Ljava.lang.String;@8ccb78d
+HWFINGERPRINT=///LLD-LGRP1-CHN 9.1.0.113/LLD-AL10-CUST 9.1.0.111(C00)/LLD-AL10-PRELOAD 9.1.0.10(C00R1)//
+TYPE=user
+SERIAL=unknown
+NO_HOTA=false
+DEVICE=HWLLD-H
+TIME=1557833742000
+MODEL=LLD-AL10
+MANUFACTURER=HUAWEI
+USER=test
+versionCode=20200208
+BRAND=HONOR
+SUPPORTED_32_BIT_ABIS=[Ljava.lang.String;@1c0f751
+matchers=[Ljava.lang.String;@c9f8024
+HARDWARE=hi6250
+IS_DEBUGGABLE=false
+BOOTLOADER=unknown
+RADIO=unknown
+UNKNOWN=unknown
+IS_EMULATOR=false
+TAGS=release-keys
+java.lang.IllegalArgumentException: width and height must be > 0
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:1252)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:1219)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:1169)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:1130)
+	at pers.zhc.tools.floatingdrawing.PaintView.exportImg(PaintView.java:269)
+	at pers.zhc.tools.floatingdrawing.FloatingDrawingBoardMainActivity.lambda$moreOptions$28$FloatingDrawingBoardMainActivity(FloatingDrawingBoardMainActivity.java:882)
+	at pers.zhc.tools.floatingdrawing.-$$Lambda$FloatingDrawingBoardMainActivity$Oe0derdt9x2Ok5jUsx2SbHtdgus.onClick(Unknown Source:16)
+	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:174)
+	at android.os.Handler.dispatchMessage(Handler.java:112)
+	at android.os.Looper.loop(Looper.java:216)
+	at android.app.ActivityThread.pers.zhc.u.kotlin.main(ActivityThread.java:7593)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.pers.zhc.u.kotlin.main(ZygoteInit.java:987)

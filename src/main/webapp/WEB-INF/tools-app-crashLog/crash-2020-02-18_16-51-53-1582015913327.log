@@ -1,0 +1,66 @@
+SUPPORTED_64_BIT_ABIS=[Ljava.lang.String;@5880949
+versionCode=202002172
+BOARD=M1E
+BOOTLOADER=unknown
+TYPE=user
+ID=NRD90M
+TIME=1559102206000
+BRAND=Meizu
+TAG=Build
+HARDWARE=mt6755
+SERIAL=A02AECP82AWGY
+SUPPORTED_ABIS=[Ljava.lang.String;@536624e
+CPU_ABI=arm64-v8a
+IS_DEBUGGABLE=false
+RADIO=unknown
+MANUFACTURER=Meizu
+IS_EMULATOR=false
+SUPPORTED_32_BIT_ABIS=[Ljava.lang.String;@f6a5350
+TAGS=release-keys
+CPU_ABI2=
+UNKNOWN=unknown
+PERMISSIONS_REVIEW_REQUIRED=false
+USER=flyme
+FINGERPRINT=Meizu/meizu_M1E/M1E:7.0/NRD90M/1559100886:user/release-keys
+HOST=mz-builder-2
+versionName=6.1.0.1_20200217162707_
+👗🄬🅠🇡🉁🇝🛶🆫🕦🌆🗒🌛🊽🅱🖁🁌
+PRODUCT=meizu_M1E
+DISPLAY=Flyme 7.3.0.0A
+MODEL=M1 E
+DEVICE=M1E
+java.lang.NullPointerException: Attempt to invoke virtual method 'pers.zhc.u.math.util.MathFloatFunctionInterface pers.zhc.tools.functiondrawing.FunctionDrawingBoardView.getFunction()' on a null object reference
+	at pers.zhc.tools.functiondrawing.FunctionDrawingBoard.onBackPressed(FunctionDrawingBoard.java:96)
+	at android.app.Activity.onKeyUp(Activity.java:2756)
+	at android.view.KeyEvent.dispatch(KeyEvent.java:2773)
+	at android.app.Activity.dispatchKeyEvent(Activity.java:3057)
+	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:336)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4903)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4868)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4340)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4393)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4359)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4506)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4367)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4563)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4340)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4393)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4359)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4367)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4340)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4393)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4359)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4539)
+	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4725)
+	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2517)
+	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2096)
+	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2087)
+	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2494)
+	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.next(MessageQueue.java:328)
+	at android.os.Looper.loop(Looper.java:148)
+	at android.app.ActivityThread.main(ActivityThread.java:6519)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1113)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:974)

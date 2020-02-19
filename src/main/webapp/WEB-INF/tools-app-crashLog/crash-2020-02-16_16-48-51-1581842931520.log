@@ -1,0 +1,69 @@
+BOARD=LLD-AL10
+CPU_ABI2=
+HOST=wh22cb47ad901557827632507-348413158-337lw
+versionName=6.0.0.0_20200216
+SUPPORTED_64_BIT_ABIS=[Ljava.lang.String;@49565ea
+CPU_ABI=arm64-v8a
+PERMISSIONS_REVIEW_REQUIRED=false
+DISPLAY=LLD-AL10 9.1.0.113(C00E111R1P10)
+SUPPORTED_ABIS=[Ljava.lang.String;@5a5e0db
+FINGERPRINT=HONOR/LLD-AL10/HWLLD-H:9/HONORLLD-AL10/113C00:user/release-keys
+PRODUCT=LLD-AL10
+HIDE_PRODUCT_INFO=false
+ID=HONORLLD-AL10
+replacements=[Ljava.lang.String;@ebf0e51
+HWFINGERPRINT=///LLD-LGRP1-CHN 9.1.0.113/LLD-AL10-CUST 9.1.0.111(C00)/LLD-AL10-PRELOAD 9.1.0.10(C00R1)//
+TYPE=user
+SERIAL=unknown
+NO_HOTA=false
+DEVICE=HWLLD-H
+TIME=1557833742000
+MODEL=LLD-AL10
+MANUFACTURER=HUAWEI
+USER=test
+versionCode=20200216
+BRAND=HONOR
+SUPPORTED_32_BIT_ABIS=[Ljava.lang.String;@210a9d5
+matchers=[Ljava.lang.String;@685a778
+HARDWARE=hi6250
+IS_DEBUGGABLE=false
+BOOTLOADER=unknown
+RADIO=unknown
+UNKNOWN=unknown
+IS_EMULATOR=false
+TAGS=release-keys
+java.lang.NullPointerException: Attempt to invoke virtual method 'pers.zhc.u.math.util.MathFloatFunctionInterface pers.zhc.tools.functiondrawing.FunctionDrawingBoardView.getFunction()' on a null object reference
+	at pers.zhc.tools.functiondrawing.FunctionDrawingBoard.onBackPressed(FunctionDrawingBoard.java:96)
+	at android.app.Activity.onKeyUp(Activity.java:3252)
+	at android.view.KeyEvent.dispatch(KeyEvent.java:2772)
+	at android.app.Activity.dispatchKeyEvent(Activity.java:3559)
+	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:427)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:5663)
+	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:5531)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4983)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:5036)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:5002)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:5157)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:5010)
+	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:5214)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4983)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:5036)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:5002)
+	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:5010)
+	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4983)
+	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:5036)
+	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:5002)
+	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:5190)
+	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:5354)
+	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2783)
+	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:2291)
+	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:2282)
+	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2758)
+	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+	at android.os.MessageQueue.nativePollOnce(Native Method)
+	at android.os.MessageQueue.next(MessageQueue.java:386)
+	at android.os.Looper.loop(Looper.java:175)
+	at android.app.ActivityThread.main(ActivityThread.java:7593)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:987)

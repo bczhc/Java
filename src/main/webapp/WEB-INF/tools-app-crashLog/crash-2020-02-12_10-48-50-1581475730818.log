@@ -1,0 +1,45 @@
+SUPPORTED_64_BIT_ABIS=[Ljava.lang.String;@ccc4832
+versionCode=20200208
+BOARD=M1E
+BOOTLOADER=unknown
+TYPE=user
+ID=NRD90M
+TIME=1559102206000
+BRAND=Meizu
+TAG=Build
+HARDWARE=mt6755
+SERIAL=A02AECP82AWGY
+SUPPORTED_ABIS=[Ljava.lang.String;@9a62983
+CPU_ABI=arm64-v8a
+IS_DEBUGGABLE=false
+RADIO=unknown
+MANUFACTURER=Meizu
+IS_EMULATOR=false
+SUPPORTED_32_BIT_ABIS=[Ljava.lang.String;@778083d
+TAGS=release-keys
+CPU_ABI2=
+UNKNOWN=unknown
+PERMISSIONS_REVIEW_REQUIRED=false
+USER=flyme
+FINGERPRINT=Meizu/meizu_M1E/M1E:7.0/NRD90M/1559100886:user/release-keys
+HOST=mz-builder-2
+versionName=6.0.0.0_20200208
+PRODUCT=meizu_M1E
+DISPLAY=Flyme 7.3.0.0A
+MODEL=M1 E
+DEVICE=M1E
+java.lang.OutOfMemoryError: Failed to allocate a 8294412 byte allocation with 4186896 free bytes and 5MB until OOM
+	at dalvik.system.VMRuntime.newNonMovableArray(Native Method)
+	at android.graphics.Bitmap.nativeCreate(Native Method)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:879)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:856)
+	at android.graphics.Bitmap.createBitmap(Bitmap.java:823)
+	at pers.zhc.tools.floatingdrawing.PaintView.lambda$init$0$PaintView(PaintView.java:137)
+	at pers.zhc.tools.floatingdrawing.-$$Lambda$PaintView$-fw9zUesgrEolR_AD9j6mICyySE.run(lambda)
+	at android.os.Handler.handleCallback(Handler.java:836)
+	at android.os.Handler.dispatchMessage(Handler.java:103)
+	at android.os.Looper.loop(Looper.java:203)
+	at android.app.ActivityThread.pers.zhc.u.kotlin.main(ActivityThread.java:6519)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:1113)
+	at com.android.internal.os.ZygoteInit.pers.zhc.u.kotlin.main(ZygoteInit.java:974)

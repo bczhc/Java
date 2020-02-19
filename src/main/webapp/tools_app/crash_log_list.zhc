@@ -1,20 +1,6 @@
-<%@ page import="org.json.JSONArray" %>
-<%@ page import="java.io.File" %>
+<%@ page import="pers.zhc.u.server.C" %>
 <%@ page pageEncoding="UTF-8" %>
-
 <%
-    File dir = new File(request.getServletContext().getRealPath("WEB-INF/tools-app-crashLog"));
-    if (!dir.exists()) {
-        System.out.println("dir.mkdirs() = " + dir.mkdirs());
-    }
-    if (request.getParameter("list") != null) {
-        JSONArray jsonArray = new JSONArray();
-        String[] list = dir.list();
-        if (list != null) {
-            for (String s : list) {
-                jsonArray.put(s);
-            }
-        }
-        out.print(jsonArray.toString());
-    }
+    C c = new C();
+    c.f(request, out);
 %>

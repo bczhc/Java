@@ -1,24 +1,15 @@
 package pers.zhc.u.groovy
 
-import pers.zhc.u.common.ReadIS
+import pers.zhc.u.server.G
 
 class Test {
     static void main(String[] args) {
-        def url = new URL("http://bczhc.gitee.io/web/res/app/some-tools/debug/output.json")
-        '''def is = url.openStream()
-        def sb = StringBuilder.newInstance()
-        ReadIS.newInstance(is).read({
-            s -> sb.append(s).append("\n")
-        })
-        def jsonArray = new JSONArray(sb.toString())
-        def versionCode = jsonArray.getJSONObject(0).getJSONObject("apkData").getInt("versionCode")
-        println "versionCode = $versionCode"'''
-        def connection = url.openConnection()
-        def size = connection.contentLength
-        println "size = $size"
-        def is = connection.inputStream
-        ReadIS.newInstance(is).read({
-            s -> println(s)
-        })
+        G g = G.newInstance()
+        StringBuilder sb = StringBuilder.newInstance()
+        for (int i = 0; i < 1000; i++) {
+            sb.append(g.ranEmoji())
+        }
+        def s = sb.toString()
+        println "s = $s"
     }
 }

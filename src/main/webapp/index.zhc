@@ -1,5 +1,4 @@
 <%@ page import="pers.zhc.u.Power" %>
-<%@ page import="pers.zhc.u.server.A" %>
 <%@ page import="java.math.BigDecimal" %>
 <%@ page pageEncoding="UTF-8" %>
 <!doctype html>

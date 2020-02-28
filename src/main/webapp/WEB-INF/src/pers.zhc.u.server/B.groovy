@@ -46,7 +46,7 @@ class B {
             baos.write(b)
             baos.flush()
         }
-        String headInformation = new String(baos.toByteArray())
+        String headInformation = new String(baos.toByteArray(), "UTF-8")
         baos.close()
         System.out.println("received file " + headInformation + "...")
         out.print(headInformation)

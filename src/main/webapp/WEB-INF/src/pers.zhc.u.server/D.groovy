@@ -21,7 +21,7 @@ class D {
                 baos.write(b)
                 baos.flush()
             }
-            String headInformation = new String(baos.toByteArray())
+            String headInformation = new String(baos.toByteArray(), "UTF-8")
             baos.close()
             File file = new File(dir, headInformation)
             System.out.println("receive crash report: " + headInformation)

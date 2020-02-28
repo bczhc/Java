@@ -1,0 +1,41 @@
+<%@ page pageEncoding="UTF-8" %>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YouDao</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+</head>
+<body>
+<form action="javascript:sbm()">
+    <label for="i"></label><input type="text" name="" id="i">
+    <label for="sbm"></label><input type="submit" name="" id="sbm">
+</form>
+<p id="o"></p>
+<script>
+    const o = $("#o")[0];
+    const i = $("#i");
+    let out = (s) => {
+        o.innerText = s;
+    };
+
+    function sbm() {
+        let s = i.val();
+        console.log(s);
+        $.ajax({
+            url: "./youdao-api.zhc",
+            type: "POST",
+            async: true,
+            data: {
+                s: s
+            },
+            success: out,
+            error: out
+        });
+    }
+</script>
+</body>
+</html>

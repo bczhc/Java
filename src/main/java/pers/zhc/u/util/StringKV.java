@@ -17,7 +17,7 @@ public class StringKV {
         Scanner sc = new Scanner(System.in);
         try {
             String s = sc.nextLine();
-            String hello = YouDao.translate(s);
+            String hello = YouDao.translate(s, null, null);
             System.out.println("hello = " + hello);
             main(null);
         } catch (IOException e) {

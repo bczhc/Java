@@ -1,6 +1,22 @@
 {
-  a: 1,
-  "b": 2,
-  c: true,
-  "d": "."
+  "translateResult": [
+    [
+      {
+        "tgt": "Who am I?",
+        "src": "我是谁？"
+      },
+      {
+        "tgt": "Where am I?",
+        "src": "我在哪儿？"
+      }
+    ],
+    [
+      {
+        "tgt": "Why am I here?",
+        "src": "我为什么要来到这儿？"
+      }
+    ]
+  ],
+  "errorCode": 0,
+  "type": "zh-CHS2en"
 }

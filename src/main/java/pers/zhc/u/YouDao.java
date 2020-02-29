@@ -1,5 +1,6 @@
 package pers.zhc.u;
 
+import org.json.JSONArray;
 import org.json.JSONObject;
 import pers.zhc.u.common.Documents;
 import pers.zhc.u.common.ReadIS;
@@ -14,10 +15,26 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class YouDao {
-    public static String translate(String str) throws IOException {
+    public final static String LANGUAGE_AUTO = "AUTO";
+    public final static String LANGUAGE_CHINESE = "zh-CHS";
+    public final static String LANGUAGE_ENGLISH = "en";
+    public final static String LANGUAGE_JAPANESE = "ja";
+    public final static String LANGUAGE_RUSSIAN = "ru";
+    public final static String LANGUAGE_KOREAN = "ko";
+    public final static String LANGUAGE_FRANCE = "fr";
+    public final static String LANGUAGE_FRENCH = "fr";
+    public final static String LANGUAGE_GERMAN = "de";
+    public final static String LANGUAGE_SPANISH = "es";
+    public final static String LANGUAGE_PORTUGUESE = "pt";
+    public final static String LANGUAGE_ITALIAN = "it";
+    public final static String LANGUAGE_VIETNAMESE = "vi";
+    public final static String LANGUAGE_ARABIC= "ar";
+    public static String translate(String str, @Documents.Nullable String languageFrom
+            , @Documents.Nullable String languageTo) throws IOException {
+        languageFrom = languageFrom == null ? LANGUAGE_AUTO : languageFrom;
+        languageTo = languageTo == null ? LANGUAGE_AUTO : languageTo;
         long timeStamp = System.currentTimeMillis();
         int rand_int = pers.zhc.u.Random.ran_sc(0, 10);
-//        def rand_int = 8
         String appVersion = "5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
         String bv = MD5.md5(appVersion);
         String tsStr = String.valueOf(timeStamp);
@@ -31,8 +48,8 @@ public class YouDao {
                 "; ___rl__test__cookies=" + timeStamp;
         Map<String, String> data = new HashMap<>();
         data.put("i", str);
-        data.put("from", "AUTO");
-        data.put("to", "AUTO");
+        data.put("from", languageFrom);
+        data.put("to", languageTo);
         data.put("smartresult", "dict");
         data.put("client", "fanyideskweb");
         data.put("version", "2.1");
@@ -43,6 +60,7 @@ public class YouDao {
         data.put("action", "FY_BY_REALTlME");
         data.put("bv", bv);
         data.put("sign", sign);
+        data.put("type", languageFrom + "2" + languageTo);
         StringBuilder sb = new StringBuilder();
         data.forEach((s, s2) -> {
             String p1 = null;
@@ -74,17 +92,28 @@ public class YouDao {
         os.close();
         InputStream is = connection.getInputStream();
         StringBuilder r = new StringBuilder();
-        String result;
+        StringBuilder result = new StringBuilder();
         new ReadIS(is, StandardCharsets.UTF_8).read(r::append);
         JSONObject jsonObject = new JSONObject(r.toString());
         int errorCode = jsonObject.getInt("errorCode");
         if (errorCode == 0) {
-            result = jsonObject.getJSONArray("translateResult").getJSONArray(0)
-                    .getJSONObject(0).getString("tgt");
+            JSONArray translateResult = jsonObject.getJSONArray("translateResult");
+            int length = translateResult.length();
+            for (int i = 0; i < length; i++) {
+                JSONArray lineResultJSONArray = translateResult.getJSONArray(i);
+                int lineLength = lineResultJSONArray.length();
+                for (int j = 0; j < lineLength; j++) {
+                    JSONObject translateResultJSONObject = lineResultJSONArray.getJSONObject(j);
+                    result.append(translateResultJSONObject.getString("tgt"));
+                    if (j != lineLength - 1) result.append(' ');
+                }
+                if (i != length - 1)
+                    result.append('\n');
+            }
         } else {
-            result = "error: " + errorCode;
+            result.append("error: ").append(errorCode);
         }
-        return result;
+        return result.toString();
     }
 
     @Documents.Nullable
@@ -114,8 +143,8 @@ public class YouDao {
         return null;
     }
 
-    public static void main(String[] args) {
-        String constStr = getConstStr();
-        System.out.println("constStr = " + constStr);
+    public static void main(String[] args) throws IOException {
+        String hello = translate("", YouDao.LANGUAGE_AUTO, YouDao.LANGUAGE_AUTO);
+        System.out.println("hello = " + hello);
     }
 }

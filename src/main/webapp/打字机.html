@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>打字机</title>
+</head>
+<body>
+<input id="rcd" name="" onclick="r();" type="button" value="录入">
+<br/>
+<input id="show" name="" onclick="show();" type="button" value="播放">
+<br/>
+<label for="inp"></label><input id="inp" name="" type="text">
+<div id="out"></div>
+<script>
+    let keyContent = [];
+    let i = document.getElementById("inp");
+
+    function r() {
+        let now = Date.now();
+        i.onkeyup = () => {
+            keyContent[keyContent.length] = [];
+            keyContent[keyContent.length - 1][0] = Date.now() - now;
+            keyContent[keyContent.length - 1][1] = i.value;
+
+        };
+    }
+
+    function show() {
+        i.onkeyup = null;
+        let o = document.getElementById("out");
+        for (let j = 0; j < keyContent.length; ++j) {
+            setTimeout(() => {
+                o.innerHTML = keyContent[j][1];
+            }, keyContent[j][0]);
+        }
+    }
+</script>
+</body>
+</html>

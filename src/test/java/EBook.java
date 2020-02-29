@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 
 public class EBook {
     public static void main(String[] args) {
-        ExecutorService es = Executors.newFixedThreadPool(24);
+        ExecutorService es = Executors.newFixedThreadPool(12);
         CountDownLatch latch = new CountDownLatch(113);
         File dir = new File("./fh");
         System.out.println("dir.mkdirs() = " + dir.mkdirs());

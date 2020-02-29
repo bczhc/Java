@@ -1,6 +1,7 @@
 package pers.zhc.u;
 
 import org.json.JSONArray;
+import org.json.JSONException;
 import org.json.JSONObject;
 import pers.zhc.u.common.Documents;
 import pers.zhc.u.common.ReadIS;
@@ -13,7 +14,11 @@ import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class YouDao {
     public final static String LANGUAGE_AUTO = "AUTO";
     public final static String LANGUAGE_CHINESE = "zh-CHS";
@@ -28,9 +33,10 @@ public class YouDao {
     public final static String LANGUAGE_PORTUGUESE = "pt";
     public final static String LANGUAGE_ITALIAN = "it";
     public final static String LANGUAGE_VIETNAMESE = "vi";
-    public final static String LANGUAGE_ARABIC= "ar";
+    public final static String LANGUAGE_ARABIC = "ar";
+
     public static String translate(String str, @Documents.Nullable String languageFrom
-            , @Documents.Nullable String languageTo) throws IOException {
+            , @Documents.Nullable String languageTo) throws IOException, JSONException {
         languageFrom = languageFrom == null ? LANGUAGE_AUTO : languageFrom;
         languageTo = languageTo == null ? LANGUAGE_AUTO : languageTo;
         long timeStamp = System.currentTimeMillis();
@@ -43,8 +49,8 @@ public class YouDao {
         String cookie = "OUTFOX_SEARCH_USER_ID=-744869165@121.227.138.203" +
                 "; OUTFOX_SEARCH_USER_ID_NCOO=305645688.41944355" +
                 "; _ntes_nnid=c6df9c9fddfee6150e1a3048322e76cd," + timeStamp +
-                "; DICT_UGC=be3af0da19b5c5e6aa4e17bd8d90b28a|" +
-                "; JSESSIONID=abcktOOAomqZ2aW7IRkcx" +
+                "; DICT_UGC=be3af0da11b5c5e6aa4e17bd8d90b28a|" +
+                "; JSESSIONID=abcktOOBomqZ2aW7IRkcx" +
                 "; ___rl__test__cookies=" + timeStamp;
         Map<String, String> data = new HashMap<>();
         data.put("i", str);
@@ -61,21 +67,8 @@ public class YouDao {
         data.put("bv", bv);
         data.put("sign", sign);
         data.put("type", languageFrom + "2" + languageTo);
-        StringBuilder sb = new StringBuilder();
-        data.forEach((s, s2) -> {
-            String p1 = null;
-            try {
-                p1 = URLEncoder.encode(s2, "UTF-8");
-            } catch (UnsupportedEncodingException e) {
-                e.printStackTrace();
-            }
-            if (sb.length() == 0) {
-                sb.append(s).append('=').append(p1);
-            } else
-                sb.append('&').append(s).append('=').append(p1);
-        });
-        String params = sb.toString();
-        URL url = new URL("http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule");
+        String params = mapParamsToString(data);
+        URL url = new URL("http://fanyi.youdao.com/translate_a?smartresult=dict&smartresult=rule");
         URLConnection connection = url.openConnection();
         connection.setRequestProperty("Cookie", cookie);
         connection.setRequestProperty("User-Agent", "Mozilla/" + appVersion);
@@ -143,8 +136,43 @@ public class YouDao {
         return null;
     }
 
-    public static void main(String[] args) throws IOException {
-        String hello = translate("", YouDao.LANGUAGE_AUTO, YouDao.LANGUAGE_AUTO);
-        System.out.println("hello = " + hello);
+    public static void main(String[] args) {
+        ExecutorService es = Executors.newFixedThreadPool(8);
+        CountDownLatch latch = new CountDownLatch(100000);
+        for (int i = 0; i < 100000; i++) {
+            int finalI = i;
+            es.execute(() -> {
+                try {
+                    String hello = translate("hello", YouDao.LANGUAGE_AUTO, YouDao.LANGUAGE_AUTO);
+                    System.out.println("hello " + finalI + " = " + hello);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                latch.countDown();
+            });
+        }
+        es.shutdown();
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public static String mapParamsToString(Map<String, String> params) {
+        StringBuilder sb = new StringBuilder();
+        params.forEach((s, s2) -> {
+            String p1 = null;
+            try {
+                p1 = URLEncoder.encode(s2, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+            if (sb.length() == 0) {
+                sb.append(s).append('=').append(p1);
+            } else
+                sb.append('&').append(s).append('=').append(p1);
+        });
+        return sb.toString();
     }
 }

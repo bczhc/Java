@@ -12,18 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/MYouDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/ListArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/String.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/打字机.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/zhc/zhc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.smali" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/baiduTranslate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/YouDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/YouDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/server.jar" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib/server.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/s.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/s.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/EBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/baiduTranslate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/baiduTranslate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/String.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/StringU.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -630,7 +622,7 @@
       <workItem from="1582934984623" duration="11130000" />
       <workItem from="1582964822668" duration="2418000" />
       <workItem from="1582968356886" duration="15213000" />
-      <workItem from="1582985958075" duration="2661000" />
+      <workItem from="1582985958075" duration="10144000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -849,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1582940039436</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="失败的百度翻译接口爬取">
+      <created>1582988960833</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1582988960834</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -904,7 +903,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="2&#10;rename mvn-repo" />
     <MESSAGE value="delete mvn pom" />
     <MESSAGE value="mvn: 2.0..." />
     <MESSAGE value="mvn: 1.1" />
@@ -929,7 +927,8 @@
     <MESSAGE value="失败的有道接口爬虫" />
     <MESSAGE value="有道接口爬虫" />
     <MESSAGE value="可选语言，但是只能与中文互译" />
-    <option name="LAST_COMMIT_MESSAGE" value="可选语言，但是只能与中文互译" />
+    <MESSAGE value="失败的百度翻译接口爬取" />
+    <option name="LAST_COMMIT_MESSAGE" value="失败的百度翻译接口爬取" />
   </component>
   <component name="WindowStateProjectService">
     <state x="456" y="103" width="1008" height="922" key="#Intentions" timestamp="1581922317758">
@@ -986,10 +985,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="632" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1050@0.0.1920.1050" timestamp="1582891721056" />
-    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1582975813942">
+    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583024945989">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1582975813942" />
+    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583024945989" />
     <state x="724" y="198" width="462" height="717" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581840379590" />
     <state x="551" y="108" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581738393412">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1007,112 +1006,116 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="0" y="0" width="1920" height="1050" key="#xdebugger.XInspectDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582902265139" />
+    <state x="660" y="145" key="#xdebugger.evaluate" timestamp="1582990844786">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="660" y="145" key="#xdebugger.evaluate/0.0.1920.1050@0.0.1920.1050" timestamp="1582990844786" />
     <state x="582" y="298" width="638" height="417" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1582946612132">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="582" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1582946612132" />
     <state x="692" y="397" width="638" height="417" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1581840160903" />
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1582940038711">
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1582988955543">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1582940038711" />
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1582988955543" />
     <state x="349" y="27" width="867" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1580188097835" />
     <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830478783" />
-    <state width="942" height="546" key="DebuggerActiveHint" timestamp="1582986331991">
+    <state width="942" height="546" key="DebuggerActiveHint" timestamp="1583026525531">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="942" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1582986331991" />
+    <state width="942" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583026525531" />
     <state width="595" height="548" key="DebuggerActiveHint/0.27.1920.1053@0.27.1920.1053" timestamp="1581840273070" />
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog" timestamp="1581905930192">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1581905930192" />
-    <state x="100" y="100" width="1720" height="850" key="DiffContextDialog" timestamp="1582888869585">
+    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog" timestamp="1583025862438">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="100" y="100" width="1720" height="850" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1582888869585" />
+    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583025862438" />
     <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1582987487946">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1582987487946" />
     <state x="514" y="225" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1579853724418" />
     <state x="722" y="308" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1578754371353" />
-    <state width="1852" height="261" key="GridCell.Tab.0.bottom" timestamp="1582987933277">
+    <state width="1852" height="141" key="GridCell.Tab.0.bottom" timestamp="1583027070982">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="261" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582987933277" />
+    <state width="1852" height="141" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583027070982" />
     <state width="1312" height="169" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579859568492" />
     <state width="1852" height="396" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340970" />
-    <state width="1852" height="261" key="GridCell.Tab.0.center" timestamp="1582987933277">
+    <state width="1852" height="141" key="GridCell.Tab.0.center" timestamp="1583027070981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="261" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582987933277" />
+    <state width="1852" height="141" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583027070981" />
     <state width="1312" height="169" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579859568490" />
     <state width="1852" height="396" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="261" key="GridCell.Tab.0.left" timestamp="1582987933276">
+    <state width="1852" height="141" key="GridCell.Tab.0.left" timestamp="1583027070981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="261" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582987933276" />
+    <state width="1852" height="141" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583027070981" />
     <state width="1312" height="169" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579859568489" />
     <state width="1852" height="396" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340968" />
-    <state width="1852" height="261" key="GridCell.Tab.0.right" timestamp="1582987933277">
+    <state width="1852" height="141" key="GridCell.Tab.0.right" timestamp="1583027070981">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="261" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582987933277" />
+    <state width="1852" height="141" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583027070981" />
     <state width="1312" height="169" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579859568491" />
     <state width="1852" height="396" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="238" key="GridCell.Tab.1.bottom" timestamp="1582987221342">
+    <state width="1852" height="380" key="GridCell.Tab.1.bottom" timestamp="1583026684210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="238" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582987221342" />
+    <state width="1852" height="380" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684210" />
     <state width="1852" height="396" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340973" />
-    <state width="1852" height="238" key="GridCell.Tab.1.center" timestamp="1582987221337">
+    <state width="1852" height="380" key="GridCell.Tab.1.center" timestamp="1583026684209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="238" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582987221337" />
+    <state width="1852" height="380" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684209" />
     <state width="1852" height="396" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="238" key="GridCell.Tab.1.left" timestamp="1582987221332">
+    <state width="1852" height="380" key="GridCell.Tab.1.left" timestamp="1583026684209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="238" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582987221332" />
+    <state width="1852" height="380" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684209" />
     <state width="1852" height="396" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="238" key="GridCell.Tab.1.right" timestamp="1582987221339">
+    <state width="1852" height="380" key="GridCell.Tab.1.right" timestamp="1583026684209">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="238" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582987221339" />
+    <state width="1852" height="380" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684209" />
     <state width="1852" height="396" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="284" key="GridCell.Tab.2.bottom" timestamp="1582985344670">
+    <state width="1852" height="380" key="GridCell.Tab.2.bottom" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344670" />
-    <state width="1852" height="284" key="GridCell.Tab.2.center" timestamp="1582985344670">
+    <state width="1852" height="380" key="GridCell.Tab.2.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
+    <state width="1852" height="380" key="GridCell.Tab.2.center" timestamp="1583026684210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344670" />
-    <state width="1852" height="284" key="GridCell.Tab.2.left" timestamp="1582985344669">
+    <state width="1852" height="380" key="GridCell.Tab.2.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684210" />
+    <state width="1852" height="380" key="GridCell.Tab.2.left" timestamp="1583026684210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344669" />
-    <state width="1852" height="284" key="GridCell.Tab.2.right" timestamp="1582985344670">
+    <state width="1852" height="380" key="GridCell.Tab.2.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684210" />
+    <state width="1852" height="380" key="GridCell.Tab.2.right" timestamp="1583026684210">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344670" />
-    <state width="1852" height="284" key="GridCell.Tab.3.bottom" timestamp="1582985344671">
+    <state width="1852" height="380" key="GridCell.Tab.2.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684210" />
+    <state width="1852" height="380" key="GridCell.Tab.3.bottom" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344671" />
-    <state width="1852" height="284" key="GridCell.Tab.3.center" timestamp="1582985344670">
+    <state width="1852" height="380" key="GridCell.Tab.3.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
+    <state width="1852" height="380" key="GridCell.Tab.3.center" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344670" />
-    <state width="1852" height="284" key="GridCell.Tab.3.left" timestamp="1582985344670">
+    <state width="1852" height="380" key="GridCell.Tab.3.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
+    <state width="1852" height="380" key="GridCell.Tab.3.left" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344670" />
-    <state width="1852" height="284" key="GridCell.Tab.3.right" timestamp="1582985344671">
+    <state width="1852" height="380" key="GridCell.Tab.3.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
+    <state width="1852" height="380" key="GridCell.Tab.3.right" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="284" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1582985344671" />
+    <state width="1852" height="380" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
     <state x="747" y="459" key="ReplaceDuplicatesPrompt" timestamp="1578730918000">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1136,10 +1139,10 @@
     <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1582902679764" />
     <state x="396" y="209" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1579836020712" />
     <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830493073" />
-    <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1582983933944">
+    <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1583025167833">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1582983933944" />
+    <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1583025167833" />
     <state width="960" height="527" key="XDebugger.FullValuePopup/0.27.1920.1053@0.27.1920.1053" timestamp="1581840329502" />
     <state x="100" y="100" width="1720" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1578730402260">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1149,15 +1152,19 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="771" y="392" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1581907516397" />
-    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582948360540">
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583025861771">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1582948360540" />
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583025861771" />
     <state x="206" y="27" width="944" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1580186375221" />
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581902049462">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1581902049462" />
+    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583024923432">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1583024923432" />
     <state x="694" y="277" width="652" height="505" key="extract.method.dialog" timestamp="1578730916425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1208,81 +1215,26 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/z/M3u8.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="75" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/z/M3u8.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java</url>
-          <line>16</line>
-          <option name="timeStamp" value="77" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/zhc/u/common/Execute.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/z/FFMPEG.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="81" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
-          <line>196</line>
-          <option name="timeStamp" value="94" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/T6.java</url>
-          <line>224</line>
-          <option name="timeStamp" value="95" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/z/SplitFile.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="96" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.6.RELEASE/spring-beans-4.1.6.RELEASE-sources.jar!/org/springframework/beans/factory/xml/XmlBeanDefinitionReader.java</url>
-          <line>329</line>
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/z/UnicodeConvert.java</url>
-          <line>17</line>
-          <option name="timeStamp" value="106" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/YouDao.java</url>
-          <line>89</line>
-          <option name="timeStamp" value="107" />
+          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="170" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="145" />
+          <line>65</line>
+          <option name="timeStamp" value="181" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java</url>
-          <line>140</line>
-          <option name="timeStamp" value="146" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/baiduTranslate.js</url>
+          <line>3</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="180" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="encodedResource.getResource()" language="JAVA" />
-      </configuration>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="a" language="JavaScript" />
-      </configuration>
-      <configuration name="Application">
-        <watch expression="split1[0]" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -23,16 +23,17 @@ function e(r) {
     for (var p = m, F = "" + String.fromCharCode(43) + String.fromCharCode(45) + String.fromCharCode(97) +
         ("" + String.fromCharCode(94) + String.fromCharCode(43) + String.fromCharCode(54))
              , D = "" + String.fromCharCode(43) + String.fromCharCode(45) + String.fromCharCode(51) + ("" + String.fromCharCode(94) + String.fromCharCode(43) + String.fromCharCode(98)) + ("" + String.fromCharCode(43) + String.fromCharCode(45) + String.fromCharCode(102))
-             , b = 0; b < S.length; b++) {
-        p += S[b];
-        p = n(p, F);
-        p = n(p, D);
-        p ^= s;
-        0 > p && (p = (2147483647 & p) + 2147483648);
-        p %= 1e6;
-        return p.toString() + "." + (p ^ m);
-    }
+             , b = 0; b < S.length; b++)
+        p += S[b],
+            p = n(p, F);
+    return p = n(p, D),
+        p ^= s,
+    0 > p && (p = (2147483647 & p) + 2147483648),
+        p %= 1e6,
+    p.toString() + "." + (p ^ m)
+
 }
+
 
 function n(r, o) {
     for (var t = 0; t < o.length - 2; t += 3) {
@@ -44,5 +45,5 @@ function n(r, o) {
     return r
 }
 
-var r = e("hello");
+var r = e("I am a soldier, the beautiful grass, the wild fire when the spring spring, you are a silly force, I love you");
 console.log(r);

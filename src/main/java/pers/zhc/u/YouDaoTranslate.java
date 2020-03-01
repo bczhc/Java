@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
-@SuppressWarnings("SpellCheckingInspection")
+@SuppressWarnings({"SpellCheckingInspection", "unused"})
 public class YouDaoTranslate {
     public final static String LANGUAGE_AUTO = "AUTO";
     public final static String LANGUAGE_CHINESE = "zh-CHS";
@@ -32,17 +32,20 @@ public class YouDaoTranslate {
     public final static String LANGUAGE_ITALIAN = "it";
     public final static String LANGUAGE_VIETNAMESE = "vi";
     public final static String LANGUAGE_ARABIC = "ar";
+    private URL url;
     private String cookie = "";
     private String appVersion = "5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
     private String userAgent = "Mozilla/" + appVersion;
+    private String refererURLString;
 
     public YouDaoTranslate() {
         try {
-            URL url = new URL("http://fanyi.youdao.com/?keyfrom=dict2.index");
+            refererURLString = "http://fanyi.youdao.com/?keyfrom=dict2.index";
+            url = new URL("http://fanyi.youdao.com/translate_o?smartresult=dict&smartresult=rule");
             Map<String, String> p = new HashMap<>();
             p.put("User-Agent", this.userAgent);
             p.put("Cookie", this.cookie);
-            URLConnection connection = Connection.get(url, null, p);
+            URLConnection connection = Connection.get(new URL(refererURLString), null, p);
             this.cookie = Connection.getCookiesString(connection);
         } catch (IOException e) {
             e.printStackTrace();
@@ -51,8 +54,9 @@ public class YouDaoTranslate {
 
     public static void main(String[] args) throws IOException {
         YouDaoTranslate youDao = new YouDaoTranslate();
-        String hello = youDao.translate("hello", YouDaoTranslate.LANGUAGE_AUTO, LANGUAGE_AUTO);
-        System.out.println("hello = " + hello);
+        for (int i = 0; i < 10000; i++) {
+            System.out.println("youDao.translate(\"you are silly: \" + i, LANGUAGE_AUTO, LANGUAGE_AUTO) = " + youDao.translate("you are silly: " + i, LANGUAGE_AUTO, LANGUAGE_AUTO));
+        }
     }
 
     public String translate(String str, @Documents.Nullable String languageFrom
@@ -80,11 +84,10 @@ public class YouDaoTranslate {
         data.put("bv", bv);
         data.put("sign", sign);
         data.put("type", languageFrom + "2" + languageTo);
-        URL url = new URL("http://fanyi.youdao.com/translate_a?smartresult=dict&smartresult=rule");
         Map<String, String> requsetProperty = new HashMap<>();
         requsetProperty.put("Cookie", this.cookie);
         requsetProperty.put("User-Agent", this.userAgent);
-        requsetProperty.put("Referer", "http://fanyi.youdao.com/?keyfrom=dict2.index");
+        requsetProperty.put("Referer", refererURLString);
         URLConnection connection = Connection.post(url, data, requsetProperty);
         InputStream is = connection.getInputStream();
         StringBuilder r = new StringBuilder();

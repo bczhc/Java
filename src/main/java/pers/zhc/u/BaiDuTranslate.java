@@ -1,50 +1,67 @@
 package pers.zhc.u;
 
+import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.ListArray;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
 public class BaiDuTranslate {
-    public static String translate(String src) throws IOException, JSONException {
-        URL url = new URL("https://fanyi.baidu.com/v2transapi?from=en&to=zh");
+    private String cookie = "";
+    private String token;
+
+    public BaiDuTranslate() {
+        getToken();
+        this.token = getToken();
+    }
+
+    public static void main(String[] args) throws IOException {
+        BaiDuTranslate baiDuTranslate = new BaiDuTranslate();
+        String translate = baiDuTranslate.translate("try", "en", "zh");
+        System.out.println("translate = " + translate);
+    }
+
+    public String translate(String src, String languageFrom, String languageTo) throws IOException, JSONException {
+        URL url = new URL("https://fanyi.baidu.com/v2transapi");
         URLConnection connection = url.openConnection();
         connection.setDoInput(true);
         connection.setDoOutput(true);
-        setRequestProperty(connection);
         Map<String, String> params = new HashMap<>();
-        params.put("from", "en");
-        params.put("to", "zh");
+        params.put("from", languageFrom);
+        params.put("to", languageTo);
         params.put("query", src);
         params.put("transtype", "realtime");
         params.put("simple_means_flag", "3");
         params.put("domain", "common");
         params.put("sign", getSign(src));
-        params.put("token", getToken());
+        params.put("token", token);
         String paramsToString = YouDao.mapParamsToString(params);
+        setRequestProperty(connection);
         OutputStream os = connection.getOutputStream();
-        os.write(paramsToString.getBytes());
-        os.flush();
+        OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
+        BufferedWriter bw = new BufferedWriter(osw);
+        bw.write(paramsToString);
+        bw.flush();
+        bw.close();
+        osw.close();
         os.close();
         InputStream is = connection.getInputStream();
         StringBuilder rSB = new StringBuilder();
         new ReadIS(is, StandardCharsets.UTF_8).read(rSB::append);
         is.close();
-        String r = rSB.toString();
-        return r;
+        JSONObject jsonObject = new JSONObject(rSB.toString());
+        JSONArray jsonArray = jsonObject.getJSONObject("trans_result").getJSONArray("data");
+        return jsonArray.getJSONObject(0).getString("dst");
     }
 
-    private static String e(String str) {
+    private String e(String str) {
         String i = "320305.131321201";
         String r = str;
         boolean o = r.matches("[\\uD800-\\uDBFF][\\uDC00-\\uDFFF]");
@@ -56,7 +73,7 @@ public class BaiDuTranslate {
                 r = substr(r, 0, 10) + substr(r, floor - 5, 10) + substr(r, -10, 10);
             }
         } else {
-            //TODO handle Emoji...
+            //TODO handle emoji...
         }
 //        String l = "" + ((char) 103) + ((char) 116) + ((char) 107);
         String[] d = i.split("\\.");
@@ -90,9 +107,11 @@ public class BaiDuTranslate {
         long p = m;
         String F = new String(new char[]{43, 45, 97, 94, 43, 54});
         String D = new String(new char[]{43, 45, 51, 94, 43, 98, 43, 45, 102});
-        int b = 0;
-        p += S.get(b);
-        p = n(p, F);
+        int sSize = S.size();
+        for (int b = 0; b < sSize; b++) {
+            p += S.get(b);
+            p = n(p, F);
+        }
         p = n(p, D);
         p ^= s;
         if (0 > p) {
@@ -102,7 +121,7 @@ public class BaiDuTranslate {
         return p + "." + (p ^ m);
     }
 
-    private static long n(long r, String o) {
+    private long n(long r, String o) {
         for (int t = 0; t < o.length() - 2; t += 3) {
             long a = o.charAt(t + 2);
             a = a >= 'a' ? ((a - 87)) : Long.parseLong("" + ((char) a));
@@ -112,46 +131,27 @@ public class BaiDuTranslate {
         return r;
     }
 
-    private static String substr(String s, int startIndex, @SuppressWarnings("SameParameterValue") int length) {
-        if (startIndex < 0) startIndex = 0;
+    private String substr(String s, int startIndex, @SuppressWarnings("SameParameterValue") int length) {
+        if (startIndex < 0) startIndex = s.length() + startIndex;
         return s.substring(startIndex, startIndex + length);
     }
 
-    private static void setRequestProperty(URLConnection connection) {
-        String infos =
-                "accept: */*\n" +
-                        "accept-encoding: gzip, deflate, br\n" +
-                        "accept-language: zh-CN,zh;q=0.9\n" +
-                        "cache-control: no-cache\n" +
-                        "content-length: 136\n" +
-                        "content-type: application/x-www-form-urlencoded; charset=UTF-8\n" +
-                        "cookie: " + getCookie() + "\n" +
-                        "origin: https://fanyi.baidu.com\n" +
-                        "pragma: no-cache\n" +
-                        "referer: https://fanyi.baidu.com/?aldtype=16047\n" +
-                        "sec-fetch-dest: empty\n" +
-                        "sec-fetch-mode: cors\n" +
-                        "sec-fetch-site: same-origin\n" +
-                        "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36\n" +
-                        "x-requested-with: XMLHttpRequest";
-        String[] split = infos.split("\\n");
-        for (String s : split) {
-            String[] split1 = s.split(": ");
-            try {
-                connection.setRequestProperty(split1[0], URLEncoder.encode(split1[1], "UTF-8"));
-            } catch (UnsupportedEncodingException e) {
-                connection.setRequestProperty(split1[0], split1[1]);
-                e.printStackTrace();
-            }
-        }
+    private void setRequestProperty(URLConnection connection) {
+        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
+        connection.setRequestProperty("Cookie", cookie);
     }
 
-    private static String getToken() {
+    private String getToken() {
         String r = null;
         try {
-            URL url = new URL("https://fanyi.baidu.com/?aldtype=16047");
+            URL url = new URL("https://fanyi.baidu.com");
             URLConnection connection = url.openConnection();
             setRequestProperty(connection);
+            String t = connection.getHeaderField("set-cookie");
+            if (t != null) {
+                t = extractCookie(t);
+                cookie = t;
+            }
             InputStream is = connection.getInputStream();
             final String[] l = {null};
             new ReadIS(is, StandardCharsets.UTF_8).read(line -> {
@@ -174,18 +174,12 @@ public class BaiDuTranslate {
         return r;
     }
 
-    private static String getSign(String text) {
+    private String extractCookie(String t) {
+        int indexOf = t.indexOf(';');
+        return t.substring(0, indexOf);
+    }
+
+    private String getSign(String text) {
         return e(text);
-    }
-
-    private static String getCookie() {
-        return "BAIDUID=B597C6B751C2CC6936DFFBC4DD8F4706:FG=1";
-    }
-
-    public static void main(String[] args) throws IOException {
-        String translate = translate("hello");
-        System.out.println("translate = " + translate);
-//        System.out.println("getToken() = " + getToken());
-//        System.out.println("getSign(\"hello\") = " + getSign("hello"));
     }
 }

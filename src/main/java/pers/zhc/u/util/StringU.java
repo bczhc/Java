@@ -1,6 +1,6 @@
 package pers.zhc.u.util;
 
-public class String {
+public class StringU {
     public static int compareString(java.lang.String s1, java.lang.String s2) {
         int s1Len = s1.length();
         int s2Len = s2.length();

@@ -1,4 +1,4 @@
-<%@ page import="pers.zhc.u.YouDao" %>
+<%@ page import="pers.zhc.u.YouDaoTranslate" %>
 <%--
   Created by IntelliJ IDEA.
   User: root
@@ -10,7 +10,7 @@
 <%
     String s = request.getParameter("s");
     s = s == null ? "" : s;
-    String r = YouDao.translate(s);
+    String r = YouDaoTranslate.translate(s);
     ServletOutputStream os = response.getOutputStream();
     byte[] bytes = r.getBytes();
     response.setContentLength(bytes.length);

@@ -1,4 +1,4 @@
-<%--
+<%@ page import="java.net.URLEncoder" %><%--
   Created by IntelliJ IDEA.
   User: root
   Date: 20-2-28
@@ -7,8 +7,7 @@
 --%>
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%
-    String a = request.getParameter("a");
-    System.out.println("a = " + a);
-    String method = request.getMethod();
-    System.out.println(method);
+    response.addCookie(new Cookie("a", "1"));
+    response.addCookie(new Cookie("b", "d"));
+    response.addCookie(new Cookie("c", URLEncoder.encode("完美", "UTF-8")));
 %>

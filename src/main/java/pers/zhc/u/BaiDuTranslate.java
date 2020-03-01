@@ -4,6 +4,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import pers.zhc.u.common.ReadIS;
+import pers.zhc.u.util.Connection;
 import pers.zhc.u.util.ListArray;
 
 import java.io.*;
@@ -12,20 +13,54 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class BaiDuTranslate {
     private String cookie = "";
     private String token;
+    private String userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
 
     public BaiDuTranslate() {
+        refreshCookie();
         getToken();
         this.token = getToken();
     }
 
-    public static void main(String[] args) throws IOException {
-        BaiDuTranslate baiDuTranslate = new BaiDuTranslate();
-        String translate = baiDuTranslate.translate("try", "en", "zh");
-        System.out.println("translate = " + translate);
+    public static void main(String[] args) {
+        ExecutorService es = Executors.newFixedThreadPool(8);
+        int n = 10000;
+        CountDownLatch latch = new CountDownLatch(n);
+        for (int i = 0; i < n; i++) {
+            es.execute(() -> {
+                try {
+                    System.out.println("new BaiDuTranslate().translate(\"hello\", \"en\", \"zh\") = " + new BaiDuTranslate().translate("hello", "en", "zh"));
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                latch.countDown();
+            });
+        }
+        try {
+            latch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        es.shutdown();
+    }
+
+    private void refreshCookie() {
+        try {
+            URL url = new URL("https://fanyi.baidu.com/");
+            Map<String, String> requestProperty = new HashMap<>();
+            requestProperty.put("Cookie", this.cookie);
+            requestProperty.put("User-Agent", this.userAgent);
+            URLConnection connection = Connection.get(url, null, requestProperty);
+            requestProperty.put("Cookie", (this.cookie = Connection.getCookiesString(connection)));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public String translate(String src, String languageFrom, String languageTo) throws IOException, JSONException {
@@ -42,7 +77,7 @@ public class BaiDuTranslate {
         params.put("domain", "common");
         params.put("sign", getSign(src));
         params.put("token", token);
-        String paramsToString = YouDao.mapParamsToString(params);
+        String paramsToString = Connection.mapParamsToString(params);
         setRequestProperty(connection);
         OutputStream os = connection.getOutputStream();
         OutputStreamWriter osw = new OutputStreamWriter(os, StandardCharsets.UTF_8);
@@ -137,7 +172,7 @@ public class BaiDuTranslate {
     }
 
     private void setRequestProperty(URLConnection connection) {
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36");
+        connection.setRequestProperty("User-Agent", this.userAgent);
         connection.setRequestProperty("Cookie", cookie);
     }
 
@@ -147,11 +182,7 @@ public class BaiDuTranslate {
             URL url = new URL("https://fanyi.baidu.com");
             URLConnection connection = url.openConnection();
             setRequestProperty(connection);
-            String t = connection.getHeaderField("set-cookie");
-            if (t != null) {
-                t = extractCookie(t);
-                cookie = t;
-            }
+            cookie = Connection.getCookiesString(connection);
             InputStream is = connection.getInputStream();
             final String[] l = {null};
             new ReadIS(is, StandardCharsets.UTF_8).read(line -> {
@@ -172,11 +203,6 @@ public class BaiDuTranslate {
             e.printStackTrace();
         }
         return r;
-    }
-
-    private String extractCookie(String t) {
-        int indexOf = t.indexOf(';');
-        return t.substring(0, indexOf);
     }
 
     private String getSign(String text) {

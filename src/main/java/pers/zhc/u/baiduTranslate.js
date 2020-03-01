@@ -1,4 +1,4 @@
-let i = "320305.131321201";
+let i = "439729.1124205703";
 
 function e(r) {
     var o = r.match(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g);
@@ -45,5 +45,5 @@ function n(r, o) {
     return r
 }
 
-var r = e("I am a soldier, the beautiful grass, the wild fire when the spring spring, you are a silly force, I love you");
+var r = e("hello");
 console.log(r);

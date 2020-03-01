@@ -2,6 +2,7 @@ package pers.zhc.u;
 
 import org.json.JSONException;
 import pers.zhc.u.common.ReadIS;
+import pers.zhc.u.util.Connection;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -27,7 +28,7 @@ public class MYouDao {
         Map<String, String> params = new HashMap<>();
         params.put("inputtext", "hello");
         params.put("type", "AUTO");
-        String paramsString = YouDao.mapParamsToString(params);
+        String paramsString = Connection.mapParamsToString(params);
         OutputStream os = connection.getOutputStream();
         os.write(paramsString.getBytes());
         os.flush();
@@ -51,8 +52,7 @@ public class MYouDao {
             sb.append(charAt);
             ++i;
         }
-        String result = sb.toString();
-        return result;
+        return sb.toString();
     }
 
     public static void main(String[] args) {

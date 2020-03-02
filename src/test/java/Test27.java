@@ -8,33 +8,41 @@ import org.junit.Test;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Test27 {
-    private String infos = "Accept: */*\n" +
-            "Accept-Encoding: gzip, deflate\n" +
-            "Accept-Language: zh-CN,zh;q=0.9\n" +
-            "Cache-Control: no-cache\n" +
-            "Connection: keep-alive\n" +
-            "Content-Length: 127\n" +
-            "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\n" +
-            "Cookie: JSESSIONID=4B88B1BA979B7E00A9B3525080CEA29A.web1; GENSEE_UUID_COOKIE=g-89391-90136447-7391-42f3-afab-6f4338774057; GENSEE_FORBIDDEN_WORDS_COOKIE_G_PC_CLIENT_ROLE_NORMAL_L5loJskMd8=1000078502; GENSEE_FORBIDDEN_WORDS_COOKIE_WEB_L5loJskMd8=1000078502\n" +
-            "Host: yangshe.gensee.com\n" +
-            "Origin: http://yangshe.gensee.com\n" +
-            "Pragma: no-cache\n" +
-            "Referer: http://yangshe.gensee.com/training/site/v/11660284?nickname=%e7%bf%9f%e7%81%bf&token=fd1dafe546c4460bf9a295c6b250b0f5&sec=md5&uid=1000078502\n" +
-            "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
-    private String fromDataStr;
 
     private Map<String, String> getRequestPropertyMap(Map<String, String> map) {
         if (map == null) {
             map = new HashMap<>();
         }
+        String infos = "Accept: */*\n" +
+                "Accept-Encoding: gzip, deflate\n" +
+                "Accept-Language: zh-CN,zh;q=0.9\n" +
+                "Cache-Control: no-cache\n" +
+                "Connection: keep-alive\n" +
+                "Content-Length: 127\n" +
+                "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\n" +
+                "Cookie: JSESSIONID=4B88B1BA979B7E00A9B3525080CEA29A.web1; GENSEE_UUID_COOKIE=g-89391-90136447-7391-42f3-afab-6f4338774057; GENSEE_FORBIDDEN_WORDS_COOKIE_G_PC_CLIENT_ROLE_NORMAL_L5loJskMd8=1000078502; GENSEE_FORBIDDEN_WORDS_COOKIE_WEB_L5loJskMd8=1000078502\n" +
+                "Host: yangshe.gensee.com\n" +
+                "Origin: http://yangshe.gensee.com\n" +
+                "Pragma: no-cache\n" +
+                "Referer: http://yangshe.gensee.com/training/site/v/11660284?nickname=%e7%bf%9f%e7%81%bf&token=fd1dafe546c4460bf9a295c6b250b0f5&sec=md5&uid=1000078502\n" +
+                "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
         String[] split = infos.split("\\n");
         for (String s : split) {
             String[] anInfo = s.split(": ");
@@ -44,17 +52,40 @@ public class Test27 {
     }
 
     @Test
-    public void main() {
+    public void main() throws Exception {
         File file = new File("/home/zhc/code/code/java/src/test/questions.json");
-        OutputStream os = null;
+        OutputStream os = new FileOutputStream(file, false);
+        List<SubjectBean> subjectList = getSubjectList();
+        JSONArray result = new JSONArray();
+        for (SubjectBean subjectBean : subjectList) {
+            JSONObject subjectsJSON = new JSONObject();
+            subjectsJSON.put("subjectName", subjectBean.subjectName);
+            JSONArray coursesArray = new JSONArray();
+            List<OneSubjectBean> subjects = subjectBean.subjects;
+            for (OneSubjectBean subject : subjects) {
+                JSONObject coursesJSON = new JSONObject();
+                coursesJSON.put("order", subject.order);
+                coursesJSON.put("courseId", subject.pId);
+                JSONObject questionsJSON = fetch(subject.pId);
+                coursesJSON.put("questions", questionsJSON);
+                coursesArray.put(coursesJSON);
+            }
+            subjectsJSON.put("courses", coursesArray);
+            result.put(subjectsJSON);
+        }
+        os.write(result.toString().getBytes(StandardCharsets.UTF_8));
+        os.flush();
+        os.close();
+    }
+
+    private JSONObject fetch(String pId) {
         try {
             JSONObject resultJSON = new JSONObject(),
                     infosJSON = new JSONObject();
-            os = new FileOutputStream(file, false);
             URL url = new URL("http://yangshe.gensee.com/clientapi/apichannel?sc=1");
             Map<String, String> p = getRequestPropertyMap(new HashMap<>());
             int pageIndex = 1;
-            fromDataStr = "<?xml version=\"1.0\" encoding=\"utf-8\"?><qaHistory siteid=\"89391\" userid=\"1000078502\" confid=\"Hv5uuWeVok\" live=\"false\" page=\"%1$d\"/>";
+            String fromDataStr = "<?xml version=\"1.0\" encoding=\"utf-8\"?><qaHistory siteid=\"89391\" userid=\"1000078502\" confid=\"" + pId + "\" live=\"false\" page=\"%1$d\"/>";
             Document fromDataParse = Jsoup.parse(String.format(fromDataStr, pageIndex));
             Element element = fromDataParse.getElementsByTag("qahistory").get(0);
             String siteId = element.attr("siteid");
@@ -99,22 +130,14 @@ public class Test27 {
             }
             resultJSON.put("infos", infosJSON).put("questions", resultJSON)
                     .put("questions", questionsArray);
-            String result = resultJSON.toString();
-            os.write(result.getBytes(StandardCharsets.UTF_8));
-            os.flush();
+            return resultJSON;
         } catch (Exception e) {
             e.printStackTrace();
-        } finally {
-            if (os != null) {
-                try {
-                    os.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-            }
         }
+        return null;
     }
 
+    @SuppressWarnings("unused")
     private String stringToUnicode(String str) {
         StringBuilder sb = new StringBuilder();
         char[] charArray = str.toCharArray();
@@ -130,29 +153,94 @@ public class Test27 {
         return sb.toString();
     }
 
-    @Test
-    public void test() {
-        try {
-            infos = "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\n" +
-                    "Accept-Encoding: gzip, deflate\n" +
-                    "Accept-Language: zh-CN,zh;q=0.9\n" +
-                    "Cache-Control: no-cache\n" +
-                    "Connection: keep-alive\n" +
-                    "Cookie: BEC=aff2d9989b1422da3f7e45443a4e0511; ASP.NET_SessionId=lntc2gga3hwloa5fyxcwgewn; company=%e7%bf%9f%e7%81%bf; userid=74d256af-c5d2-40d4-b7af-9a38ea22d8e5; grade=2019; SERVERID=e8550d127bb922f42ee39fd21ff03815|1583150785|1583147036\n" +
-                    "Host: jc.iztedu.com\n" +
-                    "Pragma: no-cache\n" +
-                    "Referer: http://jc.iztedu.com/UserCenter/StudedntSchedule.aspx\n" +
-                    "Upgrade-Insecure-Requests: 1\n" +
-                    "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
-            URL url = new URL("http://jc.iztedu.com/UserCenter/StudentRecord.aspx");
-            Map<String, String> requestPropertyMap = getRequestPropertyMap(new HashMap<>());
-            URLConnection connection = Connection.get(url, null, requestPropertyMap);
-            InputStream is = connection.getInputStream();
-            new ReadIS(is, StandardCharsets.UTF_8).read(line -> {
-                System.out.println(line);
-            });
-        } catch (IOException e) {
-            e.printStackTrace();
+    public List<SubjectBean> getSubjectList() throws IOException {
+        List<SubjectElementsBean> subjectElementsBeans = new LinkedList<>();
+        List<SubjectBean> subjectBeans = new LinkedList<>();
+        for (int i = 0; i < 2; i++) {
+            Document parse = Jsoup.parse(new File("/home/zhc/code/code/java/src/test/StudentRecord" + i + ".html"), "UTF-8");
+            Element divContent = parse.getElementById("Div_Content");
+            Elements divList1 = divContent.getElementsByClass("Div_List");
+            Elements pList1 = divContent.getElementsByClass("P_List");
+            for (int j = 0; j < divList1.size(); j++) {
+                subjectElementsBeans.add(new SubjectElementsBean(divList1.get(j), pList1.get(j)));
+            }
         }
+        for (SubjectElementsBean subjectElementsBean : subjectElementsBeans) {
+            Element div = subjectElementsBean.div;
+            String title = div.getElementsByTag("h4").get(0).text();
+            SubjectBean subjectBean = new SubjectBean(title);
+            Elements pListChildren = subjectElementsBean.p.getElementsByTag("p");
+            for (Element pListChild : pListChildren) {
+                if (pListChild.text().equals("暂无点播内容")) continue;
+                Matcher matcher = Pattern.compile("^[0-9]*").matcher(pListChild.text());
+                if (matcher.find()) {
+                    int index = Integer.parseInt(matcher.group(0));
+                    String href = pListChild.getElementsByTag("a").get(0).attr("href");
+                    String pId = href.substring(href.indexOf('=') + 1);
+                    OneSubjectBean oneSubjectBean = new OneSubjectBean(pId, index);
+                    subjectBean.subjects.add(oneSubjectBean);
+                }
+            }
+            subjectBeans.add(subjectBean);
+        }
+        return subjectBeans;
+    }
+
+    private static class OneSubjectBean {
+        private String pId;
+        private int order;
+
+        private OneSubjectBean(String pId, int order) {
+            this.pId = pId;
+            this.order = order;
+        }
+    }
+
+    private static class SubjectBean {
+        private String subjectName;
+        private List<OneSubjectBean> subjects;
+
+        public SubjectBean(String subjectName) {
+            subjects = new LinkedList<>();
+            this.subjectName = subjectName;
+        }
+    }
+
+    private static class SubjectElementsBean {
+        private Element div, p;
+
+        private SubjectElementsBean(Element div, Element p) {
+            this.div = div;
+            this.p = p;
+        }
+    }
+
+    @Test
+    public void FindSomeone() throws IOException {
+        File file = new File("/home/zhc/code/code/java/src/test/someone.json");
+        OutputStream os = new FileOutputStream(file);
+        com.alibaba.fastjson.JSONArray set = new com.alibaba.fastjson.JSONArray();
+        String name = "滕晔";
+        InputStream is = new FileInputStream(new File("/home/zhc/code/code/java/src/test/questions.json"));
+        StringBuilder sb = new StringBuilder();
+        new ReadIS(is, StandardCharsets.UTF_8).read(sb::append);
+        com.alibaba.fastjson.JSONArray jsonArray = com.alibaba.fastjson.JSONArray.parseArray(sb.toString());
+        for (Object o : jsonArray) {
+            com.alibaba.fastjson.JSONObject jsonObject = (com.alibaba.fastjson.JSONObject) o;
+            com.alibaba.fastjson.JSONArray courses = jsonObject.getJSONArray("courses");
+            for (Object o1 : courses) {
+                com.alibaba.fastjson.JSONObject course = ((com.alibaba.fastjson.JSONObject) o1);
+                com.alibaba.fastjson.JSONArray questions = course.getJSONObject("questions").getJSONArray("questions");
+                for (Object o2 : questions) {
+                    com.alibaba.fastjson.JSONObject question = (com.alibaba.fastjson.JSONObject) o2;
+                    if (question.getString("questionOwner").equals(name)) {
+                        set.add(question);
+                    }
+                }
+            }
+        }
+        os.write(set.toString().getBytes(StandardCharsets.UTF_8));
+        os.flush();
+        os.close();
     }
 }

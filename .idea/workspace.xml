@@ -11,12 +11,14 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/t.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Test27.java" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="完成获取聊天信息；从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表用二进制流保存下来可以判断成一个GZip压缩归档，打开之后可以看见一个纯文本文件，里面是网站源码。真是奇怪了，为什么会这样，网站上面也不是这样显示的，可是为什么爬它会成那样？还在一个压缩包里，真是奇怪了。">
+      <change afterPath="$PROJECT_DIR$/src/test/StudentRecord0.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/StudentRecord1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/a.gzip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/Connection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/s.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/s.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test27.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/s.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/questions.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +154,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="sad (11223123)" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Android/some-tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -169,34 +171,15 @@
     <property name="project.structure.proportion" value="0.21790235" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pers.zhc.u.groovy.spring" />
-    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zhc.u.qmcflac_Decode" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="pers.zhc.u.groovy" />
-      <recent name="com.zhc.u" />
-      <recent name="" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/target/classes" />
-      <recent name="$PROJECT_DIR$/src/main/java" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
-      <recent name="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util" />
-      <recent name="$PROJECT_DIR$/mvn-repo-zhc/zhc/java" />
-    </key>
-    <key name="OPEN_URL_DIALOG">
-      <recent name="http://www.baidu.com" />
-      <recent name="http://baidu.com" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src" />
@@ -204,6 +187,25 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jni/src" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="pers.zhc.u.groovy" />
+      <recent name="com.zhc.u" />
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test" />
+      <recent name="$PROJECT_DIR$/target/classes" />
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/lib" />
+      <recent name="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util" />
+    </key>
+    <key name="OPEN_URL_DIALOG">
+      <recent name="http://www.baidu.com" />
+      <recent name="http://baidu.com" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pers.zhc.u.groovy.spring" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -280,7 +282,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test27.main">
+  <component name="RunManager" selected="JUnit.Test27.FindSomeone">
     <configuration name="KuaiDaiLi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="KuaiDaiLi" />
       <module name="java" />
@@ -288,9 +290,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="S" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="S" />
+    <configuration name="Test27.FindSomeone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Test27" />
+      <option name="METHOD_NAME" value="FindSomeone" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -327,11 +332,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Test27.FindSomeone" />
         <item itemvalue="JUnit.Test27.main" />
         <item itemvalue="JUnit.Test27.test" />
         <item itemvalue="JUnit.Test27.test2" />
         <item itemvalue="Application.KuaiDaiLi" />
-        <item itemvalue="Application.S" />
       </list>
     </recent_temporary>
   </component>
@@ -621,7 +626,7 @@
       <workItem from="1582985958075" duration="19847000" />
       <workItem from="1583038304506" duration="1973000" />
       <workItem from="1583050769701" duration="3762000" />
-      <workItem from="1583138506028" duration="10737000" />
+      <workItem from="1583138506028" duration="18231000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -861,7 +866,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583056704243</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码">
+      <created>1583151437810</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1583151437810</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -916,7 +928,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="mvn: 1.1" />
     <MESSAGE value="mvn: 1.2" />
     <MESSAGE value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
     <MESSAGE value="a" />
@@ -941,7 +952,8 @@
     <MESSAGE value="失败的百度翻译接口爬取" />
     <MESSAGE value="百度翻译接口爬取" />
     <MESSAGE value="youdao ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="youdao ok" />
+    <MESSAGE value="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码" />
+    <option name="LAST_COMMIT_MESSAGE" value="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="454" y="99" key="#Console" timestamp="1583140427046">
@@ -989,10 +1001,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="419" y="175" width="1302" height="699" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583036481464" />
-    <state x="568" y="327" width="587" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1581758703410">
+    <state x="568" y="327" width="587" height="413" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1583151443145">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="568" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1581758703410" />
+    <state x="568" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583151443145" />
     <state x="404" y="258" width="587" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1579835442454" />
     <state x="672" y="411" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1582892096395">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1002,10 +1014,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="632" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1050@0.0.1920.1050" timestamp="1582891721056" />
-    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583036267600">
+    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583155013670">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583036267600" />
+    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583155013669" />
     <state x="724" y="198" width="462" height="717" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581840379590" />
     <state x="551" y="108" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581738393412">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1036,16 +1048,16 @@
     </state>
     <state x="582" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1582946612132" />
     <state x="692" y="397" width="638" height="417" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1581840160903" />
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583056703506">
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583157502122">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583056703506" />
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583157502122" />
     <state x="349" y="27" width="867" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1580188097835" />
     <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830478783" />
-    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583148737490">
+    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583158582247">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583148737490" />
+    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583158582247" />
     <state width="595" height="548" key="DebuggerActiveHint/0.27.1920.1053@0.27.1920.1053" timestamp="1581840273070" />
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog" timestamp="1581905930192">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1055,55 +1067,55 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583025862438" />
-    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1583051240555">
+    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1583153741294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583051240555" />
+    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583153741294" />
     <state x="514" y="225" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1579853724418" />
     <state x="722" y="308" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1578754371353" />
-    <state width="1852" height="121" key="GridCell.Tab.0.bottom" timestamp="1583151359866">
+    <state width="1852" height="184" key="GridCell.Tab.0.bottom" timestamp="1583158756130">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="121" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583151359866" />
+    <state width="1852" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756130" />
     <state width="1312" height="169" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579859568492" />
     <state width="1852" height="396" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340970" />
-    <state width="1852" height="121" key="GridCell.Tab.0.center" timestamp="1583151359866">
+    <state width="1852" height="184" key="GridCell.Tab.0.center" timestamp="1583158756129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="121" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583151359866" />
+    <state width="1852" height="184" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756129" />
     <state width="1312" height="169" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579859568490" />
     <state width="1852" height="396" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="121" key="GridCell.Tab.0.left" timestamp="1583151359866">
+    <state width="1852" height="184" key="GridCell.Tab.0.left" timestamp="1583158756129">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="121" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583151359866" />
+    <state width="1852" height="184" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756129" />
     <state width="1312" height="169" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579859568489" />
     <state width="1852" height="396" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340968" />
-    <state width="1852" height="121" key="GridCell.Tab.0.right" timestamp="1583151359866">
+    <state width="1852" height="184" key="GridCell.Tab.0.right" timestamp="1583158756130">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="121" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583151359866" />
+    <state width="1852" height="184" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756130" />
     <state width="1312" height="169" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579859568491" />
     <state width="1852" height="396" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="805" key="GridCell.Tab.1.bottom" timestamp="1583149490693">
+    <state width="1852" height="205" key="GridCell.Tab.1.bottom" timestamp="1583158694876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="805" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583149490693" />
+    <state width="1852" height="205" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694876" />
     <state width="1852" height="396" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340973" />
-    <state width="1852" height="805" key="GridCell.Tab.1.center" timestamp="1583149490692">
+    <state width="1852" height="205" key="GridCell.Tab.1.center" timestamp="1583158694875">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="805" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583149490692" />
+    <state width="1852" height="205" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694875" />
     <state width="1852" height="396" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="805" key="GridCell.Tab.1.left" timestamp="1583149490691">
+    <state width="1852" height="205" key="GridCell.Tab.1.left" timestamp="1583158694874">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="805" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583149490691" />
+    <state width="1852" height="205" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694874" />
     <state width="1852" height="396" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="805" key="GridCell.Tab.1.right" timestamp="1583149490692">
+    <state width="1852" height="205" key="GridCell.Tab.1.right" timestamp="1583158694876">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="805" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583149490692" />
+    <state width="1852" height="205" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694876" />
     <state width="1852" height="396" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
     <state width="1852" height="380" key="GridCell.Tab.2.bottom" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1145,10 +1157,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="706" y="161" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583151169988" />
-    <state x="0" y="0" width="1858" height="1056" key="SettingsEditor" timestamp="1582891728823">
+    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor" timestamp="1583153912107">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1858" height="1056" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1582891728823" />
+    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1583153912107" />
     <state x="112" y="31" width="1037" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1579786605284" />
     <state x="412" y="128" width="540" height="524" key="StructurePopup" timestamp="1579786541588">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1164,10 +1176,10 @@
     <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583056719978" />
     <state x="396" y="209" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1579836020712" />
     <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830493073" />
-    <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1583148732660">
+    <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1583156744066">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1583148732660" />
+    <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1583156744066" />
     <state width="960" height="527" key="XDebugger.FullValuePopup/0.27.1920.1053@0.27.1920.1053" timestamp="1581840329502" />
     <state x="100" y="100" width="1720" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583029513155">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1181,10 +1193,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="771" y="392" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1581907516397" />
-    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583145212578">
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583152016799">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583145212578" />
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583152016799" />
     <state x="206" y="27" width="944" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1580186375221" />
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581902049462">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1229,10 +1241,10 @@
     </state>
     <state x="488" y="84" width="945" height="964" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583038583570" />
     <state x="347" y="173" width="672" height="680" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1579852885794" />
-    <state x="623" y="231" width="928" height="678" key="search.everywhere.popup" timestamp="1583145404668">
+    <state x="623" y="231" width="928" height="678" key="search.everywhere.popup" timestamp="1583153756208">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="623" y="231" width="928" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583145404668" />
+    <state x="623" y="231" width="928" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583153756208" />
     <state x="443" y="190" width="672" height="479" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1580186741008" />
     <state x="623" y="259" width="840" height="680" key="search.everywhere.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582179744606" />
     <state x="475" y="128" key="spring file set editor" timestamp="1581904382062">
@@ -1245,14 +1257,14 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/Test27.java</url>
-          <line>59</line>
-          <option name="timeStamp" value="9" />
+          <line>72</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
-        <watch expression="fromDataParse" language="JAVA" />
+        <watch expression="pListChild.text()" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="parse.getElementById(&quot;list&quot;).child(1).child(1).children().get(0).child(0)" language="JAVA" custom="org.jsoup.nodes.Element" />

@@ -30,12 +30,28 @@ public class Connection {
         return connection;
     }
 
+    public static URLConnection post(URL url, @Documents.Nullable String fromData, @Documents.Nullable Map<String, String> requsetProperty) throws IOException {
+        URLConnection connection = url.openConnection();
+        connection.setDoInput(true);
+        connection.setDoOutput(true);
+        if (requsetProperty != null) {
+            requsetProperty.forEach(connection::setRequestProperty);
+        }
+        OutputStream os = connection.getOutputStream();
+        if (fromData != null) {
+            os.write(fromData.getBytes(StandardCharsets.UTF_8));
+            os.flush();
+        }
+        os.close();
+        return connection;
+    }
+
     public static URLConnection get(URL url, @Documents.Nullable Map<String, String> params, @Documents.Nullable Map<String, String> requestProperty) throws IOException {
         String paramsToString = "";
         if (params != null) {
             paramsToString = mapParamsToString(params);
         }
-        url = new URL(url.toString() + "?" + paramsToString);
+        url = new URL(url.toString() + (params == null ? "" : "?") + paramsToString);
         URLConnection connection = url.openConnection();
         if (requestProperty != null) {
             requestProperty.forEach(connection::setRequestProperty);

@@ -11,14 +11,86 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="完成获取聊天信息；从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表用二进制流保存下来可以判断成一个GZip压缩归档，打开之后可以看见一个纯文本文件，里面是网站源码。真是奇怪了，为什么会这样，网站上面也不是这样显示的，可是为什么爬它会成那样？还在一个压缩包里，真是奇怪了。">
-      <change afterPath="$PROJECT_DIR$/src/test/StudentRecord0.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/StudentRecord1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/a.gzip" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_javaparser_javaparser_core_3_15_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_37_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_37_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_cssparser_1_5_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_37_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_10_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_brotli_dec_0_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_datetime_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovydoc_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovysh_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_nio_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_sql_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_templates_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_3_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_26_v20200117.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/JsonFormatTool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/r.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/recordXML.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/dependencies.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zhc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zhc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_3_9_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_antlr_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_antlr_1_10_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_junit_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_junit_1_10_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_10_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_ant_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_ant_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_commons_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_picocli_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_picocli_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_console_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_servlet_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_datetime_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_docgenerator_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_docgenerator_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovydoc_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovysh_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jmx_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jmx_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jsr223_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jsr223_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_macro_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_macro_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_nio_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_servlet_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_console_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_sql_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_swing_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_swing_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_templates_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_junit5_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_junit5_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_testng_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_testng_3_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_5_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_13_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/d.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/StudentRecord0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StudentRecord0.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/StudentRecord1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StudentRecord1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/proxy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/s.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/questions.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/someone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/someone.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,7 +239,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.21790235" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -282,10 +354,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Test27.FindSomeone">
-    <configuration name="KuaiDaiLi" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="KuaiDaiLi" />
+  <component name="RunManager" selected="JUnit.JsonFormatTool.test">
+    <configuration name="JsonFormatTool.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="JsonFormatTool" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -332,11 +407,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Test27.FindSomeone" />
+        <item itemvalue="JUnit.JsonFormatTool.test" />
         <item itemvalue="JUnit.Test27.main" />
-        <item itemvalue="JUnit.Test27.test" />
         <item itemvalue="JUnit.Test27.test2" />
-        <item itemvalue="Application.KuaiDaiLi" />
+        <item itemvalue="JUnit.Test27.test" />
+        <item itemvalue="JUnit.Test27.FindSomeone" />
       </list>
     </recent_temporary>
   </component>
@@ -626,7 +701,8 @@
       <workItem from="1582985958075" duration="19847000" />
       <workItem from="1583038304506" duration="1973000" />
       <workItem from="1583050769701" duration="3762000" />
-      <workItem from="1583138506028" duration="18231000" />
+      <workItem from="1583138506028" duration="18758000" />
+      <workItem from="1583216425857" duration="17923000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -873,7 +949,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583151437810</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="添加找人。。">
+      <created>1583158801862</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1583158801862</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -928,7 +1011,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="mvn: 1.2" />
     <MESSAGE value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
     <MESSAGE value="a" />
     <MESSAGE value="b" />
@@ -953,7 +1035,8 @@
     <MESSAGE value="百度翻译接口爬取" />
     <MESSAGE value="youdao ok" />
     <MESSAGE value="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码" />
-    <option name="LAST_COMMIT_MESSAGE" value="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码" />
+    <MESSAGE value="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。" />
+    <option name="LAST_COMMIT_MESSAGE" value="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="454" y="99" key="#Console" timestamp="1583140427046">
@@ -1048,74 +1131,78 @@
     </state>
     <state x="582" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1582946612132" />
     <state x="692" y="397" width="638" height="417" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1581840160903" />
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583157502122">
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583243464176">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583157502122" />
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583243464176" />
     <state x="349" y="27" width="867" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1580188097835" />
     <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830478783" />
-    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583158582247">
+    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583231179231">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583158582247" />
+    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583231179231" />
     <state width="595" height="548" key="DebuggerActiveHint/0.27.1920.1053@0.27.1920.1053" timestamp="1581840273070" />
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog" timestamp="1581905930192">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1581905930192" />
-    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog" timestamp="1583025862438">
+    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog" timestamp="1583231404522">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583025862438" />
+    <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583231404522" />
     <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1583153741294">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583153741294" />
     <state x="514" y="225" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1579853724418" />
     <state x="722" y="308" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1578754371353" />
-    <state width="1852" height="184" key="GridCell.Tab.0.bottom" timestamp="1583158756130">
+    <state x="746" y="400" key="GitRewordDialog" timestamp="1583158955326">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="184" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756130" />
+    <state x="746" y="400" key="GitRewordDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583158955326" />
+    <state width="1852" height="115" key="GridCell.Tab.0.bottom" timestamp="1583243356465">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1852" height="115" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356465" />
     <state width="1312" height="169" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579859568492" />
     <state width="1852" height="396" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340970" />
-    <state width="1852" height="184" key="GridCell.Tab.0.center" timestamp="1583158756129">
+    <state width="1852" height="115" key="GridCell.Tab.0.center" timestamp="1583243356464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="184" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756129" />
+    <state width="1852" height="115" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
     <state width="1312" height="169" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579859568490" />
     <state width="1852" height="396" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="184" key="GridCell.Tab.0.left" timestamp="1583158756129">
+    <state width="1852" height="115" key="GridCell.Tab.0.left" timestamp="1583243356464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="184" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756129" />
+    <state width="1852" height="115" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
     <state width="1312" height="169" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579859568489" />
     <state width="1852" height="396" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340968" />
-    <state width="1852" height="184" key="GridCell.Tab.0.right" timestamp="1583158756130">
+    <state width="1852" height="115" key="GridCell.Tab.0.right" timestamp="1583243356464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="184" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583158756130" />
+    <state width="1852" height="115" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
     <state width="1312" height="169" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579859568491" />
     <state width="1852" height="396" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="205" key="GridCell.Tab.1.bottom" timestamp="1583158694876">
+    <state width="1852" height="305" key="GridCell.Tab.1.bottom" timestamp="1583242725013">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="205" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694876" />
+    <state width="1852" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725013" />
     <state width="1852" height="396" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340973" />
-    <state width="1852" height="205" key="GridCell.Tab.1.center" timestamp="1583158694875">
+    <state width="1852" height="305" key="GridCell.Tab.1.center" timestamp="1583242725012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="205" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694875" />
+    <state width="1852" height="305" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725012" />
     <state width="1852" height="396" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="205" key="GridCell.Tab.1.left" timestamp="1583158694874">
+    <state width="1852" height="305" key="GridCell.Tab.1.left" timestamp="1583242725011">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="205" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694874" />
+    <state width="1852" height="305" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725011" />
     <state width="1852" height="396" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="205" key="GridCell.Tab.1.right" timestamp="1583158694876">
+    <state width="1852" height="305" key="GridCell.Tab.1.right" timestamp="1583242725012">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="205" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583158694876" />
+    <state width="1852" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725012" />
     <state width="1852" height="396" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
     <state width="1852" height="380" key="GridCell.Tab.2.bottom" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1157,10 +1244,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="706" y="161" key="RollbackChangesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583151169988" />
-    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor" timestamp="1583153912107">
+    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor" timestamp="1583237407345">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1583153912107" />
+    <state x="0" y="0" width="1858" height="1050" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1583237407345" />
     <state x="112" y="31" width="1037" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1579786605284" />
     <state x="412" y="128" width="540" height="524" key="StructurePopup" timestamp="1579786541588">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1170,10 +1257,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="623" height="664" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1583032609498" />
-    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2" timestamp="1583056719978">
+    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2" timestamp="1583158958304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583056719978" />
+    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583158958304" />
     <state x="396" y="209" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1579836020712" />
     <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830493073" />
     <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1583156744066">
@@ -1193,27 +1280,27 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="771" y="392" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1581907516397" />
-    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583152016799">
+    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583242402413">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583152016799" />
+    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583242402413" />
     <state x="206" y="27" width="944" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1580186375221" />
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581902049462">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1581902049462" />
-    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583045084383">
+    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1583235470921">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1583045084383" />
+    <state x="350" y="198" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1050@0.0.1920.1050" timestamp="1583235470921" />
     <state x="694" y="277" width="652" height="505" key="extract.method.dialog" timestamp="1578730916425">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="694" y="277" width="652" height="505" key="extract.method.dialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578730916425" />
-    <state x="595" y="256" width="919" height="782" key="find.popup" timestamp="1583145398122">
+    <state x="595" y="256" width="919" height="782" key="find.popup" timestamp="1583223575921">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="595" y="256" width="919" height="782" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583145398122" />
+    <state x="595" y="256" width="919" height="782" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583223575921" />
     <state x="27" y="34" width="1297" height="727" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1579835633708" />
     <state x="595" y="284" width="919" height="785" key="find.popup/0.27.1920.1053@0.27.1920.1053" timestamp="1582179751505" />
     <state x="634" y="347" width="642" height="420" key="git4idea.merge.GitPullDialog" timestamp="1578749373974">
@@ -1232,14 +1319,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="23" y="0" key="new project wizard/0.0.1920.1050@0.0.1920.1050" timestamp="1581738658319" />
-    <state x="651" y="144" width="616" height="767" key="refactoring.ChangeSignatureDialog" timestamp="1578730642336">
+    <state x="651" y="144" width="619" height="767" key="refactoring.ChangeSignatureDialog" timestamp="1583222675191">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="651" y="144" width="616" height="767" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1578730642336" />
-    <state x="488" y="84" width="945" height="964" key="run.anything.popup" timestamp="1583038583570">
+    <state x="651" y="144" width="619" height="767" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583222675191" />
+    <state x="488" y="84" width="945" height="964" key="run.anything.popup" timestamp="1583234040457">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="488" y="84" width="945" height="964" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583038583570" />
+    <state x="488" y="84" width="945" height="964" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583234040457" />
     <state x="347" y="173" width="672" height="680" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1579852885794" />
     <state x="623" y="231" width="928" height="678" key="search.everywhere.popup" timestamp="1583153756208">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1253,15 +1340,6 @@
     <state x="475" y="128" key="spring file set editor/0.0.1920.1050@0.0.1920.1050" timestamp="1581904382062" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test27.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="pListChild.text()" language="JAVA" />

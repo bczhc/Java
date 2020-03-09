@@ -36,7 +36,7 @@ public class Demo3 {
         is.close();
         JSONObject jsonObject = new JSONObject(sb.toString());
         JSONArray list = jsonObject.getJSONArray("list");
-        ExecutorService es = Executors.newFixedThreadPool(24);
+        ExecutorService es = Executors.newFixedThreadPool(list.length());
         CountDownLatch latch = new CountDownLatch(list.length());
         for (Object o1 : list) {
             es.execute(() -> {

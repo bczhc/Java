@@ -39,4 +39,10 @@ public class ReadIS {
             s = br.readLine();
         }
     }
+
+    public static String readToString(InputStream is, Charset charsets) throws IOException {
+        StringBuilder sb = new StringBuilder();
+        new ReadIS(is, charsets).read(sb::append);
+        return sb.toString();
+    }
 }

@@ -205,6 +205,11 @@
             <artifactId>htmlunit</artifactId>
             <version>2.37.0</version>
         </dependency>
+        <dependency>
+            <groupId>com.itextpdf</groupId>
+            <artifactId>itextpdf</artifactId>
+            <version>5.5.13.1</version>
+        </dependency>
     </dependencies>
     <distributionManagement>
         <repository>

@@ -11,86 +11,17 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_javaparser_javaparser_core_3_15_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_2_37_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_core_js_2_37_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_htmlunit_cssparser_1_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_htmlunit_neko_htmlunit_2_37_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_10_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_text_1_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_brotli_dec_0_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_datetime_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovydoc_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovysh_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_nio_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_sql_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_templates_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_client_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_http_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_io_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_util_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_jetty_xml_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_api_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_client_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jetty_websocket_websocket_common_9_4_26_v20200117.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_serializer_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xalan_xalan_2_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/JsonFormatTool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/r.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/recordXML.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/dependencies.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/dependencies.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/zhc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/zhc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__info_picocli_picocli_3_9_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_antlr_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_antlr_1_10_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_junit_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_junit_1_10_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_10_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_all_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_ant_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_ant_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_commons_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_picocli_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_cli_picocli_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_console_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_servlet_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_datetime_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_docgenerator_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_docgenerator_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovydoc_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_groovysh_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jmx_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jmx_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_json_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jsr223_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_jsr223_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_macro_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_macro_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_nio_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_servlet_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_console_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_sql_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_swing_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_swing_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_templates_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_junit5_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_test_junit5_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_testng_2_5_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_testng_3_0_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_xml_2_5_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_launcher_1_6_0.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_testng_testng_6_13_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/d.xml" beforeDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="未完成的爬取聊天（上次爬取的是提问）和ppt图片，某些信息的获取遇到困难，gensee框架真的很迷。">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_itextpdf_itextpdf_5_5_13_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ImagePDF.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/pdf.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/coursesData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demo/Demo2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demo/Demo3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/java.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/StudentRecord0.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StudentRecord0.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/StudentRecord1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/StudentRecord1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Test27.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/questions.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/questions.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/someone.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/someone.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadIS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadIS.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,8 +61,8 @@
         <option value="JUnit4 Test Class" />
         <option value="Interface" />
         <option value="Jsp File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
@@ -247,20 +178,20 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pers.zhc.u.groovy.spring" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.zhc.u.qmcflac_Decode" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/externalJNI/jni" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jni/src" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pers.zhc.u" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="demo" />
       <recent name="pers.zhc.u.groovy" />
       <recent name="com.zhc.u" />
       <recent name="" />
@@ -276,8 +207,12 @@
       <recent name="http://www.baidu.com" />
       <recent name="http://baidu.com" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pers.zhc.u.groovy.spring" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/externalJNI/jni" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jni/src" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -354,52 +289,81 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JsonFormatTool.test">
-    <configuration name="JsonFormatTool.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Android JUnit.Demo3.test">
+    <configuration name="Demo2.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="JsonFormatTool" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo2" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo3.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo3" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.Demo3" />
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo2" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test27.FindSomeone" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo3.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test27" />
-      <option name="METHOD_NAME" value="FindSomeone" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test27.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test27" />
-      <option name="METHOD_NAME" value="main" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test27.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test27" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo3" />
       <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test27.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="Test27" />
-      <option name="METHOD_NAME" value="test2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -407,11 +371,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JsonFormatTool.test" />
-        <item itemvalue="JUnit.Test27.main" />
-        <item itemvalue="JUnit.Test27.test2" />
-        <item itemvalue="JUnit.Test27.test" />
-        <item itemvalue="JUnit.Test27.FindSomeone" />
+        <item itemvalue="Android JUnit.Demo3.test" />
+        <item itemvalue="Application.Demo3" />
+        <item itemvalue="JUnit.Demo3.test" />
+        <item itemvalue="Android JUnit.Demo2.test" />
+        <item itemvalue="JUnit.Demo2.test" />
       </list>
     </recent_temporary>
   </component>
@@ -702,7 +666,8 @@
       <workItem from="1583038304506" duration="1973000" />
       <workItem from="1583050769701" duration="3762000" />
       <workItem from="1583138506028" duration="18758000" />
-      <workItem from="1583216425857" duration="17923000" />
+      <workItem from="1583216425857" duration="19393000" />
+      <workItem from="1583756449795" duration="9385000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -956,7 +921,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583158801862</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="未完成的爬取聊天（上次爬取的是提问）和ppt图片，某些信息的获取遇到困难，gensee框架真的很迷。">
+      <created>1583243591548</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1583243591549</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1011,7 +983,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="Fourier Series。。and function drawing&#10;mvn: 1.3" />
     <MESSAGE value="a" />
     <MESSAGE value="b" />
     <MESSAGE value="d" />
@@ -1036,7 +1007,8 @@
     <MESSAGE value="youdao ok" />
     <MESSAGE value="收集聊天信息，对于单视频界面，给confId和正确登录的所有请求头，即可获取内容，但是从http://jc.iztedu.com/UserCenter/StudentRecord.aspx获取课程列表却返回乱码" />
     <MESSAGE value="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。" />
-    <option name="LAST_COMMIT_MESSAGE" value="收集聊天信息完成。添加找人；对前面那个网址爬下来的内容乱码的问题，对其使用二进制流保存到本地文件，可以判断出是一个GZip归档文件，但是不知道为什么会发生这样的情况，为什么网站上看出来的不是这样，真的很奇怪……最后选择了在网页上直接复制下来经过浏览器渲染的HTML源码，用Jsoup进行解析。" />
+    <MESSAGE value="未完成的爬取聊天（上次爬取的是提问）和ppt图片，某些信息的获取遇到困难，gensee框架真的很迷。" />
+    <option name="LAST_COMMIT_MESSAGE" value="未完成的爬取聊天（上次爬取的是提问）和ppt图片，某些信息的获取遇到困难，gensee框架真的很迷。" />
   </component>
   <component name="WindowStateProjectService">
     <state x="454" y="99" key="#Console" timestamp="1583140427046">
@@ -1097,10 +1069,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="632" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1050@0.0.1920.1050" timestamp="1582891721056" />
-    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583155013670">
+    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583761970282">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583155013669" />
+    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583761970282" />
     <state x="724" y="198" width="462" height="717" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581840379590" />
     <state x="551" y="108" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581738393412">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1110,9 +1082,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="1025" y="157" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1581755876557" />
-    <state x="432" y="243" width="501" height="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1579857251837">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="607" y="306" width="501" height="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1583762894637">
+      <screen x="0" y="0" width="1920" height="1050" />
     </state>
+    <state x="607" y="306" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1583762894637" />
     <state x="432" y="243" width="501" height="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1366.741@0.27.1366.741" timestamp="1579857251837" />
     <state x="143" y="0" width="1635" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583036211147">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1131,16 +1104,16 @@
     </state>
     <state x="582" y="298" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1050@0.0.1920.1050" timestamp="1582946612132" />
     <state x="692" y="397" width="638" height="417" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.27.1920.1053@0.27.1920.1053" timestamp="1581840160903" />
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583243464176">
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2" timestamp="1583756527464">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583243464176" />
+    <state x="0" y="0" width="1920" height="1050" key="CommitChangelistDialog2/0.0.1920.1050@0.0.1920.1050" timestamp="1583756527464" />
     <state x="349" y="27" width="867" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1580188097835" />
     <state x="490" y="141" width="938" height="823" key="CommitChangelistDialog2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830478783" />
-    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583231179231">
+    <state width="1896" height="546" key="DebuggerActiveHint" timestamp="1583765544900">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583231179231" />
+    <state width="1896" height="546" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1583765544900" />
     <state width="595" height="548" key="DebuggerActiveHint/0.27.1920.1053@0.27.1920.1053" timestamp="1581840273070" />
     <state x="693" y="103" key="Diagram.Print.Preview.Dialog" timestamp="1581905930192">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1160,49 +1133,49 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="746" y="400" key="GitRewordDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583158955326" />
-    <state width="1852" height="115" key="GridCell.Tab.0.bottom" timestamp="1583243356465">
+    <state width="922" height="809" key="GridCell.Tab.0.bottom" timestamp="1583766160844">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="115" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356465" />
+    <state width="922" height="809" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583766160844" />
     <state width="1312" height="169" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579859568492" />
     <state width="1852" height="396" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340970" />
-    <state width="1852" height="115" key="GridCell.Tab.0.center" timestamp="1583243356464">
+    <state width="922" height="809" key="GridCell.Tab.0.center" timestamp="1583766160844">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="115" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
+    <state width="922" height="809" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583766160844" />
     <state width="1312" height="169" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579859568490" />
     <state width="1852" height="396" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="115" key="GridCell.Tab.0.left" timestamp="1583243356464">
+    <state width="922" height="809" key="GridCell.Tab.0.left" timestamp="1583766160844">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="115" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
+    <state width="922" height="809" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583766160844" />
     <state width="1312" height="169" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579859568489" />
     <state width="1852" height="396" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340968" />
-    <state width="1852" height="115" key="GridCell.Tab.0.right" timestamp="1583243356464">
+    <state width="922" height="809" key="GridCell.Tab.0.right" timestamp="1583766160844">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="115" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583243356464" />
+    <state width="922" height="809" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583766160844" />
     <state width="1312" height="169" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579859568491" />
     <state width="1852" height="396" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="305" key="GridCell.Tab.1.bottom" timestamp="1583242725013">
+    <state width="1852" height="338" key="GridCell.Tab.1.bottom" timestamp="1583765588926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="305" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725013" />
+    <state width="1852" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583765588926" />
     <state width="1852" height="396" key="GridCell.Tab.1.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340973" />
-    <state width="1852" height="305" key="GridCell.Tab.1.center" timestamp="1583242725012">
+    <state width="1852" height="338" key="GridCell.Tab.1.center" timestamp="1583765588926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="305" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725012" />
+    <state width="1852" height="338" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583765588926" />
     <state width="1852" height="396" key="GridCell.Tab.1.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="305" key="GridCell.Tab.1.left" timestamp="1583242725011">
+    <state width="1852" height="338" key="GridCell.Tab.1.left" timestamp="1583765588925">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="305" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725011" />
+    <state width="1852" height="338" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583765588925" />
     <state width="1852" height="396" key="GridCell.Tab.1.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
-    <state width="1852" height="305" key="GridCell.Tab.1.right" timestamp="1583242725012">
+    <state width="1852" height="338" key="GridCell.Tab.1.right" timestamp="1583765588926">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="305" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583242725012" />
+    <state width="1852" height="338" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583765588926" />
     <state width="1852" height="396" key="GridCell.Tab.1.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340972" />
     <state width="1852" height="380" key="GridCell.Tab.2.bottom" timestamp="1583026684211">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1236,6 +1209,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1852" height="380" key="GridCell.Tab.3.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583026684211" />
+    <state x="379" y="96" key="Maven.ArtifactSearchDialog" timestamp="1583759058572">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="379" y="96" key="Maven.ArtifactSearchDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583759058572" />
     <state x="747" y="459" key="ReplaceDuplicatesPrompt" timestamp="1578730918000">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1257,16 +1234,16 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="623" height="664" key="SwitcherDM/0.0.1920.1050@0.0.1920.1050" timestamp="1583032609498" />
-    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2" timestamp="1583158958304">
+    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2" timestamp="1583756521404">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583158958304" />
+    <state x="556" y="258" width="1012" height="669" key="Vcs.Push.Dialog.v2/0.0.1920.1050@0.0.1920.1050" timestamp="1583756521404" />
     <state x="396" y="209" width="800" height="538" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1579836020712" />
     <state x="556" y="286" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1581830493073" />
-    <state width="960" height="525" key="XDebugger.FullValuePopup" timestamp="1583156744066">
+    <state width="1592" height="525" key="XDebugger.FullValuePopup" timestamp="1583765514773">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1583156744066" />
+    <state width="1592" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1583765514773" />
     <state width="960" height="527" key="XDebugger.FullValuePopup/0.27.1920.1053@0.27.1920.1053" timestamp="1581840329502" />
     <state x="100" y="100" width="1720" height="850" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1583029513155">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1280,10 +1257,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="771" y="392" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1920.1050@0.0.1920.1050" timestamp="1581907516397" />
-    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583242402413">
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1583761571966">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="290" y="0" width="1327" height="1050" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583242402413" />
+    <state x="290" y="0" width="1327" height="1056" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583761571966" />
     <state x="206" y="27" width="944" height="741" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.27.1366.741@0.27.1366.741" timestamp="1580186375221" />
     <state x="642" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1581902049462">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1323,10 +1300,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="651" y="144" width="619" height="767" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583222675191" />
-    <state x="488" y="84" width="945" height="964" key="run.anything.popup" timestamp="1583234040457">
+    <state x="488" y="84" width="945" height="964" key="run.anything.popup" timestamp="1583765766200">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="488" y="84" width="945" height="964" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583234040457" />
+    <state x="488" y="84" width="945" height="964" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1583765766200" />
     <state x="347" y="173" width="672" height="680" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1579852885794" />
     <state x="623" y="231" width="928" height="678" key="search.everywhere.popup" timestamp="1583153756208">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1343,6 +1320,10 @@
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="pListChild.text()" language="JAVA" />
+      </configuration>
+      <configuration name="AndroidJUnit">
+        <watch expression="s.indexOf(&quot;totalPageCount=&quot;)" language="JAVA" />
+        <watch expression="group" language="JAVA" />
       </configuration>
       <configuration name="Application">
         <watch expression="parse.getElementById(&quot;list&quot;).child(1).child(1).children().get(0).child(0)" language="JAVA" custom="org.jsoup.nodes.Element" />

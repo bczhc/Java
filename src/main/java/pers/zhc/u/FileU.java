@@ -199,6 +199,19 @@ public class FileU {
         StreamWrite(u.openConnection().getInputStream(), fos);
     }
 
+    public static void DownloadWebRetry(URL url, File file, int retryNum) throws IOException {
+        Throwable throwable = new Exception("");
+        for (int i = 0; i < retryNum; i++) {
+            try {
+                DownloadWeb(url, file);
+                break;
+            } catch (IOException e) {
+                throwable = e;
+            }
+        }
+        throw new IOException("fail, had retried " + retryNum + "times", throwable);
+    }
+
     public static void ReadServletInputStreamToFileIS(InputStream in, OutputStream to_outputStream, long fileSize) throws IOException {
         FileU o = new FileU();
         ByteArrayOutputStream baos1 = new ByteArrayOutputStream(), baos2 = new ByteArrayOutputStream();

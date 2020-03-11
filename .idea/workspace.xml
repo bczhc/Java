@@ -12,8 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/ClockHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/ClockHandlerCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demo/Demo4.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Digest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Digest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +53,11 @@
       <list>
         <option value="Kotlin File" />
         <option value="JUnit4 Test Class" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -149,7 +151,7 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last.edited.regexp" value="sad (11223123)" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Python" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -281,24 +283,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Android JUnit.Demo3.test">
-    <configuration name="Demo2.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.zhc.u.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="demo" />
-      <option name="MAIN_CLASS_NAME" value="demo.Demo2" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.Demo4.test3">
     <configuration name="Demo3.test" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
@@ -329,33 +314,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo2.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo4.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="demo" />
-      <option name="MAIN_CLASS_NAME" value="demo.Demo2" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo4" />
       <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Demo3.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Demo4.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.zhc.u.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="demo" />
-      <option name="MAIN_CLASS_NAME" value="demo.Demo3" />
-      <option name="METHOD_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo4" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Demo4.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Demo4" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -363,11 +364,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Demo4.test3" />
+        <item itemvalue="JUnit.Demo4.test2" />
+        <item itemvalue="JUnit.Demo4.test" />
         <item itemvalue="Android JUnit.Demo3.test" />
         <item itemvalue="Application.Demo3" />
-        <item itemvalue="JUnit.Demo3.test" />
-        <item itemvalue="Android JUnit.Demo2.test" />
-        <item itemvalue="JUnit.Demo2.test" />
       </list>
     </recent_temporary>
   </component>
@@ -661,6 +662,7 @@
       <workItem from="1583216425857" duration="19393000" />
       <workItem from="1583756449795" duration="11781000" />
       <workItem from="1583840809566" duration="776000" />
+      <workItem from="1583923759209" duration="7559000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1076,10 +1078,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="632" y="299" key="#com.intellij.ide.scriptingContext.ui.PerFileMappingsDialogWrapper/0.0.1920.1050@0.0.1920.1050" timestamp="1582891721056" />
-    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583761970282">
+    <state x="724" y="171" width="462" height="717" key="#com.intellij.ide.util.MemberChooser" timestamp="1583939002964">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583761970282" />
+    <state x="724" y="171" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1583939002964" />
     <state x="724" y="198" width="462" height="717" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053@0.27.1920.1053" timestamp="1581840379590" />
     <state x="551" y="108" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1581738393412">
       <screen x="0" y="0" width="1920" height="1050" />
@@ -1094,10 +1096,10 @@
     </state>
     <state x="607" y="306" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1050@0.0.1920.1050" timestamp="1583762894637" />
     <state x="432" y="243" width="501" height="328" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1366.741@0.27.1366.741" timestamp="1579857251837" />
-    <state x="143" y="0" width="1635" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583036211147">
+    <state x="143" y="0" width="1635" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1583939213725">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="143" y="0" width="1635" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583036211147" />
+    <state x="143" y="0" width="1635" height="1056" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583939213725" />
     <state x="0" y="0" width="1920" height="1050" key="#xdebugger.XInspectDialog" timestamp="1582902265139">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -1130,38 +1132,38 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="120" y="0" width="1720" height="850" maximized="true" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583231404522" />
-    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1583153741294">
+    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl" timestamp="1583932068618">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583153741294" />
+    <state x="722" y="280" width="963" height="599" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1583932068618" />
     <state x="514" y="225" width="424" height="491" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1579853724418" />
     <state x="722" y="308" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1578754371353" />
     <state x="746" y="400" key="GitRewordDialog" timestamp="1583158955326">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="746" y="400" key="GitRewordDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1583158955326" />
-    <state width="1852" height="338" key="GridCell.Tab.0.bottom" timestamp="1583767617379">
+    <state width="1852" height="115" key="GridCell.Tab.0.bottom" timestamp="1583940184862">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583767617379" />
+    <state width="1852" height="115" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1583940184862" />
     <state width="1312" height="169" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1579859568492" />
     <state width="1852" height="396" key="GridCell.Tab.0.bottom/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340970" />
-    <state width="1852" height="338" key="GridCell.Tab.0.center" timestamp="1583767617379">
+    <state width="1852" height="115" key="GridCell.Tab.0.center" timestamp="1583940184860">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="338" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583767617379" />
+    <state width="1852" height="115" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1583940184860" />
     <state width="1312" height="169" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1579859568490" />
     <state width="1852" height="396" key="GridCell.Tab.0.center/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
-    <state width="1852" height="338" key="GridCell.Tab.0.left" timestamp="1583767617378">
+    <state width="1852" height="115" key="GridCell.Tab.0.left" timestamp="1583940184858">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="338" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583767617378" />
+    <state width="1852" height="115" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1583940184858" />
     <state width="1312" height="169" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1579859568489" />
     <state width="1852" height="396" key="GridCell.Tab.0.left/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340968" />
-    <state width="1852" height="338" key="GridCell.Tab.0.right" timestamp="1583767617379">
+    <state width="1852" height="115" key="GridCell.Tab.0.right" timestamp="1583940184861">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1852" height="338" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583767617379" />
+    <state width="1852" height="115" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1583940184861" />
     <state width="1312" height="169" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1579859568491" />
     <state width="1852" height="396" key="GridCell.Tab.0.right/0.27.1920.1053@0.27.1920.1053" timestamp="1581854340969" />
     <state width="1852" height="338" key="GridCell.Tab.1.bottom" timestamp="1583767611794">

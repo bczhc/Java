@@ -125,6 +125,13 @@
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xerces/xercesImpl/2.12.0/xercesImpl-2.12.0.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala-2.11/lib/scala-xml.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala-2.11/lib/scala-library.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala-2.11/lib/scala-reflect.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala-2.11/lib/scala-actors.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="/usr/share/scala-2.11/lib/scala-parser-combinators.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/commons-io/commons-io/2.6/commons-io-2.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/itextpdf/itextpdf/5.5.13.1/itextpdf-5.5.13.1.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>

@@ -181,5 +181,6 @@
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-common:9.4.26.v20200117" level="project" />
     <orderEntry type="library" name="Maven: org.eclipse.jetty.websocket:websocket-api:9.4.26.v20200117" level="project" />
     <orderEntry type="library" name="Maven: com.itextpdf:itextpdf:5.5.13.1" level="project" />
+    <orderEntry type="library" name="scala-sdk-2.11.12" level="application" />
   </component>
 </module>

@@ -1,8 +1,10 @@
 package demo;
 
 import org.junit.Test;
+import pers.zhc.u.CanDoHandler;
+import pers.zhc.u.Latch;
 import pers.zhc.u.util.ClockHandler;
-import pers.zhc.u.util.ClockHandlerCallback;
+import pers.zhc.u.util.HandlerCallback;
 
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
@@ -40,7 +42,7 @@ public class Demo4 {
 
     @Test
     public void test3() {
-        ClockHandlerCallback<Integer> callback = a -> System.out.println("a = " + a);
+        HandlerCallback<Integer> callback = a -> System.out.println("a = " + a);
         ClockHandler<Integer> clockHandler = new ClockHandler<>(callback, 1000);
         ClockHandler.ParamReference<Integer> paramReference = clockHandler.getParamReference();
         clockHandler.start();
@@ -89,5 +91,44 @@ public class Demo4 {
             es.shutdown();
         }).start();
         new CountDownLatch(1).await();
+    }
+
+    @Test
+    public void test4() {
+        CanDoHandler<Integer> handler = new CanDoHandler<>(System.out::println);
+        handler.start();
+        new Thread(() -> {
+            handler.push(1);
+        }).start();
+        try {
+            new CountDownLatch(1).await();
+            handler.stop();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @Test
+    public void test5() {
+        Latch latch = new Latch();
+        latch.suspend();
+        new Thread(() -> {
+            System.out.println(1);
+            latch.await();
+            System.out.println(2);
+        }).start();
+        new Thread(() -> {
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            latch.stop();
+        }).start();
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -1,12 +1,17 @@
 package pers.zhc.u.util;
 
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
 public class ClockHandler<MsgType> {
-    Thread clockThread;
-    boolean start = true;
+    private final Runnable runnable;
+    private ExecutorService es;
+    private boolean start;
     private ParamReference<MsgType> paramReference;
 
-    public ClockHandler(ClockHandlerCallback<MsgType> callback, long periodMillis) {
-        clockThread = new Thread(() -> {
+    public ClockHandler(HandlerCallback<MsgType> callback, long periodMillis) {
+        es = Executors.newFixedThreadPool(1);
+        runnable = () -> {
             while (start) {
                 callback.callback(this.paramReference.param);
                 try {
@@ -15,12 +20,13 @@ public class ClockHandler<MsgType> {
                     e.printStackTrace();
                 }
             }
-        });
+        };
         paramReference = new ParamReference<>();
     }
 
     public void start() {
-        this.clockThread.start();
+        this.start = true;
+        es.execute(runnable);
     }
 
     public ParamReference<MsgType> getParamReference() {
@@ -29,6 +35,7 @@ public class ClockHandler<MsgType> {
 
     public void stop() {
         this.start = false;
+        es.shutdownNow();
     }
 
     public static class ParamReference<T> {

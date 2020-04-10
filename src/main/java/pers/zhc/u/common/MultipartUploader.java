@@ -16,20 +16,20 @@ public class MultipartUploader {
     public static String formUpload(String urlStr, @Documents.Nullable byte[] headByte, InputStream is) throws IOException {
         String res;
         HttpURLConnection conn = null;
-        // boundary就是request头和上传文件内容的分隔符
         try {
             URL url = new URL(urlStr);
             conn = (HttpURLConnection) url.openConnection();
             OutputStream out = setConnection(conn, headByte);
             // file
             FileU.StreamWrite(is, out);
-            is.close();
             res = getString(conn, out);
         } catch (IOException e) {
             if (conn != null) {
                 conn.disconnect();
             }
             throw e;
+        } finally {
+            is.close();
         }
         return res;
     }
@@ -37,7 +37,6 @@ public class MultipartUploader {
     public static String formUpload(String urlStr, @Documents.Nullable byte[] headByte, byte[] data) throws IOException {
         String res;
         HttpURLConnection conn = null;
-        // boundary就是request头和上传文件内容的分隔符
         try {
             URL url = new URL(urlStr);
             conn = (HttpURLConnection) url.openConnection();
@@ -77,7 +76,6 @@ public class MultipartUploader {
         conn.setUseCaches(false);
         conn.setRequestMethod("POST");
         conn.setRequestProperty("Connection", "Keep-Alive");
-        // conn.setRequestProperty("User-Agent","Mozilla/5.0 (Windows; U; Windows NT 6.1; zh-CN; rv:1.9.2.6)");
         OutputStream out = new DataOutputStream(conn.getOutputStream());
         if (headByte != null) {
             out.write(headByte);

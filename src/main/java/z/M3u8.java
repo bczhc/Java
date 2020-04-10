@@ -57,7 +57,9 @@ public class M3u8 {
             InputStream is = url.openStream();
             List<String> c = new ArrayList<>();
             new ReadIS(is, StandardCharsets.UTF_8).read(line -> {
-                if (!line.matches("#.*")) c.add(line);
+                if (!line.matches("#.*")) {
+                    c.add(line);
+                }
             });
             List<String> urlList = new ArrayList<>();
             for (String s : c) {
@@ -90,8 +92,9 @@ public class M3u8 {
                         es.execute(() -> {
                             try {
                                 String tsUrl = o.toString();
-                                int lastIndexOf = tsUrl.lastIndexOf('/');
-                                File file = new File("./tsDownload/" + tsUrl.substring(lastIndexOf + 1));
+//                                int lastIndexOf = tsUrl.lastIndexOf('/');
+                                final int indexOf = tsUrl.indexOf('?');
+                                File file = new File("./tsDownload/" + tsUrl.substring(0, indexOf));
                                 if (!file.exists()) {
                                     OutputStream os = new FileOutputStream(file);
                                     FileU.DownloadWeb(tsUrl, os);
@@ -124,7 +127,9 @@ public class M3u8 {
                     if ((readLen = fis.read(buf)) != -1) {
                         os.write(buf, 0, readLen);
                         os.flush();
-                    } else break;
+                    } else {
+                        break;
+                    }
                 }
                 fis.close();
             }
@@ -170,7 +175,9 @@ class CopyB {
                 if ((readLen = is.read(buf)) != -1) {
                     os.write(buf, 0, readLen);
                     os.flush();
-                } else break;
+                } else {
+                    break;
+                }
             }
             is.close();
         }

@@ -7,30 +7,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EpicyclesSequence {
-    public List<AEpicycle> epicycles;
+    public List<Epicycle> epicycles;
 
     public EpicyclesSequence() {
         this.epicycles = new ArrayList<>();
     }
 
     public void put(double n, ComplexValue c) {
-        this.epicycles.add(new AEpicycle(n, c));
+        this.epicycles.add(new Epicycle(n, c));
     }
 
     public void put(double n, double complexReP, double complexImP) {
-        this.epicycles.add(new AEpicycle(n, new ComplexValue(complexReP, complexImP)));
+        this.epicycles.add(new Epicycle(n, new ComplexValue(complexReP, complexImP)));
     }
 
-    public void put(AEpicycle aEpicycle) {
+    public void put(Epicycle aEpicycle) {
         this.epicycles.add(aEpicycle);
     }
 
-    public static class AEpicycle {
+    public static class Epicycle {
 
         public double n;
         public ComplexValue c;
 
-        public AEpicycle(double n, ComplexValue c) {
+        public Epicycle(double n, ComplexValue c) {
             this.n = n;
             this.c = c;
         }

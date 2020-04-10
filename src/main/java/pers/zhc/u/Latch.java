@@ -1,26 +1,24 @@
 package pers.zhc.u;
 
+/**
+ * @author bczhc
+ */
 public class Latch {
-    private boolean stop = false;
+    private volatile boolean stop = false;
 
     public void await() {
         for (; ; ) {
-            if (stop) break;
+            if (stop) {
+                break;
+            }
         }
-//        new CountDownLatch().await();
     }
 
     public void suspend() {
-        new Thread(() -> {
-            stop = false;
-            System.out.println("stop false");
-        }).start();
+        stop = false;
     }
 
     public void stop() {
-        new Thread(() -> {
-            stop = true;
-            System.out.println("stop true");
-        }).start();
+        stop = true;
     }
 }

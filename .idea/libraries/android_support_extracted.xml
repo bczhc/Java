@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-support-extracted">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../z/android-support-extracted.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

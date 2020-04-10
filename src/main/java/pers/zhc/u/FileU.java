@@ -2,11 +2,24 @@ package pers.zhc.u;
 
 
 import pers.zhc.u.common.Documents;
+import pers.zhc.u.interfaces.ProgressCallback;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -42,7 +55,9 @@ public class FileU {
             int readLen;
             if ((readLen = inputStream.read(b)) != -1) {
                 to_outputStream.write(b, 0, readLen);
-            } else break;
+            } else {
+                break;
+            }
         }
         to_outputStream.flush();
     }
@@ -57,8 +72,9 @@ public class FileU {
      * @throws IOException IOException
      */
     public static void StreamWrite(InputStream inputStream, OutputStream to_outputStream, long skip, long len) throws IOException {
-        if (skip > 0)
+        if (skip > 0) {
             System.out.println("skip: " + inputStream.skip(skip));
+        }
         long ardRead = 0L;
         while (true) {
             byte[] b = new byte[1024];
@@ -67,8 +83,12 @@ public class FileU {
                 ardRead += readLen;
                 boolean bo = ardRead > len;
                 to_outputStream.write(b, 0, bo ? (int) (len % 1024L) : readLen);
-                if (bo) break;
-            } else break;
+                if (bo) {
+                    break;
+                }
+            } else {
+                break;
+            }
         }
         to_outputStream.flush();
 
@@ -97,8 +117,11 @@ public class FileU {
     public static boolean FileCopy(java.io.File srcFile, java.io.File destFile) throws IOException {
         boolean r1 = true, r2 = true, r3 = true;
         if (srcFile.exists()) {
-            if (!destFile.exists()) r1 = destFile.createNewFile();
-            else r2 = destFile.delete();
+            if (!destFile.exists()) {
+                r1 = destFile.createNewFile();
+            } else {
+                r2 = destFile.delete();
+            }
             InputStream is = new FileInputStream(srcFile);
             FileOutputStream fos = new FileOutputStream(destFile);
             StreamWrite(is, fos);
@@ -114,8 +137,11 @@ public class FileU {
     public static boolean FileCopy(java.io.File srcFile, java.io.File destFile, long skip) throws IOException {
         boolean r1 = true, r2 = true, r3 = true;
         if (srcFile.exists()) {
-            if (!destFile.exists()) r1 = destFile.createNewFile();
-            else r2 = destFile.delete();
+            if (!destFile.exists()) {
+                r1 = destFile.createNewFile();
+            } else {
+                r2 = destFile.delete();
+            }
             InputStream is = new FileInputStream(srcFile);
             FileOutputStream fos = new FileOutputStream(destFile);
             StreamWrite(is, fos, skip);
@@ -229,7 +255,9 @@ public class FileU {
             if ((readLen = source.read(b)) != -1) {
                 dest1.write(b, 0, readLen);
                 dest2.write(b, 0, readLen);
-            } else break;
+            } else {
+                break;
+            }
         }
         dest1.flush();
         dest2.flush();
@@ -253,7 +281,9 @@ public class FileU {
             if ((readLen = inputStream.read(b)) != -1) {
                 assert md != null;
                 md.update(b, 0, readLen);
-            } else break;
+            } else {
+                break;
+            }
         }
         inputStream.close();
         assert md != null;
@@ -269,6 +299,64 @@ public class FileU {
             s = br.readLine();
         }
         br.close();
+    }
+
+    public static void download(URLConnection connection, File destFile, @Documents.Nullable Integer downloadLength
+            , @Documents.Nullable ProgressCallback progressCallback) throws IOException {
+        long length;
+        if (downloadLength == null) {
+            length = connection.getContentLengthLong();
+        } else {
+            length = downloadLength;
+        }
+        InputStream inputStream = null;
+        OutputStream outputStream = null;
+        try {
+            inputStream = connection.getInputStream();
+            outputStream = new FileOutputStream(destFile);
+            if (length == -1) {
+                StreamWrite(inputStream, outputStream);
+            } else {
+                StreamWrite(inputStream, outputStream, 0, length, progressCallback);
+            }
+        } finally {
+            if (inputStream != null) {
+                try {
+                    inputStream.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+            if (outputStream != null) {
+                outputStream.flush();
+                outputStream.close();
+            }
+        }
+    }
+
+    private static void StreamWrite(InputStream inputStream, OutputStream outputStream, int skip, long len, @Documents.Nullable ProgressCallback progressCallback) throws IOException {
+        if (skip > 0) {
+            System.out.println("skip: " + inputStream.skip(skip));
+        }
+        long hasRead = 0L;
+        while (true) {
+            byte[] b = new byte[1024];
+            int readLen;
+            if ((readLen = inputStream.read(b)) != -1) {
+                hasRead += readLen;
+                boolean bo = hasRead > len;
+                outputStream.write(b, 0, bo ? (int) (len % 1024L) : readLen);
+                if (progressCallback != null) {
+                    progressCallback.call(((float) (((double) hasRead) / ((double) len))));
+                }
+                if (bo) {
+                    break;
+                }
+            } else {
+                break;
+            }
+        }
+        outputStream.flush();
     }
 
     public URL StrToUrl(String s) throws MalformedURLException {
@@ -296,7 +384,9 @@ public class FileU {
                         break w;
                     }
                 }
-            } else break;
+            } else {
+                break;
+            }
         }
         return skip;
     }
@@ -318,7 +408,9 @@ public class FileU {
     }
 
     public String getFileName(String file) {
-        if (!file.matches(".*\\..*")) return file;
+        if (!file.matches(".*\\..*")) {
+            return file;
+        }
         int indexOf = file.lastIndexOf('.');
         return file.substring(0, indexOf);
     }
@@ -441,7 +533,9 @@ public class FileU {
                 fileArrayList = new ArrayList<>();
                 if (list != null) {
                     for (java.io.File f : list) {
-                        if (f.isFile()) fileArrayList.add(f);
+                        if (f.isFile()) {
+                            fileArrayList.add(f);
+                        }
                     }
                 }
             } else if (method == Traverse_All) {
@@ -488,7 +582,9 @@ public class FileU {
             BufferedWriter bw = null;
             try {
                 java.io.File out = new java.io.File(new java.io.File(p).getCanonicalFile() + "/chong.txt");
-                if (!out.exists()) System.out.println(out.createNewFile());
+                if (!out.exists()) {
+                    System.out.println(out.createNewFile());
+                }
                 FileOutputStream fos = new FileOutputStream(out, false);
                 OutputStreamWriter osw = new OutputStreamWriter(fos, StandardCharsets.UTF_8);
                 bw = new BufferedWriter(osw);

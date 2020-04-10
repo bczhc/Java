@@ -1,14 +1,18 @@
 import org.json.JSONArray;
 import org.json.JSONObject;
 import org.jsoup.Jsoup;
+import org.jsoup.nodes.Attribute;
+import org.jsoup.nodes.Attributes;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 import org.junit.Test;
 import pers.zhc.u.FileU;
+import pers.zhc.u.common.Documents;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -29,25 +33,28 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.zip.GZIPInputStream;
 
 public class Test27 {
     private long sum = 0;
-    private String infos = "Accept: */*\n" +
+    private String infos = "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\n" +
             "Accept-Encoding: gzip, deflate\n" +
             "Accept-Language: zh-CN,zh;q=0.9\n" +
             "Cache-Control: no-cache\n" +
             "Connection: keep-alive\n" +
-            "Content-Length: 127\n" +
-            "Content-Type: application/x-www-form-urlencoded; charset=UTF-8\n" +
-            "Cookie: JSESSIONID=4B88B1BA979B7E00A9B3525080CEA29A.web1; GENSEE_UUID_COOKIE=g-89391-90136447-7391-42f3-afab-6f4338774057; GENSEE_FORBIDDEN_WORDS_COOKIE_G_PC_CLIENT_ROLE_NORMAL_L5loJskMd8=1000078502; GENSEE_FORBIDDEN_WORDS_COOKIE_WEB_L5loJskMd8=1000078502\n" +
-            "Host: yangshe.gensee.com\n" +
-            "Origin: http://yangshe.gensee.com\n" +
+            "Cookie: BEC=aff2d9989b1422da3f7e45443a4e0511; ASP.NET_SessionId=dexsog24pna4ybok41xfjdu4; company=%e7%bf%9f%e7%81%bf; userid=74d256af-c5d2-40d4-b7af-9a38ea22d8e5; grade=2019; yxtToken=1eecf87dddf8ad83506ee4ab9484dff5; SERVERID=1c695556adbce01f9e51b56c53f0f392|1584543633|1584543083\n" +
+            "Host: jc.iztedu.com\n" +
             "Pragma: no-cache\n" +
-            "Referer: http://yangshe.gensee.com/training/site/v/11660284?nickname=%e7%bf%9f%e7%81%bf&token=fd1dafe546c4460bf9a295c6b250b0f5&sec=md5&uid=1000078502\n" +
-            "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
+            "Upgrade-Insecure-Requests: 1\n" +
+            "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36";
+    private Map<String, String> requestPropertiesMap;
     private int N = 0;
 
-    private Map<String, String> getRequestPropertyMap(String text, Map<String, String> map) {
+    public Test27() {
+        requestPropertiesMap = getRequestPropertyMap(this.infos, new HashMap<>());
+    }
+
+    public static Map<String, String> getRequestPropertyMap(String text, Map<String, String> map) {
         if (map == null) {
             map = new HashMap<>();
         }
@@ -59,9 +66,42 @@ public class Test27 {
         return map;
     }
 
+    public static String getContent(URL url, @Documents.Nullable Map<String, String> queryParams
+            , Map<String, String> requestProperties, boolean gZipCompressed) {
+        StringBuilder sb = new StringBuilder();
+        try {
+            URLConnection connection = Connection.get(url, queryParams, requestProperties);
+            InputStream is = connection.getInputStream();
+            if (gZipCompressed) {
+                return gZipUncompress(is);
+            } else {
+                new ReadIS(is, StandardCharsets.UTF_8).read(sb::append);
+            }
+            is.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return sb.toString();
+    }
+
+    private static String gZipUncompress(InputStream is) {
+        ByteArrayOutputStream out = new ByteArrayOutputStream();
+        try {
+            GZIPInputStream unGZip = new GZIPInputStream(is);
+            byte[] buffer = new byte[256];
+            int n;
+            while ((n = unGZip.read(buffer)) >= 0) {
+                out.write(buffer, 0, n);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return new String(out.toByteArray(), StandardCharsets.UTF_8);
+    }
+
     @Test
     public void main() throws Exception {
-        File file = new File("/home/zhc/code/code/java/src/test/questions.json");
+        File file = new File("/home/zhc/code/code/java/src/test/messages.json");
         OutputStream os = new FileOutputStream(file, false);
         List<SubjectBean> subjectList = getSubjectList();
         JSONArray result = new JSONArray();
@@ -74,9 +114,16 @@ public class Test27 {
                 JSONObject coursesJSON = new JSONObject();
                 coursesJSON.put("order", subject.order);
                 coursesJSON.put("courseId", subject.pId);
-                JSONObject questionsJSON = fetch(subject.pId);
+                JSONArray questionsJSON = fetch(subject.pId);
+                JSONArray chatJSONArray = null;
+                try {
+                    chatJSONArray = fetchChat(subject.pId);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
                 System.out.println(subjectBean.subjectName + " " + subject.order);
                 coursesJSON.put("questions", questionsJSON);
+                coursesJSON.put("chatMessages", chatJSONArray);
                 coursesArray.put(coursesJSON);
             }
             subjectsJSON.put("courses", coursesArray);
@@ -88,23 +135,13 @@ public class Test27 {
         System.out.printf("\n共%1$d条\n", this.sum);
     }
 
-    private JSONObject fetch(String pId) {
+    private JSONArray fetch(String pId) {
         try {
-            JSONObject resultJSON = new JSONObject(),
-                    infosJSON = new JSONObject();
+            JSONArray questionsArray = new JSONArray();
             URL url = new URL("http://yangshe.gensee.com/clientapi/apichannel?sc=1");
             Map<String, String> p = getRequestPropertyMap(infos, new HashMap<>());
             int pageIndex = 1;
             String fromDataStr = "<?xml version=\"1.0\" encoding=\"utf-8\"?><qaHistory siteid=\"89391\" userid=\"1000078502\" confid=\"" + pId + "\" live=\"false\" page=\"%1$d\"/>";
-            Document fromDataParse = Jsoup.parse(String.format(fromDataStr, pageIndex));
-            Element element = fromDataParse.getElementsByTag("qahistory").get(0);
-            String siteId = element.attr("siteid");
-            String confId = element.attr("confid");
-            String userId = element.attr("userid");
-            infosJSON.put("siteId", siteId)
-                    .put("confId", confId)
-                    .put("userId", userId);
-            JSONArray questionsArray = new JSONArray();
             while (true) {
                 URLConnection connection = Connection.post(url, String.format(fromDataStr, pageIndex), p);
                 InputStream is = connection.getInputStream();
@@ -136,9 +173,7 @@ public class Test27 {
                     break;
                 }
             }
-            resultJSON.put("infos", infosJSON).put("questions", resultJSON)
-                    .put("questions", questionsArray);
-            return resultJSON;
+            return questionsArray;
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -341,6 +376,81 @@ public class Test27 {
     public void test2() throws IOException {
         Document code = getCode("3H1aKkAslP");
         System.out.println(code);
+    }
+
+    @Test
+    public void chatMain() {
+    }
+
+    private JSONArray fetchChat(String vodId) throws Exception {
+        JSONArray chatArray = new JSONArray();
+        URL vURL = new URL("http://jc.iztedu.com/UserCenter/PlayVideo.aspx?id=" + vodId);
+        String frameSrc = Jsoup.parse(getContent(vURL, null, requestPropertiesMap, true)).getElementById("frame_src").attr("src");
+        URL frameURL = new URL(frameSrc);
+        String content = getContent(frameURL, null, requestPropertiesMap, false);
+        Document document = Jsoup.parse(content);
+        Elements children = document.getElementById("mainModule").getElementsByClass("bord").get(0).children();
+        Map<String, String> query = new HashMap<>();
+        for (Element child : children) {
+            if (child.hasAttr("ownerid")) {
+                Attributes attributes = child.attributes();
+                for (Attribute attribute : attributes) {
+                    query.put(attribute.getKey(), attribute.getValue());
+                }
+            }
+        }
+        query.put("widgetid", getWidgetId());
+        query.put("class", "gs-sdk-widget");
+        query.put("jsonpcallback", "__GSJsonp.jsonpcallback_0");
+        String vodContent = getContent(new URL("http://yangshe.gensee.com/sdk/site/sdk/gs/tra/h5/vod"), query, requestPropertiesMap, false);
+        String xmlUrl = getDeclaredStringVariable(vodContent, '\'', "xmlUrl");
+        String xmlContent = null;
+        xmlContent = getContent(new URL(xmlUrl), null, requestPropertiesMap, false);
+        Document xmlDocument = Jsoup.parse(xmlContent);
+        Element conf = xmlDocument.getElementsByTag("conf").get(0);
+        String jsChat = conf.attr("jschat");
+        String newURLString = getNewURLString(xmlUrl, jsChat);
+        String chatJsContent = getContent(new URL(newURLString), null, requestPropertiesMap, false);
+        JSONObject jsonObject = new JSONObject(chatJsContent);
+        JSONArray chatJOSNArray = jsonObject.getJSONObject("module").getJSONArray("chat");
+        for (Object o : chatJOSNArray) {
+            JSONObject msg = new JSONObject();
+            Object emsObject = ((JSONObject) o).get("ems");
+            JSONArray emsArray = new JSONArray();
+            if (emsObject instanceof JSONObject) {
+                emsArray.put(emsObject);
+            } else {
+                JSONArray emsJSONArray = (JSONArray) emsObject;
+                for (int i = 0; i < emsJSONArray.length(); i++) {
+                    emsArray.put(emsJSONArray.getJSONObject(i));
+                }
+            }
+            for (Object o1 : emsArray) {
+                JSONObject ems = (JSONObject) o1;
+                long timestamp = Long.parseLong(ems.getString("utctime"));
+                String sender = ems.getString("sender");
+                String senderId = ems.getString("senderId");
+                String text = ems.getString("text");
+                String richText = ems.getString("richtext");
+                msg.put("sender", sender);
+                msg.put("senderId", senderId);
+                msg.put("text", text);
+                msg.put("richText", richText);
+                msg.put("timestamp", timestamp);
+                chatArray.put(msg);
+            }
+        }
+        return chatArray;
+    }
+
+    private String getDeclaredStringVariable(String content, @Documents.Nullable Character declareMark, String varName) {
+        if (declareMark == null) {
+            declareMark = '\"';
+        }
+        int indexOf = content.indexOf("var " + varName);
+        int i1 = content.indexOf(declareMark, indexOf);
+        int i2 = content.indexOf(declareMark, i1 + 1);
+        return content.substring(i1 + 1, i2);
     }
 
     private static class OneSubjectBean {

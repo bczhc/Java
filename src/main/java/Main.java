@@ -1,15 +1,29 @@
-import pers.zhc.u.groovy.YouDao;
-
+/**
+ * @author bczhc
+ */
 public class Main {
-
-    public static void main(String[] args) {
-        System.out.println("YouDao.translate(\"hello\") = " + YouDao.translate("hello"));
+    static {
+        System.out.println("1");
     }
 
-    private static enum E {
-        A(1,2);
+    public static void m1() {
+    }
 
-        E(int i, int j) {
+
+    public static class C2 {
+        static {
+            System.out.println("2");
         }
+
+        public static void m2() {
+        }
+
+    }
+}
+
+class C3 {
+    public static void main(String[] args) {
+        Main.m1();
+        Main.C2.m2();
     }
 }

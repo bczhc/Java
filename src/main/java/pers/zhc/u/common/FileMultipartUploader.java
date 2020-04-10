@@ -6,6 +6,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * @author bczhc
+ */
 public class FileMultipartUploader {
     public static String upload(String urlString, File file) throws IOException {
         byte[] bytes = file.getName().getBytes(StandardCharsets.UTF_8);

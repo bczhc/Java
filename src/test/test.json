@@ -1,0 +1,52 @@
+{
+  "bizCode": null,
+  "bizMsg": null,
+  "success": true,
+  "data": {
+    "liveCourseCode": "ZB152000000272001026",
+    "liveCourseName": "课外阅读：活在汉字里的“人”",
+    "beginTime": "2020-01-20 10:00:00",
+    "endTime": "2020-01-20 10:45:00",
+    "playCount": 125579,
+    "liveCourseJson": "{\"room_id\":\"20010858111630\",\"student_code\":\"3xn5w6\",\"admin_code\":\"q7ztax\",\"teacher_code\":\"c9akcv\"}",
+    "speakerCode": "YH153520190900031992",
+    "speakerName": "范丽伟",
+    "liveCode": "ZB152000000272",
+    "avgScore": 8.67164,
+    "flagComment": 0,
+    "liveCourseResVos": [
+      {
+        "id": 12981,
+        "liveCode": "ZB152000000272",
+        "liveCourseCode": "ZB152000000272001026",
+        "resProperty": 10,
+        "resTypeL1": 10,
+        "resCode": "MT15202130001318",
+        "flagDelete": 0,
+        "creator": "刘妹妹",
+        "createTime": "2020-01-20 12:12:52",
+        "modifier": "刘妹妹",
+        "modifyTime": "2020-01-20 12:12:52",
+        "resName": "课外阅读：活在汉字里的“人”",
+        "suffix": ".mp4",
+        "resSize": "156707759",
+        "resStatus": null,
+        "mediaDurationMS": "2373000",
+        "thumbnailPath": null,
+        "lowPath": "ls/20200120/567/1579493568567.mp4",
+        "highPath": "ls/20200120/567/1579493568567.mp4",
+        "p2pPath": null,
+        "coverPath": "/img_upload/city/live/4t/0510JG00000102/c06d8622-f8ef-4ba4-b226-12188d37a060.png",
+        "timeOrder": "0",
+        "pages": null,
+        "resFlagDelete": null,
+        "objectId": null,
+        "mediaId": 115700,
+        "flagOriginal": 0,
+        "lectureName": null
+      }
+    ],
+    "resResource": 2
+  },
+  "page": null
+}

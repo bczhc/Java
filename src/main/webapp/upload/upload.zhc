@@ -1,6 +1,0 @@
-<%@ page import="pers.zhc.u.server.B" %>
-<%@ page pageEncoding="utf-8" %>
-<%
-    B b = new B();
-    b.f1(request, response, out);
-%>

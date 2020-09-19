@@ -1,6 +1,0 @@
-<%@ page import="pers.zhc.u.server.C" %>
-<%@ page pageEncoding="UTF-8" %>
-<%
-    C c = new C();
-    c.f(request, out);
-%>

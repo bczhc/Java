@@ -1,6 +1,6 @@
 package demo;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
 
@@ -12,7 +12,7 @@ import java.nio.charset.StandardCharsets;
 
 public class Demo5 {
     @Test
-    void test() {
+    public void test() {
         try {
             URL url = new URL("http://idea.medeming.com/jihuoma/images/jihuoma.txt");
             URLConnection connection = Connection.get(url, null, null);

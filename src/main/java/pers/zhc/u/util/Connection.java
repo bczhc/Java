@@ -9,6 +9,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -89,5 +90,25 @@ public class Connection {
             }
         }
         return r.toString();
+    }
+
+    public static Map<String, String> stringParams2Map(String s) {
+        Map<String, String> map = new HashMap<>();
+        String[] split = s.split("\n");
+        for (String o : split) {
+            int index = o.indexOf(':');
+            map.put(o.substring(0, index), o.substring(index + 2));
+        }
+        return map;
+    }
+
+    public static Map<String, String> cookie2Map(String s) {
+        Map<String, String> map = new HashMap<>();
+        String[] split = s.split("; ");
+        for (String s1 : split) {
+            String[] split1 = s1.split("=");
+            map.put(split1[0], split1[1]);
+        }
+        return map;
     }
 }

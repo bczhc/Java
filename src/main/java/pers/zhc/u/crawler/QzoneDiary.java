@@ -83,6 +83,7 @@ public class QzoneDiary {
         os.write(resolved.toString().getBytes(StandardCharsets.UTF_8));
         os.flush();
         os.close();
+        
     }
 
     private static int getTotalNum(String read) {

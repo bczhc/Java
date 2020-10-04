@@ -37,8 +37,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="Maven to Gradle...........; Get QQ friends list">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/a.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/a.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/Connection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +89,23 @@
         </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -316,9 +337,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QQFriendList">
+  <component name="RunManager" selected="Gradle.java [jar]">
     <configuration name="QQFriendList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.QQFriendList" />
+      <module name="java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.crawler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QzoneDiary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.QzoneDiary" />
       <module name="java.main" />
       <extension name="coverage">
         <pattern>
@@ -341,6 +375,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="java [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Test30.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java" />
       <option name="PACKAGE_NAME" value="" />
@@ -354,9 +407,13 @@
     <list>
       <item itemvalue="JUnit.Test30.test2" />
       <item itemvalue="Application.QQFriendList" />
+      <item itemvalue="Application.QzoneDiary" />
+      <item itemvalue="Gradle.java [jar]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.java [jar]" />
+        <item itemvalue="Application.QzoneDiary" />
         <item itemvalue="Application.QQFriendList" />
         <item itemvalue="JUnit.Test30.test2" />
       </list>
@@ -723,7 +780,7 @@
       <workItem from="1600492092362" duration="315000" />
       <workItem from="1601767358850" duration="2038000" />
       <workItem from="1601769411725" duration="1612000" />
-      <workItem from="1601771036249" duration="5238000" />
+      <workItem from="1601771036249" duration="12937000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1019,7 +1076,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601776669443</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Maven to Gradle...........; Get QQ friends list">
+      <created>1601777035980</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1601777035980</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1115,10 +1179,14 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="216" y="194" width="924" height="413" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1596590389607" />
-    <state x="721" y="186" width="468" height="727" key="#com.intellij.ide.util.MemberChooser" timestamp="1601773179580">
+    <state x="721" y="186" width="468" height="727" key="#com.intellij.ide.util.MemberChooser" timestamp="1601782376507">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="721" y="186" width="468" height="727" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601773179580" />
+    <state x="721" y="186" width="468" height="727" key="#com.intellij.ide.util.MemberChooser/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601782376507" />
+    <state x="627" y="295" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601783021290">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="627" y="295" width="656" height="510" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601783021290" />
     <state x="445" y="83" width="1020" height="934" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1601769601627">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -1131,11 +1199,11 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="52" y="27" width="1251" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1596884724974" />
-    <state width="1346" height="549" key="DebuggerActiveHint" timestamp="1601776349442">
+    <state width="1346" height="549" key="DebuggerActiveHint" timestamp="1601784430620">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="661" height="547" key="DebuggerActiveHint/0.0.1920.1050@0.0.1920.1050" timestamp="1594552045981" />
-    <state width="1346" height="549" key="DebuggerActiveHint/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776349442" />
+    <state width="1346" height="549" key="DebuggerActiveHint/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784430620" />
     <state x="100" y="127" width="1720" height="853" key="DiffContextDialog" timestamp="1601770202495">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -1145,86 +1213,91 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1366.738@0.0.1366.738" timestamp="1600492127527" />
-    <state width="1852" height="265" key="GridCell.Tab.0.bottom" timestamp="1601776871587">
+    <state width="1852" height="273" key="GridCell.Tab.0.bottom" timestamp="1601784585525">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600492319384" />
     <state width="1858" height="329" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594564209631" />
     <state width="1316" height="181" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1597305812218" />
-    <state width="1852" height="265" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776871587" />
-    <state width="1852" height="265" key="GridCell.Tab.0.center" timestamp="1601776871587">
+    <state width="1852" height="273" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784585525" />
+    <state width="1852" height="273" key="GridCell.Tab.0.center" timestamp="1601784585524">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
     <state width="1858" height="329" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594564209622" />
     <state width="1316" height="181" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1597305812218" />
-    <state width="1852" height="265" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776871587" />
-    <state width="1852" height="265" key="GridCell.Tab.0.left" timestamp="1601776871587">
+    <state width="1852" height="273" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784585524" />
+    <state width="1852" height="273" key="GridCell.Tab.0.left" timestamp="1601784585524">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600492319380" />
     <state width="1858" height="329" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594564209621" />
     <state width="1316" height="181" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1597305812217" />
-    <state width="1852" height="265" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776871587" />
-    <state width="1852" height="265" key="GridCell.Tab.0.right" timestamp="1601776871587">
+    <state width="1852" height="273" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784585524" />
+    <state width="1852" height="273" key="GridCell.Tab.0.right" timestamp="1601784585524">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
     <state width="1858" height="329" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594564209622" />
     <state width="1316" height="181" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1597305812218" />
-    <state width="1852" height="265" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776871587" />
-    <state width="1852" height="320" key="GridCell.Tab.1.bottom" timestamp="1601776843427">
+    <state width="1852" height="273" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784585524" />
+    <state width="1852" height="389" key="GridCell.Tab.1.bottom" timestamp="1601784466901">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1858" height="506" key="GridCell.Tab.1.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1594552973684" />
     <state width="1316" height="32" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1596592425743" />
-    <state width="1852" height="320" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776843427" />
-    <state width="1852" height="320" key="GridCell.Tab.1.center" timestamp="1601776843427">
+    <state width="1852" height="389" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784466901" />
+    <state width="1852" height="389" key="GridCell.Tab.1.center" timestamp="1601784466900">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1858" height="506" key="GridCell.Tab.1.center/0.0.1920.1050@0.0.1920.1050" timestamp="1594552973681" />
     <state width="1316" height="32" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1596592425743" />
-    <state width="1852" height="320" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776843427" />
-    <state width="1852" height="320" key="GridCell.Tab.1.left" timestamp="1601776843427">
+    <state width="1852" height="389" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784466900" />
+    <state width="1852" height="389" key="GridCell.Tab.1.left" timestamp="1601784466900">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1858" height="506" key="GridCell.Tab.1.left/0.0.1920.1050@0.0.1920.1050" timestamp="1594552973680" />
     <state width="1316" height="32" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1596592425742" />
-    <state width="1852" height="320" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776843427" />
-    <state width="1852" height="320" key="GridCell.Tab.1.right" timestamp="1601776843427">
+    <state width="1852" height="389" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784466900" />
+    <state width="1852" height="389" key="GridCell.Tab.1.right" timestamp="1601784466900">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="1858" height="506" key="GridCell.Tab.1.right/0.0.1920.1050@0.0.1920.1050" timestamp="1594552973682" />
     <state width="1316" height="32" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1596592425743" />
-    <state width="1852" height="320" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776843427" />
+    <state width="1852" height="389" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784466900" />
     <state x="133" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1601773459144">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="95" y="27" width="1271" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1597287661500" />
     <state x="133" y="27" width="1280" height="1042" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601773459144" />
-    <state width="960" height="527" key="XDebugger.FullValuePopup" timestamp="1601776444821">
+    <state x="455" y="225" width="1000" height="649" key="Vcs.Push.Dialog.v2" timestamp="1601777062241">
+      <screen x="0" y="27" width="1920" height="1053" />
+    </state>
+    <state x="455" y="225" width="1000" height="649" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601777062241" />
+    <state width="960" height="527" key="XDebugger.FullValuePopup" timestamp="1601784430614">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state width="960" height="525" key="XDebugger.FullValuePopup/0.0.1920.1050@0.0.1920.1050" timestamp="1594552045953" />
-    <state width="960" height="527" key="XDebugger.FullValuePopup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776444821" />
-    <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601776151191">
+    <state width="960" height="527" key="XDebugger.FullValuePopup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601784430614" />
+    <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601783023386">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
-    <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601776151191" />
-    <state x="491" y="27" width="938" height="1053" key="find.popup" timestamp="1601771078853">
+    <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601783023386" />
+    <state x="491" y="27" width="938" height="1053" key="find.popup" timestamp="1601778510848">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="349" y="108" width="667" height="578" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1596425405879" />
-    <state x="491" y="27" width="938" height="1053" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601771078853" />
+    <state x="491" y="27" width="938" height="1053" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601778510848" />
     <state x="0" y="214" width="1910" height="671" key="new project wizard" timestamp="1601770508588">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="0" y="214" width="1910" height="671" key="new project wizard/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601770508588" />
-    <state x="347" y="146" key="run.anything.popup" timestamp="1600490040389">
-      <screen x="0" y="0" width="1366" height="738" />
+    <state x="488" y="235" key="run.anything.popup" timestamp="1601779629362">
+      <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="347" y="146" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600490040389" />
     <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1597472420283" />
+    <state x="488" y="235" key="run.anything.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601779629362" />
     <state x="623" y="259" width="1087" height="681" key="search.everywhere.popup" timestamp="1601767693549">
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
@@ -1235,107 +1308,29 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/demo/Demo3.java</url>
-          <line>58</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/CanDoHandler.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/CanDoHandler.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/CanDoHandler.java</url>
-          <line>21</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/CanDoHandler.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/demo/Test.java</url>
-          <line>66</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/demo/Test.java</url>
-          <line>93</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test27.java</url>
-          <line>443</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <condition expression="queryParams != null" language="JAVA" />
-          <url>file://$PROJECT_DIR$/src/test/java/Test27.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>26</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>11</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/Test28.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/YouKuM3u8.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/FS.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
-          <option name="timeStamp" value="64" />
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="84" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java</url>
+          <line>99</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java</url>
+          <line>128</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <watches-manager>
       <configuration name="AndroidJUnit">
         <watch expression="s.indexOf(&quot;totalPageCount=&quot;)" language="JAVA" />
         <watch expression="group" language="JAVA" />
+      </configuration>
+      <configuration name="Remote">
+        <watch expression="getContent(url, queryMap, headerMap, true, &quot;UTF-8&quot;)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>

@@ -47,6 +47,7 @@ public class QQFriendList {
         URLConnection urlConnection = Connection.get(new URL(urlString), query, property);
         InputStream inputStream = urlConnection.getInputStream();
         String read = ReadIS.readToString(inputStream, StandardCharsets.UTF_8);
+        inputStream.close();
 
         JSONArray resolved = resolve(read);
         System.out.println(resolved.toString());
@@ -99,7 +100,7 @@ public class QQFriendList {
         return output;
     }
 
-    private static int getToken(String key) {
+    static int getToken(String key) {
         int t = 5381;
         for (int n = 0, r = key.length(); n < r; ++n) {
             t += (t << 5) + key.charAt(n);

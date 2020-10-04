@@ -107,7 +107,7 @@ public class Connection {
         String[] split = s.split("; ");
         for (String s1 : split) {
             String[] split1 = s1.split("=");
-            map.put(split1[0], split1[1]);
+            map.put(split1[0], split1.length == 1 ? "" : split1[1]);
         }
         return map;
     }

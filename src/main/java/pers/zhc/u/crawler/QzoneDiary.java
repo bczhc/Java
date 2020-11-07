@@ -5,6 +5,7 @@ import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import pers.zhc.tools.utils.MySQLite3;
 import pers.zhc.u.common.Documents;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
@@ -22,6 +23,35 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.zip.GZIPInputStream;
 
 public class QzoneDiary {
+    static class ToSqlite3 {
+        public static void main(String[] args) throws IOException {
+            File file = new File("/home/zhc/qzone-diary");
+            InputStream is = new FileInputStream(file);
+            String read = ReadIS.readToString(is, StandardCharsets.UTF_8);
+            is.close();
+            JSONArray jsonArray = new JSONArray(read);
+            MySQLite3 db = MySQLite3.open("./qzone_diary_result.db");
+            db.exec("DROP TABLE IF EXISTS qzone_diary");
+            db.exec("CREATE TABLE IF NOT EXISTS qzone_diary (\n" +
+                    "    publish_time TEXT NOT NULL,\n" +
+                    "    html_data TEXT NOT NULL,\n" +
+                    "    plain_text TEXT NOT NULL,\n" +
+                    "    title TEXT NOT NULL\n" +
+                    ")");
+            db.exec("BEGIN TRANSACTION");
+            for (Object o : jsonArray) {
+                JSONObject jsonObject = (JSONObject) o;
+                String pubTime = jsonObject.getString("pubTime").replace("'", "''");
+                String html = jsonObject.getString("html").replace("'", "''");
+                String text = jsonObject.getString("text").replace("'", "''");
+                String title = jsonObject.getString("title").replace("'", "''");
+                db.exec(String.format("INSERT INTO qzone_diary VALUES('%s','%s','%s','%s')", pubTime, html, text, title));
+            }
+            db.exec("COMMIT");
+            db.close();
+            System.out.println("Done.");
+        }
+    }
 
     private static class Result {
         public String text, html;
@@ -32,18 +62,23 @@ public class QzoneDiary {
     public static void main(String[] args) throws IOException {
         File file = new File("./result");
         OutputStream os = new FileOutputStream(file);
-        String header = "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9\n" +
+        String header = ":authority: user.qzone.qq.com\n" +
+                ":method: GET\n" +
+                ":path: /proxy/domain/b.qzone.qq.com/cgi-bin/blognew/get_abs?hostUin=1109236592&uin=1109236592&blogType=0&cateName=&cateHex=&statYear=2020&reqInfo=7&pos=0&num=15&sortType=0&source=0&rand=0.6875723943308512&ref=qzone&g_tk=659303272&verbose=1&qzonetoken=1065edccc3a1a69d457d2a9efcb7c04b523bb46d88331911f911e175905dc8d9a80e9feba54e3e83\n" +
+                ":scheme: https\n" +
+                "accept: */*\n" +
                 "accept-encoding: gzip, deflate, br\n" +
                 "accept-language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7\n" +
                 "cache-control: no-cache\n" +
-                "cookie: zzpaneluin=; zzpanelkey=; pgv_pvi=200938496; pgv_si=s6973862912; pgv_pvid=3585738994; pgv_info=ssid=s3568835412; ptui_loginuin=1109236592; uin=o1109236592; skey=@vhImZNXwU; RK=O2Aswv62O5; ptcz=7d8350c7c5bd03cd75b1adc6f10b58af7331a46376bebcab54dbca90a6857676; p_uin=o1109236592; pt4_token=lUz0sO5ntfBXz7JokafyqCV2MN0i6iThVqgh5VzSMKk_; p_skey=z8EB*9z31Awzwum1XF2pp8Leka5tp6DvTaubYC9dbhA_; Loading=Yes; qz_screen=1536x864; 1109236592_todaycount=0; 1109236592_totalcount=2131; rv2=804DAE8E161709D8E08B5E86744360CBBE4F1886287EFCEA1D; property20=69F51022D41586DFFAF6B3BA2A5138689783114700228586EACA114E4DC9F52E037AB8CA6ACF2D29; QZ_FE_WEBP_SUPPORT=1; __Q_w_s__QZN_TodoMsgCnt=1; cpu_performance_v8=2; __Q_w_s_hat_seed=1\n" +
+                "cookie: pgv_pvi=6927831040; pgv_pvid=6595637488; ptui_loginuin=1109236592; RK=z3Akhv6GP7; ptcz=99fe8b3f306432262f5b58f4cded757f4a4d95ec77e401b35dbc2de04964c724; qz_screen=1366x768; QZ_FE_WEBP_SUPPORT=1; zzpaneluin=; zzpanelkey=; pgv_si=s1123604480; pgv_info=ssid=s818670670; uin=o1109236592; skey=@fzG6bt6sx; p_uin=o1109236592; pt4_token=GdoouMreCRiI4VtHrdYYGh*B18bc21-Yn9hSnBrYjys_; p_skey=7Y3jkmoywddWx8EVTrfBtl0feuMnVTpdjabafUVnt3k_; Loading=Yes; 1109236592_todaycount=0; 1109236592_totalcount=2133; __Q_w_s__QZN_TodoMsgCnt=1; cpu_performance_v8=5\n" +
                 "pragma: no-cache\n" +
-                "referer: https://user.qzone.qq.com/proxy/domain/qzs.qq.com/qzone/newblog/blogcanvas.html\n" +
-                "sec-fetch-dest: iframe\n" +
-                "sec-fetch-mode: navigate\n" +
+                "referer: https://user.qzone.qq.com/proxy/domain/qzs.qq.com/qzone/app/blog/v6/bloglist.html\n" +
+                "sec-ch-ua: \"Chromium\";v=\"86\", \"\\\"Not\\\\A;Brand\";v=\"99\", \"Google Chrome\";v=\"86\"\n" +
+                "sec-ch-ua-mobile: ?0\n" +
+                "sec-fetch-dest: script\n" +
+                "sec-fetch-mode: no-cors\n" +
                 "sec-fetch-site: same-origin\n" +
-                "upgrade-insecure-requests: 1\n" +
-                "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36";
+                "user-agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36";
         headerMap = Connection.stringParams2Map(header);
 
         String query = "hostUin: 1109236592\n" +
@@ -51,23 +86,17 @@ public class QzoneDiary {
                 "blogType: 0\n" +
                 "cateName: \n" +
                 "cateHex: \n" +
-                "statYear: \n" +
-                "reqInfo: 1\n" +
-                "pos: 15\n" +
+                "statYear: 2020\n" +
+                "reqInfo: 7\n" +
+                "pos: 0\n" +
                 "num: 15\n" +
                 "sortType: 0\n" +
-                "absType: 0\n" +
                 "source: 0\n" +
-                "rand: 0.4310602855887069\n" +
+                "rand: 0.6875723943308512\n" +
                 "ref: qzone\n" +
-                "g_tk: 1399649976\n" +
-                "verbose: 0\n" +
-                "iNotice: 0\n" +
-                "inCharset: utf-8\n" +
-                "outCharset: utf-8\n" +
-                "format: jsonp\n" +
-                "qzonetoken: 616d8d6829ea0208bde002cea4cf69c8372e486c4571929cbef2e9c9e782d2152b166eeee0dab0e472\n" +
-                "g_tk: 1399649976";
+                "g_tk: 659303272\n" +
+                "verbose: 1\n" +
+                "qzonetoken: 1065edccc3a1a69d457d2a9efcb7c04b523bb46d88331911f911e175905dc8d9a80e9feba54e3e83";
         Map<String, String> queryMap = Connection.stringParams2Map(query);
         queryMap.replace("rand", String.valueOf(Math.random()));
         queryMap.replace("g_tk", String.valueOf(QQFriendList.getToken(Connection.cookie2Map(headerMap.get("cookie")).get("p_skey"))));
@@ -83,7 +112,7 @@ public class QzoneDiary {
         os.write(resolved.toString().getBytes(StandardCharsets.UTF_8));
         os.flush();
         os.close();
-        
+
     }
 
     private static int getTotalNum(String read) {

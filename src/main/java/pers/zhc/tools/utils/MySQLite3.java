@@ -10,6 +10,9 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class MySQLite3 {
     private long id;
     private boolean isClosed = false;
+    static {
+        System.loadLibrary("bczhcMain");
+    }
 
     private MySQLite3() {
     }

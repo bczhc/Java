@@ -2,6 +2,7 @@ package pers.zhc.u.crawler;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
+import pers.zhc.tools.utils.MySQLite3;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
 
@@ -10,14 +11,11 @@ import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class QQFriendList {
     public static void main(String[] args) throws IOException {
-        String cookie = "pgv_info=ssid=s9682334570; pgv_pvid=9881446152; pgv_pvi=770698240; pgv_si=s532400128; ptui_loginuin=1109236592; RK=O2Aswv62O5; ptcz=111bda233745ea836ab3304d8153324cf4f2707567ff20376a7efec58529e9be; midas_openid=CDFCC07D6D1FA7B66EA39169F116B092; midas_openkey=92B64EB14AD211299472693916FED4C8; uin=o1109236592; skey=@vhImZNXwU; p_uin=o1109236592; pt4_token=Zv8i*7Kv8MX5Vh-3mjzKYg5uj85IKKhplxjBV6xi5t8_; p_skey=RL9v6v5*-d20yI9pDfrJaG3rHyyq4GKL6rbE1vuyqi4_; qz_screen=1536x864; 1109236592_todaycount=0; 1109236592_totalcount=2131; QZ_FE_WEBP_SUPPORT=1; cpu_performance_v8=7; __Q_w_s_hat_seed=1";
+        String cookie = "pgv_pvi=6927831040; pgv_pvid=6595637488; ptui_loginuin=1109236592; RK=z3Akhv6GP7; ptcz=99fe8b3f306432262f5b58f4cded757f4a4d95ec77e401b35dbc2de04964c724; qz_screen=1366x768; QZ_FE_WEBP_SUPPORT=1; zzpaneluin=; zzpanelkey=; pgv_si=s1123604480; pgv_info=ssid=s818670670; uin=o1109236592; skey=@fzG6bt6sx; p_uin=o1109236592; pt4_token=GdoouMreCRiI4VtHrdYYGh*B18bc21-Yn9hSnBrYjys_; p_skey=7Y3jkmoywddWx8EVTrfBtl0feuMnVTpdjabafUVnt3k_; Loading=Yes; 1109236592_todaycount=0; 1109236592_totalcount=2133; cpu_performance_v8=17";
 
         String header = "accept: */*\n" +
                 "accept-encoding: gzip, deflate, br\n" +
@@ -50,7 +48,32 @@ public class QQFriendList {
         inputStream.close();
 
         JSONArray resolved = resolve(read);
-        System.out.println(resolved.toString());
+        MySQLite3 db = MySQLite3.open("./qq_friends_result.db");
+        db.exec("DROP TABLE IF EXISTS qq_friend");
+        db.exec("CREATE TABLE IF NOT EXISTS qq_friend (\n" +
+                "    qq INTEGER PRIMARY KEY,\n" +
+                "    name TEXT NOT NULL,\n" +
+                "    remark TEXT NOT NULL,\n" +
+                "    group_name TEXT NOT NULL\n" +
+                ")");
+        for (Object o : resolved) {
+            JSONObject jsonObject = (JSONObject) o;
+            String groupName = jsonObject.getString("groupName");
+            JSONArray friends = jsonObject.getJSONArray("friends");
+            for (Object friend : friends) {
+                JSONObject friendJSONObject = (JSONObject) friend;
+                long qq = friendJSONObject.getLong("qq");
+                String name = friendJSONObject.getString("name");
+                String remark = friendJSONObject.getString("remark");
+                db.exec(String.format("INSERT INTO qq_friend VALUES(%d,'%s','%s','%s')",
+                        qq,
+                        name.replace("'", "''"),
+                        remark.replace("'", "''"),
+                        groupName.replace("'", "''")));
+            }
+        }
+        db.close();
+        System.out.println("Done.");
     }
 
     private static JSONArray resolve(String read) {

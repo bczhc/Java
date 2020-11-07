@@ -16,35 +16,12 @@ import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
 
 public class GoogleTranslate {
     private Map<String, String> requestProperty;
 
-    public static void main(String[] args) {
-        GoogleTranslate googleTranslate = new GoogleTranslate();
-        ExecutorService es = Executors.newFixedThreadPool(36);
-        int n = 10000;
-        CountDownLatch latch = new CountDownLatch(n);
-        for (int i = 0; i < n; i++) {
-            int finalI = i;
-            es.execute(() -> {
-                try {
-                    System.out.println("googleTranslate.translate(\"I hate you: \" + finalI) = " + googleTranslate.translate("I hate you: " + finalI));
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                latch.countDown();
-            });
-        }
-        try {
-            latch.await();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        es.shutdown();
+    public static void main(String[] args) throws IOException {
+        GoogleTranslate translate = new GoogleTranslate();
     }
 
     public GoogleTranslate() {

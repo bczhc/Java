@@ -36,17 +36,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="jni sqlite3 test">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pers/zhc/u/crawler/GetJetbrainsLicenseTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="qzone diary and qq friends crawler: save to sqlite3 database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/a.json" beforeDir="false" afterPath="$PROJECT_DIR$/a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/tools/utils/MySQLite3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/tools/utils/MySQLite3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/GoogleTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/GoogleTranslate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/s/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/s/A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/打字机.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/打字机.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/A.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/kotlin/A.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +85,7 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="java" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="other" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -211,7 +207,7 @@
     <property name="project.structure.proportion" value="0.21790235" />
     <property name="project.structure.side.proportion" value="0.44121367" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
@@ -328,13 +324,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.QzoneDiary$ToSqlite3">
-    <configuration name="QQFriendList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.QQFriendList" />
+  <component name="RunManager" selected="Gradle.java [compileGroovy]">
+    <configuration name="Demo0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.groovy.Demo0" />
       <module name="java.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.zhc.u.crawler.*" />
+          <option name="PATTERN" value="pers.zhc.u.groovy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -355,73 +351,81 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QzoneDiary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.QzoneDiary" />
-      <module name="java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.zhc.u.crawler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QzoneDiary.toSqlite3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="java [compileGroovy]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="compileGroovy" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Demo0.checkIsMe" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="java.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pers.zhc.u.crawler.*" />
+          <option name="PATTERN" value="pers.zhc.u.groovy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pers.zhc.u.crawler" />
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.QzoneDiary" />
-      <option name="METHOD_NAME" value="toSqlite3" />
+      <option name="PACKAGE_NAME" value="pers.zhc.u.groovy" />
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.groovy.Demo0" />
+      <option name="METHOD_NAME" value="checkIsMe" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetJetbrainsLicenseKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="AKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="java.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.crawler.GetJetbrainsLicenseKt" />
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.kotlin.AKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.QQFriendList" />
-      <item itemvalue="Kotlin.GetJetbrainsLicenseKt" />
-      <item itemvalue="Application.QzoneDiary" />
-      <item itemvalue="JUnit.QzoneDiary.toSqlite3" />
       <item itemvalue="Application.QzoneDiary$ToSqlite3" />
+      <item itemvalue="Application.Demo0" />
+      <item itemvalue="JUnit.Demo0.checkIsMe" />
+      <item itemvalue="Kotlin.AKt" />
+      <item itemvalue="Gradle.java [compileGroovy]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Demo0" />
+        <item itemvalue="Gradle.java [compileGroovy]" />
+        <item itemvalue="Kotlin.AKt" />
+        <item itemvalue="JUnit.Demo0.checkIsMe" />
         <item itemvalue="Application.QzoneDiary$ToSqlite3" />
-        <item itemvalue="JUnit.QzoneDiary.toSqlite3" />
-        <item itemvalue="Application.QzoneDiary" />
-        <item itemvalue="Application.QQFriendList" />
-        <item itemvalue="Kotlin.GetJetbrainsLicenseKt" />
       </list>
     </recent_temporary>
   </component>
@@ -798,7 +802,8 @@
       <workItem from="1603531403447" duration="1287000" />
       <workItem from="1604121110102" duration="5567000" />
       <workItem from="1604203255858" duration="329000" />
-      <workItem from="1604722354189" duration="4560000" />
+      <workItem from="1604722354189" duration="8972000" />
+      <workItem from="1604795231669" duration="3673000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1108,7 +1113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601793986906</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="qzone diary and qq friends crawler: save to sqlite3 database">
+      <created>1604743745794</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1604743745794</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1164,7 +1176,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="server&#10;...2" />
     <MESSAGE value="youku" />
     <MESSAGE value="MultipartUploader" />
     <MESSAGE value="server, fmt" />
@@ -1189,7 +1200,8 @@
     <MESSAGE value="修复愚蠢的复数自运算" />
     <MESSAGE value="Maven to Gradle...........; Get QQ friends list" />
     <MESSAGE value="jni sqlite3 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="jni sqlite3 test" />
+    <MESSAGE value="qzone diary and qq friends crawler: save to sqlite3 database" />
+    <option name="LAST_COMMIT_MESSAGE" value="qzone diary and qq friends crawler: save to sqlite3 database" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="43" key="#Inspections" timestamp="1600492396759">
@@ -1238,39 +1250,39 @@
     </state>
     <state x="71" y="97" width="1224" height="601" key="DiffContextDialog/0.27.1366.741@0.27.1366.741" timestamp="1604722957378" />
     <state x="100" y="127" width="1720" height="853" key="DiffContextDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601770202495" />
-    <state x="569" y="226" width="424" height="520" key="FileChooserDialogImpl" timestamp="1604122951524">
+    <state x="569" y="226" width="424" height="520" key="FileChooserDialogImpl" timestamp="1604743763919">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="569" y="226" width="424" height="520" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1604122951524" />
+    <state x="569" y="226" width="424" height="520" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1604743763919" />
     <state x="800" y="310" width="530" height="605" key="FileChooserDialogImpl/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601803540477" />
     <state x="800" y="310" key="FileChooserDialogImpl/0.27.1920.1053@0.27.1920.1053" timestamp="1601820013132" />
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict" timestamp="1600492127527">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="0" y="0" key="FileDocumentManager.FileCacheConflict/0.0.1366.738@0.0.1366.738" timestamp="1600492127527" />
-    <state width="1320" height="222" key="GridCell.Tab.0.bottom" timestamp="1604737633859">
+    <state width="1320" height="551" key="GridCell.Tab.0.bottom" timestamp="1604800473890">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600492319384" />
-    <state width="1320" height="222" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1604737633859" />
+    <state width="1320" height="551" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1604800473890" />
     <state width="1852" height="176" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="222" key="GridCell.Tab.0.center" timestamp="1604737633858">
+    <state width="1320" height="551" key="GridCell.Tab.0.center" timestamp="1604800473887">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="1320" height="222" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1604737633858" />
+    <state width="1320" height="551" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1604800473887" />
     <state width="1852" height="176" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="222" key="GridCell.Tab.0.left" timestamp="1604737633858">
+    <state width="1320" height="551" key="GridCell.Tab.0.left" timestamp="1604800473887">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600492319380" />
-    <state width="1320" height="222" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1604737633858" />
+    <state width="1320" height="551" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1604800473887" />
     <state width="1852" height="176" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="222" key="GridCell.Tab.0.right" timestamp="1604737633858">
+    <state width="1320" height="551" key="GridCell.Tab.0.right" timestamp="1604800473889">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="1320" height="222" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1604737633858" />
+    <state width="1320" height="551" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1604800473889" />
     <state width="1852" height="176" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
     <state width="1320" height="303" key="GridCell.Tab.1.bottom" timestamp="1604737461564">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1292,14 +1304,15 @@
     </state>
     <state width="1320" height="303" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1604737461564" />
     <state width="1852" height="137" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206088" />
-    <state x="95" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1601864275252">
+    <state x="95" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1604800103468">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="95" y="27" width="1271" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1601864275252" />
+    <state x="95" y="27" width="1271" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1604800103468" />
     <state x="133" y="27" width="1280" height="1042" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601791412414" />
-    <state x="455" y="225" width="1000" height="649" key="Vcs.Push.Dialog.v2" timestamp="1601820008599">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="324" y="166" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604743755133">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="324" y="166" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1604743755133" />
     <state x="455" y="225" width="1000" height="649" key="Vcs.Push.Dialog.v2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601777062241" />
     <state x="455" y="225" key="Vcs.Push.Dialog.v2/0.27.1920.1053@0.27.1920.1053" timestamp="1601820008599" />
     <state width="683" height="371" key="XDebugger.FullValuePopup" timestamp="1604736871607">
@@ -1323,10 +1336,10 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601783023386" />
-    <state x="349" y="108" width="667" height="578" key="find.popup" timestamp="1604724011455">
+    <state x="349" y="108" width="667" height="578" key="find.popup" timestamp="1604745514579">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="349" y="108" width="667" height="578" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1604724011455" />
+    <state x="349" y="108" width="667" height="578" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1604745514579" />
     <state x="491" y="27" width="938" height="1053" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601778510848" />
     <state x="0" y="159" width="1359" height="499" key="new project wizard" timestamp="1603531484316">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1343,10 +1356,10 @@
     <state x="347" y="146" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600490040389" />
     <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1602913684625" />
     <state x="488" y="235" key="run.anything.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601779629362" />
-    <state x="443" y="190" width="773" height="479" key="search.everywhere.popup" timestamp="1604139680681">
+    <state x="443" y="190" width="773" height="479" key="search.everywhere.popup" timestamp="1604747077228">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="443" y="190" width="773" height="479" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1604139680681" />
+    <state x="443" y="190" width="773" height="479" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1604747077228" />
     <state x="623" y="259" width="1087" height="681" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601767693549" />
   </component>
   <component name="XDebuggerManager">

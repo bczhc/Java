@@ -1,33 +1,19 @@
 package pers.zhc.u.groovy
 
+import pers.zhc.u.common.ReadIS
+
+import java.nio.charset.StandardCharsets
+
 class Demo0 {
-    private def i = 0
-
     static void main(String[] args) {
-        f()
+        println(checkIsMe())
     }
 
-    static def f() {
-        def o = new Demo0()
-        def t = []
-        for (int i = 0; i < 10; i++) {
-            t.add(new Thread({
-                for (int j = 0; j < 100; j++) {
-                    o.func()
-                }
-            }))
-        }
-        for (a in t) {
-            (a as Thread).start()
-        }
-        for (a in t) {
-            (a as Thread).join()
-        }
-        println "o.i = $o.i"
-        return o.i
-    }
-
-    private synchronized func() {
-        ++this.i
+    static checkIsMe() {
+        def runtime = Runtime.getRuntime()
+        def is = runtime.exec(["uname", "-a"] as String[]).getInputStream()
+        def read = ReadIS.readToString(is, StandardCharsets.UTF_8)
+        is.close()
+        return read.matches(".*Linux zhc-ubuntu.*")
     }
 }

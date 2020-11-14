@@ -11,7 +11,7 @@ public class MySQLite3 {
     private long id;
     private boolean isClosed = false;
     static {
-        System.loadLibrary("bczhcMain");
+        System.load("/usr/lib/x86_64-linux-gnu/libbczhcMain.so");
     }
 
     private MySQLite3() {

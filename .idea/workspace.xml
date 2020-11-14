@@ -36,12 +36,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="add groovy and kotlin plugin for gradle">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/tools/utils/MySQLite3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/tools/utils/MySQLite3.java" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="xml to sqlite3 test">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -207,7 +203,7 @@
     <property name="project.structure.proportion" value="0.21790235" />
     <property name="project.structure.side.proportion" value="0.44121367" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
+    <property name="settings.editor.selected.configurable" value="database.main" />
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
@@ -797,7 +793,7 @@
       <workItem from="1604203255858" duration="329000" />
       <workItem from="1604722354189" duration="8972000" />
       <workItem from="1604795231669" duration="9601000" />
-      <workItem from="1605328313108" duration="6975000" />
+      <workItem from="1605328313108" duration="8506000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1121,7 +1117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604800661068</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="xml to sqlite3 test">
+      <created>1605335578772</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1605335578772</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1177,7 +1180,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="MultipartUploader" />
     <MESSAGE value="server, fmt" />
     <MESSAGE value="LongMap" />
     <MESSAGE value="gitee.io web" />
@@ -1202,7 +1204,8 @@
     <MESSAGE value="jni sqlite3 test" />
     <MESSAGE value="qzone diary and qq friends crawler: save to sqlite3 database" />
     <MESSAGE value="add groovy and kotlin plugin for gradle" />
-    <option name="LAST_COMMIT_MESSAGE" value="add groovy and kotlin plugin for gradle" />
+    <MESSAGE value="xml to sqlite3 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="xml to sqlite3 test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="43" key="#Inspections" timestamp="1600492396759">
@@ -1221,9 +1224,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="117" y="265" width="1121" height="272" key="#SQL_Resolution_Scopes/0.27.1366.741@0.27.1366.741" timestamp="1605334772887" />
-    <state x="414" y="175" width="1313" height="868" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601791282162">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="295" y="131" width="1313" height="868" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605336022340">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="295" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1605336022340" />
     <state x="414" y="175" width="1313" height="868" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601791282162" />
     <state x="513" y="139" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1604803256991">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1270,29 +1274,29 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="485" y="298" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.27.1366.741@0.27.1366.741" timestamp="1604800673671" />
-    <state width="1320" height="180" key="GridCell.Tab.0.bottom" timestamp="1605335170295">
+    <state width="903" height="391" key="GridCell.Tab.0.bottom" timestamp="1605335767959">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600492319384" />
-    <state width="1320" height="180" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1605335170295" />
+    <state width="903" height="391" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
     <state width="1852" height="176" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="180" key="GridCell.Tab.0.center" timestamp="1605335170295">
+    <state width="903" height="391" key="GridCell.Tab.0.center" timestamp="1605335767959">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="1320" height="180" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1605335170295" />
+    <state width="903" height="391" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
     <state width="1852" height="176" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="180" key="GridCell.Tab.0.left" timestamp="1605335170294">
+    <state width="903" height="391" key="GridCell.Tab.0.left" timestamp="1605335767958">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600492319380" />
-    <state width="1320" height="180" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1605335170294" />
+    <state width="903" height="391" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1605335767958" />
     <state width="1852" height="176" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="180" key="GridCell.Tab.0.right" timestamp="1605335170295">
+    <state width="903" height="391" key="GridCell.Tab.0.right" timestamp="1605335767959">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="1320" height="180" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1605335170295" />
+    <state width="903" height="391" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
     <state width="1852" height="176" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
     <state width="1320" height="207" key="GridCell.Tab.1.bottom" timestamp="1605335159691">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1314,10 +1318,10 @@
     </state>
     <state width="1320" height="207" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1605335159691" />
     <state width="1852" height="137" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206088" />
-    <state x="95" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1605330265014">
+    <state x="95" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1605335462849">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="95" y="27" width="1271" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1605330265014" />
+    <state x="95" y="27" width="1271" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1605335462849" />
     <state x="133" y="27" width="1280" height="1042" key="SettingsEditor/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601791412414" />
     <state x="324" y="166" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1604800676925">
       <screen x="0" y="27" width="1366" height="741" />

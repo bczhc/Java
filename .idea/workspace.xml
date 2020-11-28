@@ -36,9 +36,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="xml to sqlite3 test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/a.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" afterDir="false" />
+    <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="online class questions to sqlite3 test">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/a.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Test.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Test.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +85,17 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="java" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="other" type="c8890929:TasksNode$1" />
+                <item name="build setup" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="java" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -320,7 +334,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Groovy.Demo0">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Demo0 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.zhc.u.groovy.Demo0" />
       <module name="java" />
@@ -347,13 +361,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.groovy.Test" />
+      <module name="java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.u.groovy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -388,33 +417,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <module name="java.main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.kotlin.AKt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Demo0" />
-      <item itemvalue="Gradle.java [compileGroovy]" />
-      <item itemvalue="Kotlin.AKt" />
       <item itemvalue="Application.Demo0 (1)" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Gradle.java [compileGroovy]" />
       <item itemvalue="Groovy.Demo0" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
         <item itemvalue="Groovy.Demo0" />
         <item itemvalue="Application.Demo0 (1)" />
         <item itemvalue="Application.Demo0" />
         <item itemvalue="Gradle.java [compileGroovy]" />
-        <item itemvalue="Kotlin.AKt" />
       </list>
     </recent_temporary>
   </component>
@@ -793,7 +809,10 @@
       <workItem from="1604203255858" duration="329000" />
       <workItem from="1604722354189" duration="8972000" />
       <workItem from="1604795231669" duration="9601000" />
-      <workItem from="1605328313108" duration="8506000" />
+      <workItem from="1605328313108" duration="10875000" />
+      <workItem from="1605964075003" duration="967000" />
+      <workItem from="1606536191976" duration="3265000" />
+      <workItem from="1606549836043" duration="2538000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1124,7 +1143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605335578772</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="online class questions to sqlite3 test">
+      <created>1605337065106</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1605337065106</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1180,7 +1206,6 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/mvn-repo" />
     </ignored-roots>
-    <MESSAGE value="server, fmt" />
     <MESSAGE value="LongMap" />
     <MESSAGE value="gitee.io web" />
     <MESSAGE value="github/gitee.io web" />
@@ -1205,7 +1230,8 @@
     <MESSAGE value="qzone diary and qq friends crawler: save to sqlite3 database" />
     <MESSAGE value="add groovy and kotlin plugin for gradle" />
     <MESSAGE value="xml to sqlite3 test" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml to sqlite3 test" />
+    <MESSAGE value="online class questions to sqlite3 test" />
+    <option name="LAST_COMMIT_MESSAGE" value="online class questions to sqlite3 test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="311" y="43" key="#Inspections" timestamp="1600492396759">
@@ -1229,6 +1255,10 @@
     </state>
     <state x="295" y="131" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1605336022340" />
     <state x="414" y="175" width="1313" height="868" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601791282162" />
+    <state x="409" y="199" width="537" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606537830400">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="409" y="199" width="537" height="403" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1606537830400" />
     <state x="513" y="139" width="374" height="592" key="#com.intellij.ide.util.MemberChooser" timestamp="1604803256991">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -1246,10 +1276,6 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="591" y="385" width="737" height="359" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601793410181" />
-    <state x="52" y="27" width="1251" height="741" key="CommitChangelistDialog2" timestamp="1596884724974">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="52" y="27" width="1251" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1596884724974" />
     <state width="958" height="387" key="DebuggerActiveHint" timestamp="1605335147799">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
@@ -1274,49 +1300,49 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="485" y="298" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.27.1366.741@0.27.1366.741" timestamp="1604800673671" />
-    <state width="903" height="391" key="GridCell.Tab.0.bottom" timestamp="1605335767959">
+    <state width="903" height="288" key="GridCell.Tab.0.bottom" timestamp="1606550377894">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600492319384" />
-    <state width="903" height="391" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
+    <state width="903" height="288" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1606550377894" />
     <state width="1852" height="176" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="903" height="391" key="GridCell.Tab.0.center" timestamp="1605335767959">
+    <state width="903" height="288" key="GridCell.Tab.0.center" timestamp="1606550377893">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="903" height="391" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
+    <state width="903" height="288" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1606550377893" />
     <state width="1852" height="176" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="903" height="391" key="GridCell.Tab.0.left" timestamp="1605335767958">
+    <state width="903" height="288" key="GridCell.Tab.0.left" timestamp="1606550377892">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600492319380" />
-    <state width="903" height="391" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1605335767958" />
+    <state width="903" height="288" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1606550377892" />
     <state width="1852" height="176" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="903" height="391" key="GridCell.Tab.0.right" timestamp="1605335767959">
+    <state width="903" height="288" key="GridCell.Tab.0.right" timestamp="1606550377894">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
-    <state width="903" height="391" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1605335767959" />
+    <state width="903" height="288" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1606550377894" />
     <state width="1852" height="176" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="207" key="GridCell.Tab.1.bottom" timestamp="1605335159691">
+    <state width="1320" height="293" key="GridCell.Tab.1.bottom" timestamp="1606543729223">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="207" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1605335159691" />
+    <state width="1320" height="293" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1606543729223" />
     <state width="1852" height="137" key="GridCell.Tab.1.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206089" />
-    <state width="1320" height="207" key="GridCell.Tab.1.center" timestamp="1605335159691">
+    <state width="1320" height="293" key="GridCell.Tab.1.center" timestamp="1606543729221">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="207" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1605335159691" />
+    <state width="1320" height="293" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1606543729221" />
     <state width="1852" height="137" key="GridCell.Tab.1.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206088" />
-    <state width="1320" height="207" key="GridCell.Tab.1.left" timestamp="1605335159690">
+    <state width="1320" height="293" key="GridCell.Tab.1.left" timestamp="1606543729221">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="207" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1605335159690" />
+    <state width="1320" height="293" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1606543729221" />
     <state width="1852" height="137" key="GridCell.Tab.1.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206088" />
-    <state width="1320" height="207" key="GridCell.Tab.1.right" timestamp="1605335159691">
+    <state width="1320" height="293" key="GridCell.Tab.1.right" timestamp="1606543729222">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state width="1320" height="207" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1605335159691" />
+    <state width="1320" height="293" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1606543729222" />
     <state width="1852" height="137" key="GridCell.Tab.1.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206088" />
     <state x="95" y="27" width="1280" height="1042" key="SettingsEditor" timestamp="1605335462849">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1350,9 +1376,10 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="457" y="217" width="442" height="367" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.27.1366.741@0.27.1366.741" timestamp="1604725173243" />
-    <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601783023386">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="246" y="114" width="867" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1606537783867">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
+    <state x="246" y="114" width="867" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1366.741@0.27.1366.741" timestamp="1606537783867" />
     <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601783023386" />
     <state x="349" y="108" width="667" height="578" key="find.popup" timestamp="1604745514579">
       <screen x="0" y="27" width="1366" height="741" />

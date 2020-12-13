@@ -37,12 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="Make wubi directory database">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/javafx/JavaFxTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/Demo1.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/demo/Demo1.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,17 +346,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -415,8 +399,8 @@
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.JavaFxTest" />
       <item itemvalue="Gradle.java [clean]" />
-      <item itemvalue="Groovy.Demo1" />
       <item itemvalue="Gradle.java [jar]" />
+      <item itemvalue="Groovy.Demo1" />
     </list>
     <recent_temporary>
       <list>
@@ -811,7 +795,8 @@
       <workItem from="1606612715695" duration="3625000" />
       <workItem from="1606620861192" duration="8000" />
       <workItem from="1607762553569" duration="797000" />
-      <workItem from="1607763797250" duration="5699000" />
+      <workItem from="1607763797250" duration="6129000" />
+      <workItem from="1607816552359" duration="1227000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>

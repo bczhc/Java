@@ -1,4 +1,4 @@
-package pers.zhc.tools.jni;
+package pers.zhc.jni;
 
 /**
  * @author bczhc

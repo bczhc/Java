@@ -1,6 +1,6 @@
-package pers.zhc.tools.utils;
+package pers.zhc.utils;
 
-import pers.zhc.tools.jni.JNI;
+import pers.zhc.jni.JNI;
 
 import java.util.concurrent.atomic.AtomicBoolean;
 

@@ -1,6 +1,6 @@
 package pers.zhc.u.groovy
 
-import pers.zhc.tools.utils.MySQLite3
+import pers.zhc.utils.MySQLite3
 import pers.zhc.u.common.ReadIS
 
 import java.nio.charset.StandardCharsets

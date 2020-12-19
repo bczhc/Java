@@ -5,10 +5,10 @@ import org.json.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
-import pers.zhc.utils.MySQLite3;
 import pers.zhc.u.common.Documents;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
+import pers.zhc.utils.MySQLite3;
 
 import java.io.*;
 import java.net.URL;
@@ -23,40 +23,6 @@ import java.util.concurrent.atomic.AtomicReference;
 import java.util.zip.GZIPInputStream;
 
 public class QzoneDiary {
-    static class ToSqlite3 {
-        public static void main(String[] args) throws IOException {
-            File file = new File("/home/zhc/qzone-diary");
-            InputStream is = new FileInputStream(file);
-            String read = ReadIS.readToString(is, StandardCharsets.UTF_8);
-            is.close();
-            JSONArray jsonArray = new JSONArray(read);
-            MySQLite3 db = MySQLite3.open("./qzone_diary_result.db");
-            db.exec("DROP TABLE IF EXISTS qzone_diary");
-            db.exec("CREATE TABLE IF NOT EXISTS qzone_diary (\n" +
-                    "    publish_time TEXT NOT NULL,\n" +
-                    "    html_data TEXT NOT NULL,\n" +
-                    "    plain_text TEXT NOT NULL,\n" +
-                    "    title TEXT NOT NULL\n" +
-                    ")");
-            db.exec("BEGIN TRANSACTION");
-            for (Object o : jsonArray) {
-                JSONObject jsonObject = (JSONObject) o;
-                String pubTime = jsonObject.getString("pubTime").replace("'", "''");
-                String html = jsonObject.getString("html").replace("'", "''");
-                String text = jsonObject.getString("text").replace("'", "''");
-                String title = jsonObject.getString("title").replace("'", "''");
-                db.exec(String.format("INSERT INTO qzone_diary VALUES('%s','%s','%s','%s')", pubTime, html, text, title));
-            }
-            db.exec("COMMIT");
-            db.close();
-            System.out.println("Done.");
-        }
-    }
-
-    private static class Result {
-        public String text, html;
-    }
-
     private static Map<String, String> headerMap;
 
     public static void main(String[] args) throws IOException {
@@ -224,5 +190,39 @@ public class QzoneDiary {
             e.printStackTrace();
         }
         return new String(out.toByteArray(), charset);
+    }
+
+    static class ToSqlite3 {
+        public static void main(String[] args) throws IOException {
+            File file = new File("/home/zhc/qzone-diary");
+            InputStream is = new FileInputStream(file);
+            String read = ReadIS.readToString(is, StandardCharsets.UTF_8);
+            is.close();
+            JSONArray jsonArray = new JSONArray(read);
+            MySQLite3 db = MySQLite3.open("./qzone_diary_result.db");
+            db.exec("DROP TABLE IF EXISTS qzone_diary");
+            db.exec("CREATE TABLE IF NOT EXISTS qzone_diary (\n" +
+                    "    publish_time TEXT NOT NULL,\n" +
+                    "    html_data TEXT NOT NULL,\n" +
+                    "    plain_text TEXT NOT NULL,\n" +
+                    "    title TEXT NOT NULL\n" +
+                    ")");
+            db.exec("BEGIN TRANSACTION");
+            for (Object o : jsonArray) {
+                JSONObject jsonObject = (JSONObject) o;
+                String pubTime = jsonObject.getString("pubTime").replace("'", "''");
+                String html = jsonObject.getString("html").replace("'", "''");
+                String text = jsonObject.getString("text").replace("'", "''");
+                String title = jsonObject.getString("title").replace("'", "''");
+                db.exec(String.format("INSERT INTO qzone_diary VALUES('%s','%s','%s','%s')", pubTime, html, text, title));
+            }
+            db.exec("COMMIT");
+            db.close();
+            System.out.println("Done.");
+        }
+    }
+
+    private static class Result {
+        public String text, html;
     }
 }

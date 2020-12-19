@@ -19,8 +19,8 @@ import java.util.concurrent.Executors;
 
 public class BaiDuTranslate {
     private String cookie = "";
-    private String token;
-    private String userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
+    private final String token;
+    private final String userAgent = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
 
     public BaiDuTranslate() {
         refreshCookie();

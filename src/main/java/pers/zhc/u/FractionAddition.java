@@ -3,8 +3,8 @@ package pers.zhc.u;
 import java.util.Scanner;
 
 public class FractionAddition {
-    private static FractionAddition o = new FractionAddition();
-    private static FractionSimple o1 = new FractionSimple();
+    private static final FractionAddition o = new FractionAddition();
+    private static final FractionSimple o1 = new FractionSimple();
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

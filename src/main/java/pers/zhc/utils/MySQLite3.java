@@ -8,11 +8,12 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @author bczhc
  */
 public class MySQLite3 {
-    private long id;
-    private boolean isClosed = false;
     static {
         System.load("/usr/lib/x86_64-linux-gnu/libbczhcMain.so");
     }
+
+    private long id;
+    private boolean isClosed = false;
 
     private MySQLite3() {
     }

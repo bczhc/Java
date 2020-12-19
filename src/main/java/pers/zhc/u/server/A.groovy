@@ -8,6 +8,7 @@ class A {
     static void main(String[] args) {
         println(1)
     }
+
     synchronized String existingFileJSONString(File dir) {
         def jsonObject = JSONObject.newInstance()
         def jsonArray = JSONArray.newInstance()

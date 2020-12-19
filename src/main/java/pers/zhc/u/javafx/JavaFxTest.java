@@ -7,6 +7,10 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 public class JavaFxTest extends Application {
+    static void main(String[] args) {
+        launch(args);
+    }
+
     @Override
     public void start(Stage primaryStage) {
         StackPane stackPane = new StackPane();
@@ -17,9 +21,5 @@ public class JavaFxTest extends Application {
         TextArea textArea = new TextArea();
         stackPane.getChildren().add(textArea);
         textArea.textProperty().addListener((observable, oldValue, newValue) -> System.out.println(observable + " " + oldValue + " " + newValue));
-    }
-
-    static void main(String[] args) {
-        launch(args);
     }
 }

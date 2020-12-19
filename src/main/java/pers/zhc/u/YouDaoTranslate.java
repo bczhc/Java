@@ -34,8 +34,8 @@ public class YouDaoTranslate {
     public final static String LANGUAGE_ARABIC = "ar";
     private URL url;
     private String cookie = "";
-    private String appVersion = "5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
-    private String userAgent = "Mozilla/" + appVersion;
+    private final String appVersion = "5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36";
+    private final String userAgent = "Mozilla/" + appVersion;
     private String refererURLString;
 
     public YouDaoTranslate() {

@@ -11,7 +11,7 @@ import java.util.Objects;
  * @author zhc
  */
 public class FileDoXor {
-    private static FileDoXor o = new FileDoXor();
+    private static final FileDoXor o = new FileDoXor();
 
     FileDoXor() {
     }

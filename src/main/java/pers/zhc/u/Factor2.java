@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
  * @author zhc
  */
 public class Factor2 {
-    private IsPrime isPrime = new IsPrime();
+    private final IsPrime isPrime = new IsPrime();
 
     /**
      * 比factor1只是加了个质数验证，验证比较大的质数是不需要等太久。

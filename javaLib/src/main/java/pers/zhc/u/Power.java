@@ -1,6 +1,5 @@
 package pers.zhc.u;
 
-import pers.zhc.u.demo.r;
 
 import java.io.*;
 import java.math.BigDecimal;
@@ -11,7 +10,6 @@ public class Power {
     private static Power o = new Power();
 
     public static void main(String[] args) throws IOException {
-        r r = new r();
         Scanner sc = new Scanner(System.in);
         System.out.println("\u8bf7\u4f9d\u6b21\u8f93\u5165\u5e95\u548c\u5e42\uff1a");
         BigDecimal base = new BigDecimal(sc.nextLong());

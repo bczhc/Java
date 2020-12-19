@@ -37,7 +37,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91ad5999-3998-42eb-8760-7671f900bfe5" name="Default Changelist" comment="Make wubi directory database">
+      <change afterPath="$PROJECT_DIR$/.idea/java.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/jni/JNI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/jni/JNI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/BaiDuTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Base128.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaLib/src/main/java/pers/zhc/u/Base128.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/CanDoHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaLib/src/main/java/pers/zhc/u/CanDoHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ComplexDefinite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Definite.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Digest.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaLib/src/main/java/pers/zhc/u/Digest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/DrawFunction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Factor2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileDoXor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileDoXor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FileU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FourierSeries.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FractionAddition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/FractionAddition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/GoogleTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/GoogleTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Group.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Group.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Latch.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Power.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/Random.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ThreadSequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ValueInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaLib/src/main/java/pers/zhc/u/ValueInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/YouDaoTranslate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/YouDaoTranslate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ZhiShu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/ZhiShu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Arr.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Color.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Documents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Execute.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/FileMultipartUploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Int.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/IsNum.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/MultipartUploader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadIS.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/ReadISDO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/Str.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/StrDicDo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/common/things.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QQFriendList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/b.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/Thread/b.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/YouDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/YouDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/a.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/demo/a.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/googleTranslate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/googleTranslate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Demo0.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Test.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/Test.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/WJX.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/groovy/WJX.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/interfaces/ProgressCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaLib/src/main/java/pers/zhc/u/interfaces/ProgressCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/javafx/JavaFxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/javafx/JavaFxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/fourier/EpicyclesSequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexFunctionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/ComplexValue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateDouble.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/CoordinateFloat.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFloatFunctionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/math/util/MathFunctionInterface.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/Decode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/qmcflac_Decode/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/server/A.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/u/server/A.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/ClockHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/FFMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/GuardedObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/HandlerCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/ListArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/LongMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/MD5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/StringKV.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/u/util/StringU.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pers/zhc/utils/MySQLite3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pers/zhc/utils/MySQLite3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/T6.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/T6.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +138,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/javaLib">
           <activation />
         </task>
         <projects_view>
@@ -185,7 +264,7 @@
     <property name="jdk.selected.PLUGIN_MODULE" value="IntelliJ IDEA IU-193.5662.53" />
     <property name="last.edited.regexp" value="1a321" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../some-tools" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -206,6 +285,9 @@
     <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../../../logcat2.txt" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pers.zhc.u.groovy.spring" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="pers.zhc.u.crawler" />
       <recent name="com.zhc.u.qmcflac_Decode" />
@@ -214,15 +296,8 @@
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="pers.zhc.tools" />
       <recent name="pers.zhc.u" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/externalJNI/jni" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jni/src" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
-      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
+      <recent name="pers.zhc.tools" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/pers/zhc/u/server" />
@@ -241,8 +316,12 @@
       <recent name="http://www.baidu.com" />
       <recent name="http://baidu.com" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="pers.zhc.u.groovy.spring" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/externalJNI/jni" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/jni/src" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/upload" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -319,7 +398,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.java [jar]">
+  <component name="RunManager" selected="Gradle.java [build]">
+    <configuration name="ComplexDefinite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pers.zhc.ComplexDefinite" />
+      <module name="java.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pers.zhc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaFxTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pers.zhc.u.javafx.JavaFxTest" />
       <module name="java.main" />
@@ -333,20 +425,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="pers.zhc.u.groovy.Test" />
-      <module name="java.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pers.zhc.u.groovy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -357,7 +447,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="clean" />
+            <option value="build" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -384,31 +474,39 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Demo1" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
-      <module name="java.test" />
-      <setting name="path" value="file://$PROJECT_DIR$/src/test/java/demo/Demo1.groovy" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$/src/test/java/demo" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration name="java:javaLib [jar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/javaLib" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="jar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Application.Test" />
       <item itemvalue="Application.JavaFxTest" />
-      <item itemvalue="Gradle.java [clean]" />
       <item itemvalue="Gradle.java [jar]" />
-      <item itemvalue="Groovy.Demo1" />
+      <item itemvalue="Application.ComplexDefinite" />
+      <item itemvalue="Gradle.java:javaLib [jar]" />
+      <item itemvalue="Gradle.java [build]" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.java [jar]" />
-        <item itemvalue="Groovy.Demo1" />
+        <item itemvalue="Gradle.java [build]" />
+        <item itemvalue="Gradle.java:javaLib [jar]" />
+        <item itemvalue="Application.ComplexDefinite" />
         <item itemvalue="Application.JavaFxTest" />
-        <item itemvalue="Gradle.java [clean]" />
-        <item itemvalue="Application.Test" />
+        <item itemvalue="Gradle.java [jar]" />
       </list>
     </recent_temporary>
   </component>
@@ -797,6 +895,7 @@
       <workItem from="1607762553569" duration="797000" />
       <workItem from="1607763797250" duration="6129000" />
       <workItem from="1607816552359" duration="1227000" />
+      <workItem from="1608361488049" duration="2603000" />
     </task>
     <task id="LOCAL-00001" summary="0">
       <created>1564549838107</created>
@@ -1263,9 +1362,14 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="445" y="83" width="1020" height="934" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601769601627" />
-    <state x="591" y="385" width="737" height="359" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601793410181">
-      <screen x="0" y="27" width="1920" height="1053" />
+    <state x="319" y="305" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1608362675568">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="319" y="305" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.768@0.0.1366.768" timestamp="1608362675568" />
+    <state x="420" y="261" width="525" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1608363366168">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="420" y="261" width="525" height="279" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.768@0.0.1366.768" timestamp="1608363366168" />
     <state x="591" y="385" width="737" height="359" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601793410181" />
     <state width="958" height="387" key="DebuggerActiveHint" timestamp="1605335147799">
       <screen x="0" y="27" width="1366" height="741" />
@@ -1291,28 +1395,32 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="485" y="298" key="Git.Rebase.Log.Action.NewCommitMessage.Dialog/0.27.1366.741@0.27.1366.741" timestamp="1604800673671" />
-    <state width="1320" height="200" key="GridCell.Tab.0.bottom" timestamp="1607767417758">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1320" height="253" key="GridCell.Tab.0.bottom" timestamp="1608364107744">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1600492319384" />
+    <state width="1320" height="253" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1608364107744" />
     <state width="1320" height="200" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1607767417758" />
     <state width="1852" height="176" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="200" key="GridCell.Tab.0.center" timestamp="1607767417757">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1320" height="253" key="GridCell.Tab.0.center" timestamp="1608364107742">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
+    <state width="1320" height="253" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1608364107742" />
     <state width="1320" height="200" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1607767417757" />
     <state width="1852" height="176" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="200" key="GridCell.Tab.0.left" timestamp="1607767417756">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1320" height="253" key="GridCell.Tab.0.left" timestamp="1608364107742">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1600492319380" />
+    <state width="1320" height="253" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1608364107742" />
     <state width="1320" height="200" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1607767417756" />
     <state width="1852" height="176" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
-    <state width="1320" height="200" key="GridCell.Tab.0.right" timestamp="1607767417757">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state width="1320" height="253" key="GridCell.Tab.0.right" timestamp="1608364107744">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1316" height="282" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1600492319381" />
+    <state width="1320" height="253" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1608364107744" />
     <state width="1320" height="200" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1607767417757" />
     <state width="1852" height="176" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601804206098" />
     <state width="1320" height="293" key="GridCell.Tab.1.bottom" timestamp="1606543729223">
@@ -1372,9 +1480,10 @@
     </state>
     <state x="246" y="114" width="867" height="654" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1366.741@0.27.1366.741" timestamp="1606537783867" />
     <state x="346" y="160" width="1218" height="872" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601783023386" />
-    <state x="349" y="108" width="667" height="578" key="find.popup" timestamp="1604745514579">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="349" y="84" width="667" height="600" key="find.popup" timestamp="1608364145352">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="349" y="84" width="667" height="600" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1608364145352" />
     <state x="349" y="108" width="667" height="578" key="find.popup/0.27.1366.741@0.27.1366.741" timestamp="1604745514579" />
     <state x="491" y="27" width="938" height="1053" key="find.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601778510848" />
     <state x="0" y="159" width="1359" height="499" key="new project wizard" timestamp="1603531484316">
@@ -1392,9 +1501,10 @@
     <state x="347" y="146" key="run.anything.popup/0.0.1366.738@0.0.1366.738" timestamp="1600490040389" />
     <state x="347" y="174" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1605332282380" />
     <state x="488" y="235" key="run.anything.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601779629362" />
-    <state x="443" y="190" width="773" height="479" key="search.everywhere.popup" timestamp="1604803565697">
-      <screen x="0" y="27" width="1366" height="741" />
+    <state x="443" y="169" width="773" height="497" key="search.everywhere.popup" timestamp="1608361811296">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
+    <state x="443" y="169" width="773" height="497" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1608361811296" />
     <state x="443" y="190" width="773" height="479" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1604803565697" />
     <state x="623" y="259" width="1087" height="681" key="search.everywhere.popup/0.27.1920.1053/1920.0.1920.1080@0.27.1920.1053" timestamp="1601767693549" />
   </component>
@@ -1407,7 +1517,7 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java</url>
-          <line>158</line>
+          <line>124</line>
           <option name="timeStamp" value="89" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -1432,7 +1542,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pers/zhc/u/crawler/QzoneDiary.java</url>
-          <line>52</line>
+          <line>221</line>
           <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>

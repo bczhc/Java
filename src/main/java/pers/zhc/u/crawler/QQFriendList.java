@@ -2,16 +2,19 @@ package pers.zhc.u.crawler;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import pers.zhc.utils.MySQLite3;
 import pers.zhc.u.common.ReadIS;
 import pers.zhc.u.util.Connection;
+import pers.zhc.utils.MySQLite3;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
-import java.util.*;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
 
 public class QQFriendList {
     public static void main(String[] args) throws IOException {

@@ -10,7 +10,7 @@ import java.util.Date;
 
 public class a implements Runnable {
     private Thread t;
-    private String s;
+    private final String s;
 
     private a(String a) {
         this.s = a;
@@ -59,7 +59,6 @@ public class a implements Runnable {
 //            SwingLoginExample.pers.zhc.u.kotlin.main(new String[0]);
             JFrame jFrame = new JFrame("Demo");
             jFrame.setVisible(true);
-            ;
             jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
             jFrame.setBounds(500, 300, 100, 100);
             JPanel jPanel = new JPanel();

@@ -1,9 +1,9 @@
-var bu = function(a) {
-    return function() {
+var bu = function (a) {
+    return function () {
         return a
     }
 }
-    , cu = function(a, b) {
+    , cu = function (a, b) {
     for (var c = 0; c < b.length - 2; c += 3) {
         var d = b.charAt(c + 2);
         d = "a" <= d ? d.charCodeAt(0) - 87 : Number(d);
@@ -13,7 +13,7 @@ var bu = function(a) {
     return a
 }
     , du = "439729.1124205703"
-    , eu = function(a) {
+    , eu = function (a) {
     if (null !== du)
         var b = du;
     else {

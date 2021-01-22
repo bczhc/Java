@@ -1,13 +1,16 @@
 package pers.zhc.u.util;
 
 import pers.zhc.u.common.Documents;
+import pers.zhc.u.common.ReadIS;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.List;
@@ -110,5 +113,16 @@ public class Connection {
             map.put(split1[0], split1.length == 1 ? "" : split1[1]);
         }
         return map;
+    }
+
+    public static String getString(URLConnection connection) throws IOException {
+        return getString(connection, StandardCharsets.UTF_8);
+    }
+
+    public static String getString(URLConnection connection, Charset charsets) throws IOException {
+        InputStream is = connection.getInputStream();
+        String s = ReadIS.readToString(is, charsets);
+        is.close();
+        return s;
     }
 }

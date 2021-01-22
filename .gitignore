@@ -44,3 +44,7 @@ hs_err_pid*
 将删除 target/generated-sources/
 将删除 target/generated-test-sources/
 将删除 target/maven-status/maven-compiler-plugin/testCompile/
+javaLib/build
+build
+out
+.gradle

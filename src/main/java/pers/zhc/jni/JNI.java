@@ -5,19 +5,6 @@ package pers.zhc.jni;
  */
 public class JNI {
     public static class Sqlite3 {
-        public interface SqliteExecCallback {
-            /**
-             * Callback when {@link Sqlite3#exec(long, String, SqliteExecCallback)} is called.
-             *
-             * @param contents content in database
-             * @return whether to continue search:
-             * 0: interrupt searching
-             * 1: continue
-             */
-            int callback(String[] contents);
-        }
-
-
         /**
          * Open sqlite database.
          *
@@ -40,5 +27,17 @@ public class JNI {
          * @param cmd command
          */
         public static native void exec(long id, String cmd, SqliteExecCallback callback);
+
+        public interface SqliteExecCallback {
+            /**
+             * Callback when {@link Sqlite3#exec(long, String, SqliteExecCallback)} is called.
+             *
+             * @param contents content in database
+             * @return whether to continue search:
+             * 0: interrupt searching
+             * 1: continue
+             */
+            int callback(String[] contents);
+        }
     }
 }

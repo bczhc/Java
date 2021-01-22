@@ -88,5 +88,6 @@ dependencies {
     implementation group: 'org.apache.maven.plugins', name: 'maven-compiler-plugin', version: '3.8.1'
     implementation group: 'junit', name: 'junit', version: '4.13'
     implementation group: 'javax', name: 'javaee-api', version: '7.0'
-    compile group: 'org.yaml', name: 'snakeyaml', version: '1.25'
+    implementation group: 'org.yaml', name: 'snakeyaml', version: '1.25'
+    implementation project("javaLib")
 }

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Group {
-    private List<Object> objectList = new ArrayList<>();
+    private final List<Object> objectList = new ArrayList<>();
     private Object[] objects;
     private boolean havePutObjectArr = false;
     private boolean havePutFile = false, havePutO = false;
@@ -157,7 +157,7 @@ class s0 {
         }*/
         long sum = 0L;
         for (int i = 0; i < 1000000000; i++) {
-            sum += (long) i;
+            sum += i;
             System.out.print(sum + " ");
             if (i % 15 == 0) System.out.print("\n");
         }
@@ -178,7 +178,7 @@ class s1 {
                 int[] ran = Random.ran(10000, 1000000000, 100, false);
                 for (int j = 0; j < 1000; j++) {
                     int i1 = Random.ran_sc(0, ran[j % 100]);
-                    String factor = new Factor2().factor((long) i1);
+                    String factor = new Factor2().factor(i1);
                     System.out.println(factor);
                 }
             }).start();

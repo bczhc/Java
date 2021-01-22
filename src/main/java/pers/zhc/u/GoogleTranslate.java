@@ -20,10 +20,6 @@ import java.util.Map;
 public class GoogleTranslate {
     private Map<String, String> requestProperty;
 
-    public static void main(String[] args) throws IOException {
-        GoogleTranslate translate = new GoogleTranslate();
-    }
-
     public GoogleTranslate() {
         try {
             URL url = new URL("https://translate.google.cn");
@@ -36,6 +32,10 @@ public class GoogleTranslate {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+        GoogleTranslate translate = new GoogleTranslate();
     }
 
     public String translate(String text) throws IOException, JSONException {

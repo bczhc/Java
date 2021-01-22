@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 class R0 implements Runnable {
     private Thread t;
-    private File f;
+    private final File f;
 
     R0(int i) {
         this.f = new File("C:\\zhc\\f\\s2\\" + i);

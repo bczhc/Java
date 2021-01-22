@@ -47,7 +47,7 @@ class WJX {
         def is = new URL("https://www.wenjuan.com/s/R7Nj6vR").openStream()
         new ReadIS(is, StandardCharsets.UTF_8).read({ s ->
             if (s.matches(".*var func_name.*")) {
-                def pattern = Pattern.compile("\".*\"");
+                def pattern = Pattern.compile("\".*\"")
                 def matcher = pattern.matcher(s)
                 if (matcher.find()) {
                     def t = matcher.group(0).split("\"")
@@ -83,7 +83,7 @@ class WJX_Test {
                 def has = project.has("_id")
                 def oidStr = has ? project.get("_id") : ""
                 def oidJSON = new JSONObject(oidStr.toString())
-                def oid = oidJSON.getString("\$oid");
+                def oid = oidJSON.getString("\$oid")
                 println oid
             }
         })

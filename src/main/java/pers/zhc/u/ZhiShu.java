@@ -9,7 +9,7 @@ import java.util.Scanner;
  * 2018.9.24 21:08
  */
 public class ZhiShu {
-    private static Scanner sc = new Scanner(System.in);
+    private static final Scanner sc = new Scanner(System.in);
     private static String CF = "";
 
     public static void main(String[] args) {

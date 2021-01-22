@@ -37,7 +37,7 @@ public class b {
 }
 
 class t0 implements Runnable {
-    private static CountDownLatch latch = new CountDownLatch(1000);
+    private static final CountDownLatch latch = new CountDownLatch(1000);
     private Thread t;
 
     public static void main(String[] args) {

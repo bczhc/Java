@@ -4,7 +4,8 @@ import javax.swing.*;
 import java.awt.*;
 
 public class DrawFunction extends JFrame {
-    private static int W = 1200, H = 900;
+    private static final int W = 1200;
+    private static final int H = 900;
     private FourierSeries fs;
     private int nNum;
     private int x0, y0;
